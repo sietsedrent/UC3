@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\UC3.props" />
+</Project>
