@@ -32,3 +32,38 @@ C:\Users\siets\source\repos\UC3\UC3\obj\Debug\net8.0\refint\UC3.dll
 C:\Users\siets\source\repos\UC3\UC3\obj\Debug\net8.0\UC3.pdb
 C:\Users\siets\source\repos\UC3\UC3\obj\Debug\net8.0\UC3.genruntimeconfig.cache
 C:\Users\siets\source\repos\UC3\UC3\obj\Debug\net8.0\ref\UC3.dll
+C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\appsettings.Development.json
+C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\appsettings.json
+C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\UC3.staticwebassets.endpoints.json
+C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\UC3.staticwebassets.runtime.json
+C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\UC3.exe
+C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\UC3.deps.json
+C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\UC3.runtimeconfig.json
+C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\UC3.dll
+C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\UC3.pdb
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\UC3.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\UC3.AssemblyInfoInputs.cache
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\UC3.AssemblyInfo.cs
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\UC3.csproj.CoreCompileInputs.cache
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\UC3.MvcApplicationPartsAssemblyInfo.cache
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\UC3.RazorAssemblyInfo.cache
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\UC3.RazorAssemblyInfo.cs
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\UC3.sourcelink.json
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\scopedcss\bundle\UC3.styles.css
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\scopedcss\projectbundle\UC3.bundle.scp.css
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\staticwebassets.build.json
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\staticwebassets.development.json
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\staticwebassets\msbuild.UC3.Microsoft.AspNetCore.StaticWebAssets.props
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\staticwebassets\msbuild.UC3.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\staticwebassets\msbuild.build.UC3.props
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.UC3.props
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.UC3.props
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\staticwebassets.pack.json
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\UC3.dll
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\refint\UC3.dll
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\UC3.pdb
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\UC3.genruntimeconfig.cache
+C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\ref\UC3.dll
