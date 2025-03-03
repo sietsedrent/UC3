@@ -95,7 +95,6 @@ C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\Microsoft.VisualStudio.Web.Code
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\Mono.TextTemplating.dll
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\NuGet.Common.dll
@@ -114,11 +113,8 @@ C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\System.Composition.Hosting.dll
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\System.Composition.Runtime.dll
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\System.Composition.TypedParts.dll
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\System.Drawing.Common.dll
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\System.Security.Permissions.dll
-C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\System.Windows.Extensions.dll
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\af\Humanizer.resources.dll
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\ar\Humanizer.resources.dll
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\az\Humanizer.resources.dll
@@ -258,10 +254,6 @@ C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Works
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
-C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
-C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
-C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\UC3.csproj.AssemblyReference.cache
 C:\xampp 3\htdocs\nerdy\UC3\UC3\obj\Debug\net8.0\UC3.csproj.Up2Date
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\Microsoft.Build.Locator.dll
@@ -322,3 +314,4 @@ C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\runtimes\win-arm64\native\e_sql
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\System.Formats.Asn1.dll

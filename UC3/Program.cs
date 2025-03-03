@@ -36,6 +36,11 @@ namespace UC3
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
+            using (var scope = app.Services.CreateScope())
+            {
+                var context = scope.ServiceProvider.GetRequiredService<WorkoutContext>();
+                context.Database.Migrate(); // Of gebruik context.Database.EnsureCreated(); voor een eenvoudige setup
+            }
             app.Run();
         }
     }
