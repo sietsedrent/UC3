@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using UC3.Data;
+
 namespace UC3
 {
     public class Program
@@ -5,6 +8,9 @@ namespace UC3
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+            builder.Services.AddDbContext<WorkoutContext>(x => x.UseSqlite(connectionString));
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
