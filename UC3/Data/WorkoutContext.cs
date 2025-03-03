@@ -7,9 +7,9 @@ namespace UC3.Data
     {
         public WorkoutContext(DbContextOptions<WorkoutContext> options) : base(options) { }
 
-        public DbSet<ExerciseModel> ExerciseModels { get; set; }
-        public DbSet<TrainingDataModel> TrainingDataModels { get; set; }
-        public DbSet<WorkoutModel> WorkoutModels { get; set; }
-        public DbSet<UserModel> UserModels { get; set; }
+        public DbSet<Exercise> ExerciseModels { get; set; }
+        public DbSet<TrainingData> TrainingDataModels { get; set; }
+        public DbSet<Workout> WorkoutModels { get; set; }
+        public DbSet<User> UserModels { get; set; }
     }
 }

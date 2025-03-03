@@ -2,7 +2,7 @@
 
 namespace UC3.Models
 {
-    public class ExerciseModel
+    public class Exercise
     {
         [Key]
         public int exerciseId { get; set; }

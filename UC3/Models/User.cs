@@ -2,7 +2,7 @@
 
 namespace UC3.Models
 {
-    public class UserModel
+    public class User
     {
         [Key]
         public int userId { get; set; }

@@ -2,7 +2,7 @@
 
 namespace UC3.Models
 {
-    public class TrainingDataModel
+    public class TrainingData
     {
         [Key]
         public int TrainingDataId { get; set; }
