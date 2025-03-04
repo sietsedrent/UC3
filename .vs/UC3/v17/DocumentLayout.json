@@ -62,8 +62,7 @@
               "RelativeToolTip": "UC3\\Program.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAQwC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T19:05:41.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T19:05:41.056Z"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "UC3\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-04T19:04:27.721Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T19:04:27.721Z"
             },
             {
               "$type": "Document",
@@ -88,8 +86,7 @@
               "RelativeToolTip": "UC3\\Controllers\\AccountController.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAgwD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T18:52:51.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T18:52:51.128Z"
             },
             {
               "$type": "Document",
@@ -97,9 +94,9 @@
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "UC3\\Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "UC3\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Account\\Register.cshtml*",
+              "RelativeToolTip": "UC3\\Views\\Account\\Register.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-04T18:52:45.276Z",
               "EditorCaption": ""
@@ -114,8 +111,7 @@
               "RelativeToolTip": "UC3\\Views\\Account\\Login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-04T18:52:34.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T18:52:34.876Z"
             }
           ]
         },
