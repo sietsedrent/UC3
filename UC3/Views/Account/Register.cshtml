@@ -1,16 +1,16 @@
 ﻿@model UC3.Models.User
 
 @{
-    ViewData["Title"] = "Login";
+    ViewData["Title"] = "Register";
 }
 
-<h1>Login</h1>
+<h1>Register</h1>
 
 <h4>User</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Login">
+        <form asp-controller="Account" asp-action="Register" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="email" class="control-label"></label>
@@ -28,29 +28,14 @@
                 <span asp-validation-for="name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="bio" class="control-label"></label>
-                <input asp-for="bio" class="form-control" />
-                <span asp-validation-for="bio" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="profilepicture" class="control-label"></label>
-                <input asp-for="profilepicture" class="form-control" />
-                <span asp-validation-for="profilepicture" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="RegisteryDate" class="control-label"></label>
-                <input asp-for="RegisteryDate" class="form-control" />
-                <span asp-validation-for="RegisteryDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Register" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Login">Terug naar inloggen</a>
 </div>
 
 @section Scripts {
