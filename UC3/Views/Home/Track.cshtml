@@ -5,6 +5,51 @@
 <div class="text-center">
 
     <div class="parent">
+        <style>
+            p {
+                font-weight: bold;
+                color: blue;
+            }
+        </style>
+        <p> Dit is de normale tekst</p>
+        <template id="my_component_tpl">
+            <p>Dit is de tekst uit het template</p>
+            <style>
+                p {
+                    font-weight: bold;
+                    color: red;
+                }
+            </style>
+        </template>
+        <my-component>
+            <!--<div slot="tekst">De nieuwe tekst</div> -->
+        </my-component>
+        <my-component>
+            <!--<div slot="tekst">De nieuwe tekst</div> -->
+        </my-component>
+        <my-component>
+            <!--<div slot="tekst">De nieuwe tekst</div> -->
+        </my-component>
+        <my-component>
+            <!--<div slot="tekst">De nieuwe tekst</div> -->
+        </my-component>
+        
+        <script>
+            class my_component extends HTMLElement {
+                constructor() {
+                    super();
+                    let template = document.getElementById("my_component_tpl");
+                    let templateContent = template.content;
+                    const shadowRoot = this.attachShadow({ mode:"closed"});
+                    shadowRoot.appendChild(templateContent.cloneNode(true));
+                }
+            }
+            customElements.define(
+                "my-component", my_component
+            );
+
+        </script>
+        
         <div class="div1">1</div>
         <div class="div2">2</div>
         <div class="div3">3</div>

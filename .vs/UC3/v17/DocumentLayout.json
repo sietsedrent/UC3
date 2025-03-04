@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\views\\home\\track.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\views\\home\\track.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\data\\workoutcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\data\\workoutcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,10 +42,6 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:109285407:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
             },
             {
@@ -54,7 +58,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Home\\Register.cshtml",
+              "RelativeDocumentMoniker": "UC3\\Views\\Home\\Register.cshtml",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Home\\Register.cshtml",
+              "RelativeToolTip": "UC3\\Views\\Home\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T12:06:41.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Track.cshtml",
+              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Home\\Track.cshtml",
+              "RelativeDocumentMoniker": "UC3\\Views\\Home\\Track.cshtml",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Home\\Track.cshtml",
+              "RelativeToolTip": "UC3\\Views\\Home\\Track.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T22:20:56.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "WorkoutContext.cs",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Data\\WorkoutContext.cs",
               "RelativeDocumentMoniker": "UC3\\Data\\WorkoutContext.cs",
@@ -67,7 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Workout.cs",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Models\\Workout.cs",
               "RelativeDocumentMoniker": "UC3\\Models\\Workout.cs",
@@ -75,12 +105,11 @@
               "RelativeToolTip": "UC3\\Models\\Workout.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T22:03:59.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T22:03:59.675Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Exercise.cs",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Models\\Exercise.cs",
               "RelativeDocumentMoniker": "UC3\\Models\\Exercise.cs",
@@ -88,12 +117,11 @@
               "RelativeToolTip": "UC3\\Models\\Exercise.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T22:02:59.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T22:02:59.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Models\\User.cs",
               "RelativeDocumentMoniker": "UC3\\Models\\User.cs",
@@ -101,8 +129,7 @@
               "RelativeToolTip": "UC3\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T21:54:21.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T21:54:21.946Z"
             }
           ]
         },
