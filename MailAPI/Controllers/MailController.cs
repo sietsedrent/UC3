@@ -10,7 +10,7 @@ namespace MailAPI.Controllers
     public class MailController : ControllerBase
     {
         [HttpPost]
-        public ActionResult Post([Bind("FirstName, LastName, Email, Phone, Subject, Description")] Contactform form)
+        public ActionResult Post([Bind("authenticationCode")] Contactform form)
         {
             try
             {
