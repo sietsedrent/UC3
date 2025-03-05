@@ -46,17 +46,21 @@ namespace UC3.Controllers
             {
                 return NotFound();
             }
-            
-            if (_accountService.ValidLogin(email, password) == true) 
+            if ((from u in _context.UserModels where u.email == email select u).Count() == 0) 
             {
-                return RedirectToAction("Index", "Home");
-            } else
-            {
+                ModelState.AddModelError("", "The username or password is incorrect");
                 return View();
             }
 
-
-
+            if (_accountService.ValidLogin(email, password) == true)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                ModelState.AddModelError("", "The username or password is incorrect");
+                return View();
+            }
         }
 
         //GET Register
