@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using UC3.Data;
 using UC3.Models;
@@ -28,7 +29,7 @@ namespace UC3.Controllers
         //POST Login
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(string? email)
+        public async Task<IActionResult> Login(string? email, string? password)
         {
             if (email == null)
             {
@@ -41,6 +42,9 @@ namespace UC3.Controllers
             {
                 return NotFound();
             }
+
+            if(email ==
+
 
             return RedirectToAction("Index", "Home");
         }
@@ -60,9 +64,9 @@ namespace UC3.Controllers
             {
                 _context.Add(user);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Login", "Account");
             }
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Login", "Account");
 
         }
 
