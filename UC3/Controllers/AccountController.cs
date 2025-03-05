@@ -22,15 +22,15 @@ namespace UC3.Controllers
     {
         private readonly WorkoutContext _context;
         private readonly AccountService _accountService;
-        //private readonly HttpClient _httpClient;
+        private readonly HttpClient _httpClient;
 
-        public AccountController(WorkoutContext context, AccountService accountService)
+        public AccountController(WorkoutContext context, AccountService accountService, HttpClient httpClient)
         {
             _context = context;
             _accountService = accountService;
+            _httpClient = httpClient;
             //Moet ook nog HTTPClient httpclient in initialisatie
-            //_httpClient = httpClient;
-            //_httpClient.BaseAddress = new Uri("https://localhost:7205");
+            _httpClient.BaseAddress = new Uri("https://localhost:7205");
         }
 
         //GET Login
@@ -101,7 +101,7 @@ namespace UC3.Controllers
 
 
         // POST: SendAuthenticationController
-        /*
+       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> SendMail(User user)
@@ -144,7 +144,7 @@ namespace UC3.Controllers
 
             return View();
         }
-        */
+        
 
 
         //Logout
