@@ -82,8 +82,7 @@
               "RelativeToolTip": "UC3\\Program.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAiwC0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T20:09:41.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T20:09:41.231Z"
             },
             {
               "$type": "Document",
@@ -95,8 +94,7 @@
               "RelativeToolTip": "MailAPI\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-05T19:55:43.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T19:55:43.788Z"
             },
             {
               "$type": "Document",
@@ -108,8 +106,7 @@
               "RelativeToolTip": "MailAPI\\MailAPI.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-03-05T19:50:25.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T19:50:25.06Z"
             },
             {
               "$type": "Document",
@@ -121,8 +118,7 @@
               "RelativeToolTip": "UC3\\Business\\AuthenticationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T19:47:02.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T19:47:02.079Z"
             },
             {
               "$type": "Document",
@@ -134,8 +130,7 @@
               "RelativeToolTip": "MailAPI\\Controllers\\MailController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T19:42:17.083Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T19:42:17.083Z"
             },
             {
               "$type": "Document",
@@ -147,8 +142,7 @@
               "RelativeToolTip": "MailAPI\\Models\\Contactform.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T19:41:43.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T19:41:43.975Z"
             },
             {
               "$type": "Document",
@@ -160,8 +154,7 @@
               "RelativeToolTip": "MailAPI\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T19:39:32.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T19:39:32.641Z"
             },
             {
               "$type": "Document",
@@ -173,8 +166,7 @@
               "RelativeToolTip": "UC3\\Business\\AccountService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T15:31:41.967Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T15:31:41.967Z"
             },
             {
               "$type": "Document",
@@ -182,9 +174,9 @@
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "UC3\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Account\\Login.cshtml*",
-              "RelativeToolTip": "UC3\\Views\\Account\\Login.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABPAAAAAAAAAA==",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "UC3\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-05T19:10:58.968Z",
               "EditorCaption": ""
@@ -199,8 +191,7 @@
               "RelativeToolTip": "UC3\\Views\\Account\\Register.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-05T18:32:12.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T18:32:12.683Z"
             },
             {
               "$type": "Document",
@@ -212,8 +203,7 @@
               "RelativeToolTip": "UC3\\Controllers\\AccountController.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAwwEEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T18:52:51.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T18:52:51.128Z"
             }
           ]
         },

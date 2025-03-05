@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DD07657B-F54B-4FE2-AADE-03B62BF1D611}|MailAPI\\MailAPI.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\mailapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{DD07657B-F54B-4FE2-AADE-03B62BF1D611}|MailAPI\\MailAPI.csproj|solutionrelative:mailapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -50,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -71,6 +75,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Program.cs",
+              "RelativeDocumentMoniker": "UC3\\Program.cs",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Program.cs",
+              "RelativeToolTip": "UC3\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAiwC0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T20:09:41.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\MailAPI\\appsettings.json",
               "RelativeDocumentMoniker": "MailAPI\\appsettings.json",
@@ -78,12 +94,11 @@
               "RelativeToolTip": "MailAPI\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-05T19:55:43.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T19:55:43.788Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MailAPI.http",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\MailAPI\\MailAPI.http",
               "RelativeDocumentMoniker": "MailAPI\\MailAPI.http",
@@ -91,12 +106,11 @@
               "RelativeToolTip": "MailAPI\\MailAPI.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-03-05T19:50:25.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T19:50:25.06Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "AuthenticationService.cs",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Business\\AuthenticationService.cs",
               "RelativeDocumentMoniker": "UC3\\Business\\AuthenticationService.cs",
@@ -104,12 +118,11 @@
               "RelativeToolTip": "UC3\\Business\\AuthenticationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T19:47:02.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T19:47:02.079Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MailController.cs",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\MailAPI\\Controllers\\MailController.cs",
               "RelativeDocumentMoniker": "MailAPI\\Controllers\\MailController.cs",
@@ -117,12 +130,11 @@
               "RelativeToolTip": "MailAPI\\Controllers\\MailController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T19:42:17.083Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T19:42:17.083Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Contactform.cs",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\MailAPI\\Models\\Contactform.cs",
               "RelativeDocumentMoniker": "MailAPI\\Models\\Contactform.cs",
@@ -130,12 +142,11 @@
               "RelativeToolTip": "MailAPI\\Models\\Contactform.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T19:41:43.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T19:41:43.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\MailAPI\\Program.cs",
               "RelativeDocumentMoniker": "MailAPI\\Program.cs",
@@ -143,12 +154,11 @@
               "RelativeToolTip": "MailAPI\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T19:39:32.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T19:39:32.641Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "AccountService.cs",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Business\\AccountService.cs",
               "RelativeDocumentMoniker": "UC3\\Business\\AccountService.cs",
@@ -156,8 +166,7 @@
               "RelativeToolTip": "UC3\\Business\\AccountService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T15:31:41.967Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T15:31:41.967Z"
             },
             {
               "$type": "Document",
@@ -167,7 +176,7 @@
               "RelativeDocumentMoniker": "UC3\\Views\\Account\\Login.cshtml",
               "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "UC3\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-05T19:10:58.968Z",
               "EditorCaption": ""
@@ -180,14 +189,13 @@
               "RelativeDocumentMoniker": "UC3\\Views\\Account\\Register.cshtml",
               "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Account\\Register.cshtml",
               "RelativeToolTip": "UC3\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-05T18:32:12.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T18:32:12.683Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "UC3\\Controllers\\AccountController.cs",
@@ -195,8 +203,7 @@
               "RelativeToolTip": "UC3\\Controllers\\AccountController.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAwwEEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T18:52:51.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T18:52:51.128Z"
             }
           ]
         },
