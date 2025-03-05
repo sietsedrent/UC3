@@ -37,12 +37,12 @@ namespace UC3.Controllers
 
             var user = await _context.UserModels
                 .FirstOrDefaultAsync(m => m.email == email);
-            if (user == null)
+            if (email == null)
             {
                 return NotFound();
             }
 
-            return View(user);
+            return RedirectToAction("Index", "Home");
         }
 
         //GET Register
@@ -62,8 +62,7 @@ namespace UC3.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index", "Home");
             }
-            //return RedirectToAction("Index");
-            return View(user);
+            return RedirectToAction("Index", "Home");
 
         }
 
