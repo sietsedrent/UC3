@@ -4,6 +4,7 @@ using UC3.Data;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Xml.Linq;
+using UC3.Models;
 
 namespace UC3.Business
 {
@@ -17,12 +18,7 @@ namespace UC3.Business
 
         public bool ValidLogin(string email, string password)
         {
-            if ((from u in _context.UserModels where u.email == email select u).Count() > 0) 
-            {
-            } else
-            {
-                return false;
-            }
+            
 
             bool emailAndPassword = _context.UserModels.Any(i => i.email == email && i.password == password);
 
@@ -33,6 +29,30 @@ namespace UC3.Business
             {
                 return false;
             }
+        }
+
+        public void Register(string email, string password, string name)
+        {
+            if ((from u in _context.UserModels where u.email == email select u).Count() == 0)
+            {
+                var registerDate = DateOnly.FromDateTime(DateTime.Now);
+                var newUser = new User
+                {
+                    email = email,
+                    password = password,
+                    name = name,
+                    bio = "empty",
+                    profilepicture = "empty",
+                    RegisteryDate = registerDate
+                };
+                _context.UserModels.Add(newUser);
+                _context.SaveChanges();
+            }
+            else
+            {
+                return;
+            }
+            
         }
     }
 }

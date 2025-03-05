@@ -33,7 +33,7 @@ namespace UC3.Controllers
         //POST Login
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(string email, string? password)
+        public async Task<IActionResult> Login(string? email, string? password)
         {
             if (email == null || password == null)
             {
@@ -68,16 +68,14 @@ namespace UC3.Controllers
         // POST Register
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register([Bind("email,password,name")] User user)
+        public async Task<IActionResult> Register(string? email, string? password, string? name)
         {
-            if (ModelState.IsValid)
+            if(email != null && password != null && name != null)
             {
-                _context.Add(user);
-                await _context.SaveChangesAsync();
+                _accountService.Register(email, password, name);
                 return RedirectToAction("Login", "Account");
             }
-            return RedirectToAction("Login", "Account");
-
+            return View();
         }
 
         //Logout
