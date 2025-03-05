@@ -8,16 +8,20 @@ using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using UC3.Data;
 using UC3.Models;
+using UC3.Business;
+
+
 
 namespace UC3.Controllers
 {
     public class AccountController : Controller
     {
         private readonly WorkoutContext _context;
-
-        public AccountController(WorkoutContext context)
+        private readonly AccountService _accountService;
+        public AccountController(WorkoutContext context, AccountService accountService)
         {
             _context = context;
+            _accountService = accountService;
         }
 
         //GET Login
@@ -29,24 +33,30 @@ namespace UC3.Controllers
         //POST Login
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(string? email, string? password)
+        public async Task<IActionResult> Login(string email, string? password)
         {
-            if (email == null)
+            if (email == null || password == null)
             {
                 return NotFound();
             }
 
             var user = await _context.UserModels
                 .FirstOrDefaultAsync(m => m.email == email);
-            if (email == null)
+            if (user == null)
             {
                 return NotFound();
             }
+            
+            if (_accountService.ValidLogin(email, password) == true) 
+            {
+                return RedirectToAction("Index", "Home");
+            } else
+            {
+                return View();
+            }
 
-            if(email ==
 
 
-            return RedirectToAction("Index", "Home");
         }
 
         //GET Register

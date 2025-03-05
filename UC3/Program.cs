@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using UC3.Data;
+using UC3.Business;
 
 namespace UC3
 {
@@ -11,6 +12,7 @@ namespace UC3
 
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
             builder.Services.AddDbContext<WorkoutContext>(x => x.UseSqlite(connectionString));
+            builder.Services.AddScoped<AccountService>();
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();

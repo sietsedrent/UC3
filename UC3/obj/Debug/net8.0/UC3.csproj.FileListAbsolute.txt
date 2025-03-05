@@ -322,3 +322,5 @@ C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microso
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\Dapper.dll
+C:\xampp 3\htdocs\nerdy\UC3\UC3\bin\Debug\net8.0\System.Data.SQLite.Linq.dll
