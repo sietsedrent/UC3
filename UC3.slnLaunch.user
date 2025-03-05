@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "UC3\\UC3.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "MailAPI\\MailAPI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

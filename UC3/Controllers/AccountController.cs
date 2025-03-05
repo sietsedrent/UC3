@@ -9,6 +9,10 @@ using Microsoft.EntityFrameworkCore;
 using UC3.Data;
 using UC3.Models;
 using UC3.Business;
+using Newtonsoft.Json.Serialization;
+using Newtonsoft.Json;
+using System.Text;
+using System.Net.Http;
 
 
 
@@ -35,10 +39,13 @@ namespace UC3.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(string? email, string? password)
         {
+            
+
             if (email == null || password == null)
             {
                 return NotFound();
             }
+
             if ((from u in _context.UserModels where u.email == email select u).Count() == 0)
             {
                 ModelState.AddModelError("", "This email does not exist in our database");
@@ -86,6 +93,8 @@ namespace UC3.Controllers
             }
             return View();
         }
+
+        
 
         //Logout
         public IActionResult Logout()
