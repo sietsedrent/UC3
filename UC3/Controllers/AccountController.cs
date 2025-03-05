@@ -39,6 +39,11 @@ namespace UC3.Controllers
             {
                 return NotFound();
             }
+            if ((from u in _context.UserModels where u.email == email select u).Count() == 0)
+            {
+                ModelState.AddModelError("", "This email does not exist in our database");
+                return View();
+            }
 
             var user = await _context.UserModels
                 .FirstOrDefaultAsync(m => m.email == email);
@@ -46,11 +51,7 @@ namespace UC3.Controllers
             {
                 return NotFound();
             }
-            if ((from u in _context.UserModels where u.email == email select u).Count() == 0) 
-            {
-                ModelState.AddModelError("", "The username or password is incorrect");
-                return View();
-            }
+           
 
             if (_accountService.ValidLogin(email, password) == true)
             {
@@ -74,7 +75,11 @@ namespace UC3.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(string? email, string? password, string? name)
         {
-            if(email != null && password != null && name != null)
+            //overbodig
+            var user = await _context.UserModels
+            .FirstOrDefaultAsync(m => m.email == email);
+
+            if (email != null && password != null && name != null)
             {
                 _accountService.Register(email, password, name);
                 return RedirectToAction("Login", "Account");
