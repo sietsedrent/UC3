@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD07657B-F54B-4FE2-AADE-03B62BF1D611}|MailAPI\\MailAPI.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\mailapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -161,26 +161,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "UC3\\Views\\Account\\Login.cshtml",
               "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "UC3\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-05T19:10:58.968Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "UC3\\Views\\Account\\Register.cshtml",
               "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Account\\Register.cshtml",
               "RelativeToolTip": "UC3\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-05T18:32:12.683Z",
               "EditorCaption": ""
