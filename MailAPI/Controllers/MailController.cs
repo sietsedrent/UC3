@@ -5,6 +5,8 @@ using System.Net;
 
 namespace MailAPI.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class MailController : ControllerBase
     {
         [HttpPost]
