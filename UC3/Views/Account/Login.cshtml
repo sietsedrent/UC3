@@ -24,8 +24,10 @@
                 <input type="checkbox" onclick="HidePassword()">Hide Password
             </div>
             <br /> <br /> <br />
-            <div class="form-group">
-                <input type="button" value="Send Verificationmail" id="SendMail" class="btn btn-primary" />
+            <div class="form-group" >
+                <form method="post" action="@Url.Action("SendMail", "AccountController")">
+                    <input type="button" value="Send Verificationmail" id="SendMail" class="btn btn-primary" />
+                </form>
             </div>
             <input type="number" class="form-control" />
             <br />
