@@ -10,7 +10,7 @@ namespace MailAPI.Controllers
     public class MailController : ControllerBase
     {
         [HttpPost]
-        public ActionResult Post([Bind("authenticationCode")] Contactform form)
+        public ActionResult Post([Bind("authenticationCode, email")] Contactform form)
         {
             try
             {
@@ -29,7 +29,7 @@ namespace MailAPI.Controllers
                     IsBodyHtml = false
                 };
 
-                mailMessage.To.Add("to@example.com");
+                mailMessage.To.Add("email");
 
                 client.Send(mailMessage);
 
