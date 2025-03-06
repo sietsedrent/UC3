@@ -18,6 +18,7 @@ namespace UC3
             {
                 options.BaseAddress = new Uri("https://localhost:7205");
             });
+            builder.Services.AddMvc().AddNToastNotifyToastr();
 
             builder.Services.AddDistributedMemoryCache(); // Dit configureert een tijdelijke cache in het geheugen
             builder.Services.AddSession(options =>
@@ -31,6 +32,10 @@ namespace UC3
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
+
+            app.UseNToastNotify();
+
+            
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())

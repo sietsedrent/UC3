@@ -17,7 +17,7 @@ namespace UC3.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.2");
 
-            modelBuilder.Entity("UC3.Models.ExerciseModel", b =>
+            modelBuilder.Entity("UC3.Models.Exercise", b =>
                 {
                     b.Property<int>("exerciseId")
                         .ValueGeneratedOnAdd()
@@ -36,7 +36,7 @@ namespace UC3.Migrations
                     b.ToTable("ExerciseModels");
                 });
 
-            modelBuilder.Entity("UC3.Models.TrainingDataModel", b =>
+            modelBuilder.Entity("UC3.Models.TrainingData", b =>
                 {
                     b.Property<int>("TrainingDataId")
                         .ValueGeneratedOnAdd()
@@ -68,7 +68,7 @@ namespace UC3.Migrations
                     b.ToTable("TrainingDataModels");
                 });
 
-            modelBuilder.Entity("UC3.Models.UserModel", b =>
+            modelBuilder.Entity("UC3.Models.User", b =>
                 {
                     b.Property<int>("userId")
                         .ValueGeneratedOnAdd()
@@ -97,12 +97,15 @@ namespace UC3.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("randomNumber")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("userId");
 
                     b.ToTable("UserModels");
                 });
 
-            modelBuilder.Entity("UC3.Models.WorkoutModel", b =>
+            modelBuilder.Entity("UC3.Models.Workout", b =>
                 {
                     b.Property<int>("workoutId")
                         .ValueGeneratedOnAdd()

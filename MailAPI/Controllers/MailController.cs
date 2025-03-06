@@ -9,11 +9,22 @@ namespace MailAPI.Controllers
     [ApiController]
     public class MailController : ControllerBase
     {
+        Random r = new Random();
+        private readonly Contactform _contactform;
+        private readonly HttpClient _httpClient;
+        public MailController(Contactform contactform, HttpClient httpClient)
+        {
+            _contactform = contactform;
+            _httpClient = httpClient;
+        }
         [HttpPost]
         public ActionResult Post([Bind("authenticationCode, email")] Contactform form)
         {
             try
             {
+                //var authcode = _contactform.randomNumber = r.Next(1000);
+                var authcode = 14;
+                HttpContext.Session.SetInt32("randomNumber", authcode);                
                 var client = new SmtpClient("sandbox.smtp.mailtrap.io", 2525)
                 {
                     Credentials = new NetworkCredential("ab6bf5befc4a02", "3ad7fd5780c303"),
@@ -25,7 +36,7 @@ namespace MailAPI.Controllers
                     //nog verbeteren
                     From = new MailAddress("123"),
                     Subject = "Authenticatiecode",
-                    Body = $"authenticatiecode",
+                    Body = $"authenticatiecode {authcode}",
                     IsBodyHtml = false
                 };
 

@@ -76,6 +76,10 @@
               "target": "Package",
               "version": "[8.0.7, )"
             },
+            "NToastNotify": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "System.Data.SQLite.Linq": {
               "target": "Package",
               "version": "[1.0.119, )"

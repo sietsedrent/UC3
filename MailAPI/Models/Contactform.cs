@@ -6,5 +6,6 @@ namespace MailAPI.Models
     {
         public string authenticationCode { get; set; }
         public string email { get; set; }
+        public int randomNumber {  get;  set; }
     }
 }

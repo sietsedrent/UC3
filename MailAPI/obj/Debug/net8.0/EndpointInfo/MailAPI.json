@@ -49,6 +49,10 @@
           "email": {
             "type": "string",
             "nullable": true
+          },
+          "randomNumber": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

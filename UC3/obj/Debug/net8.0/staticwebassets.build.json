@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AiIKnod0UjpdrKKdm0D08hN4FZ/rJ2wLJ0OKLrQkhqg=",
+  "Hash": "jiXnU3gz/N8BCbGugV/ScwIY55gHBnMHVFAir0F4bg0=",
   "Source": "UC3",
   "BasePath": "_content/UC3",
   "Mode": "Default",
@@ -1275,6 +1275,90 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\siets\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\8.0.13\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\siets\\.nuget\\packages\\ntoastnotify\\8.0.0\\contentFiles\\any\\net6.0\\wwwroot\\noty.js",
+      "SourceId": "UC3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\",
+      "BasePath": "_content/UC3",
+      "RelativePath": "noty#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8s9pevhhfs",
+      "Integrity": "yPezQylZ3B1Ga9hurSPOnBjVR6fbbTyJrXEfhDB44Xc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\siets\\.nuget\\packages\\ntoastnotify\\8.0.0\\contentFiles\\any\\net6.0\\wwwroot\\noty.js"
+    },
+    {
+      "Identity": "C:\\Users\\siets\\.nuget\\packages\\ntoastnotify\\8.0.0\\contentFiles\\any\\net6.0\\wwwroot\\toastr.js",
+      "SourceId": "UC3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\",
+      "BasePath": "_content/UC3",
+      "RelativePath": "toastr#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hyoec0zd2t",
+      "Integrity": "J44jB2EoMUus4PRNCTzpHdCBKiyyAVh8IZ6XPPgBekI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\siets\\.nuget\\packages\\ntoastnotify\\8.0.0\\contentFiles\\any\\net6.0\\wwwroot\\toastr.js"
+    },
+    {
+      "Identity": "C:\\Users\\siets\\.nuget\\packages\\ntoastnotify\\8.0.0\\staticwebassets\\noty.js",
+      "SourceId": "NToastNotify",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\siets\\.nuget\\packages\\ntoastnotify\\8.0.0\\staticwebassets\\",
+      "BasePath": "_content/NToastNotify",
+      "RelativePath": "noty.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8s9pevhhfs",
+      "Integrity": "yPezQylZ3B1Ga9hurSPOnBjVR6fbbTyJrXEfhDB44Xc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\siets\\.nuget\\packages\\ntoastnotify\\8.0.0\\staticwebassets\\noty.js"
+    },
+    {
+      "Identity": "C:\\Users\\siets\\.nuget\\packages\\ntoastnotify\\8.0.0\\staticwebassets\\toastr.js",
+      "SourceId": "NToastNotify",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\siets\\.nuget\\packages\\ntoastnotify\\8.0.0\\staticwebassets\\",
+      "BasePath": "_content/NToastNotify",
+      "RelativePath": "toastr.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hyoec0zd2t",
+      "Integrity": "J44jB2EoMUus4PRNCTzpHdCBKiyyAVh8IZ6XPPgBekI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\siets\\.nuget\\packages\\ntoastnotify\\8.0.0\\staticwebassets\\toastr.js"
     },
     {
       "Identity": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\obj\\Debug\\net8.0\\scopedcss\\bundle\\UC3.styles.css",
@@ -2580,6 +2664,80 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "_content/NToastNotify/noty.js",
+      "AssetFile": "C:\\Users\\siets\\.nuget\\packages\\ntoastnotify\\8.0.0\\staticwebassets\\noty.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6492"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yPezQylZ3B1Ga9hurSPOnBjVR6fbbTyJrXEfhDB44Xc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Mar 2022 02:42:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yPezQylZ3B1Ga9hurSPOnBjVR6fbbTyJrXEfhDB44Xc="
+        }
+      ]
+    },
+    {
+      "Route": "_content/NToastNotify/toastr.js",
+      "AssetFile": "C:\\Users\\siets\\.nuget\\packages\\ntoastnotify\\8.0.0\\staticwebassets\\toastr.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6956"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J44jB2EoMUus4PRNCTzpHdCBKiyyAVh8IZ6XPPgBekI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Mar 2022 02:42:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J44jB2EoMUus4PRNCTzpHdCBKiyyAVh8IZ6XPPgBekI="
+        }
+      ]
+    },
     {
       "Route": "css/site.ckryvz6f1x.css",
       "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\css\\site.css",
@@ -9717,6 +9875,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
+        }
+      ]
+    },
+    {
+      "Route": "noty.8s9pevhhfs.js",
+      "AssetFile": "C:\\Users\\siets\\.nuget\\packages\\ntoastnotify\\8.0.0\\contentFiles\\any\\net6.0\\wwwroot\\noty.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6492"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yPezQylZ3B1Ga9hurSPOnBjVR6fbbTyJrXEfhDB44Xc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Mar 2022 02:42:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8s9pevhhfs"
+        },
+        {
+          "Name": "label",
+          "Value": "noty.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yPezQylZ3B1Ga9hurSPOnBjVR6fbbTyJrXEfhDB44Xc="
+        }
+      ]
+    },
+    {
+      "Route": "noty.js",
+      "AssetFile": "C:\\Users\\siets\\.nuget\\packages\\ntoastnotify\\8.0.0\\contentFiles\\any\\net6.0\\wwwroot\\noty.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6492"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yPezQylZ3B1Ga9hurSPOnBjVR6fbbTyJrXEfhDB44Xc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Mar 2022 02:42:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yPezQylZ3B1Ga9hurSPOnBjVR6fbbTyJrXEfhDB44Xc="
+        }
+      ]
+    },
+    {
+      "Route": "toastr.hyoec0zd2t.js",
+      "AssetFile": "C:\\Users\\siets\\.nuget\\packages\\ntoastnotify\\8.0.0\\contentFiles\\any\\net6.0\\wwwroot\\toastr.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6956"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J44jB2EoMUus4PRNCTzpHdCBKiyyAVh8IZ6XPPgBekI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Mar 2022 02:42:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hyoec0zd2t"
+        },
+        {
+          "Name": "label",
+          "Value": "toastr.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J44jB2EoMUus4PRNCTzpHdCBKiyyAVh8IZ6XPPgBekI="
+        }
+      ]
+    },
+    {
+      "Route": "toastr.js",
+      "AssetFile": "C:\\Users\\siets\\.nuget\\packages\\ntoastnotify\\8.0.0\\contentFiles\\any\\net6.0\\wwwroot\\toastr.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6956"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J44jB2EoMUus4PRNCTzpHdCBKiyyAVh8IZ6XPPgBekI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Mar 2022 02:42:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J44jB2EoMUus4PRNCTzpHdCBKiyyAVh8IZ6XPPgBekI="
         }
       ]
     },

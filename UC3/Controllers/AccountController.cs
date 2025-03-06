@@ -16,6 +16,8 @@ using System.Net.Http;
 using Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Hosting;
+using NToastNotify;
 
 
 
@@ -27,13 +29,15 @@ namespace UC3.Controllers
         private readonly WorkoutContext _context;
         private readonly AccountService _accountService;
         private readonly HttpClient _httpClient;
+        private readonly IToastNotification _toastNotification;
 
-        public AccountController(WorkoutContext context, AccountService accountService, HttpClient httpClient)
+
+        public AccountController(WorkoutContext context, AccountService accountService, HttpClient httpClient, IToastNotification iToastNotification)
         {
             _context = context;
             _accountService = accountService;
             _httpClient = httpClient;
-            //Moet ook nog HTTPClient httpclient in initialisatie
+            _toastNotification = iToastNotification;
             _httpClient.BaseAddress = new Uri("https://localhost:7205");
         }
 
@@ -46,9 +50,9 @@ namespace UC3.Controllers
         //POST Login
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(string? email, string? password, int? vericode, User usersession)
+        public async Task<IActionResult> Login(string? email, string? password, User usersession)
         {
-            
+
 
             if (email == null || password == null)
             {
@@ -68,6 +72,69 @@ namespace UC3.Controllers
                 return NotFound();
             }
 
+            if (!_accountService.ValidLogin(email, password) == true)
+            {
+                ModelState.AddModelError("", "The username or password is incorrect");
+                return View();
+            }
+
+                _toastNotification.AddSuccessToastMessage("De verificatiecode is verstuurd");
+
+
+            var settings = new JsonSerializerSettings
+            {
+                ContractResolver = new CamelCasePropertyNamesContractResolver()
+            };
+
+            var json = JsonConvert.SerializeObject(user, settings);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            HttpResponseMessage response = await _httpClient.PostAsync("https://localhost:7205/api/mail", content);
+
+
+            if (!response.IsSuccessStatusCode)
+            {
+
+                ViewBag.Message = $"Er is iets misgegaan. Statuscode: {response.StatusCode}, Response inhoud: {response.Content}";
+                return View();
+            }
+            return View();
+        }
+
+        //POST Login
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login2(string? email, string? password, int? vericode, User usersession)
+        {
+            if (email == null || password == null)
+            {
+                return NotFound();
+            }
+
+            if ((from u in _context.UserModels where u.email == email select u).Count() == 0)
+            {
+                ModelState.AddModelError("", "This email does not exist in our database");
+                return View();
+            }
+
+            var user = await _context.UserModels
+                .FirstOrDefaultAsync(m => m.email == email);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+
+            var currentVericode = HttpContext.Session.GetInt32("randomNumber");
+            if (vericode != currentVericode)
+            {
+                _toastNotification.AddWarningToastMessage("De verificatiecode was onjuist");
+                return View();
+            }
+
+
+
+
             if (_accountService.ValidLogin(email, password) == true)
             {
                 var profileData = new User
@@ -80,7 +147,7 @@ namespace UC3.Controllers
                 HttpContext.Session.SetString("email", profileData.email);
                 HttpContext.Session.SetString("name", profileData.name);
                 HttpContext.Session.SetString("IsLoggedIn", "true");
-                
+
                 return RedirectToAction("Index", "Home");
             }
             else
@@ -89,6 +156,8 @@ namespace UC3.Controllers
                 return View();
             }
         }
+
+
 
         //GET Register
         public IActionResult Register()
