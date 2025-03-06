@@ -42,7 +42,7 @@ namespace UC3.Controllers
         //POST Login
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(string? email, string? password)
+        public async Task<IActionResult> Login(string? email, string? password, int? vericode)
         {
             
 
@@ -63,7 +63,6 @@ namespace UC3.Controllers
             {
                 return NotFound();
             }
-           
 
             if (_accountService.ValidLogin(email, password) == true)
             {
