@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\workoutlogger\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|solutionrelative:workoutlogger\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -23,19 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1776241114:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ScaffoldingReadMe.txt",
-              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\ScaffoldingReadMe.txt",
-              "RelativeDocumentMoniker": "WorkoutLogger\\ScaffoldingReadMe.txt",
-              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\ScaffoldingReadMe.txt",
-              "RelativeToolTip": "WorkoutLogger\\ScaffoldingReadMe.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-03-06T15:00:12.383Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",

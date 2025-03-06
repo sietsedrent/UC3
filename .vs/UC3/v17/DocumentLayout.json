@@ -1,7 +1,48 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\workoutlogger\\models\\workout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|solutionrelative:workoutlogger\\models\\workout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\workoutlogger\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|solutionrelative:workoutlogger\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\workoutlogger\\models\\trainingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|solutionrelative:workoutlogger\\models\\trainingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\workoutlogger\\models\\exercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|solutionrelative:workoutlogger\\models\\exercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\workoutlogger\\data\\workoutcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|solutionrelative:workoutlogger\\data\\workoutcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\workoutlogger\\business\\workoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|solutionrelative:workoutlogger\\business\\workoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\workoutlogger\\business\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|solutionrelative:workoutlogger\\business\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\workoutlogger\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|solutionrelative:workoutlogger\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\workoutlogger\\business\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|solutionrelative:workoutlogger\\business\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\workoutlogger\\areas\\identity\\pages\\account\\forgotpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EE45662-2853-402F-A553-3B194C026775}|WorkoutLogger\\WorkoutLogger.csproj|solutionrelative:workoutlogger\\areas\\identity\\pages\\account\\forgotpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -21,7 +62,137 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:959924162:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Workout.cs",
+              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\Models\\Workout.cs",
+              "RelativeDocumentMoniker": "WorkoutLogger\\Models\\Workout.cs",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\Models\\Workout.cs*",
+              "RelativeToolTip": "WorkoutLogger\\Models\\Workout.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T15:06:15.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\Models\\User.cs",
+              "RelativeDocumentMoniker": "WorkoutLogger\\Models\\User.cs",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\Models\\User.cs*",
+              "RelativeToolTip": "WorkoutLogger\\Models\\User.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T15:06:10.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TrainingData.cs",
+              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\Models\\TrainingData.cs",
+              "RelativeDocumentMoniker": "WorkoutLogger\\Models\\TrainingData.cs",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\Models\\TrainingData.cs*",
+              "RelativeToolTip": "WorkoutLogger\\Models\\TrainingData.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T15:06:03.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Exercise.cs",
+              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\Models\\Exercise.cs",
+              "RelativeDocumentMoniker": "WorkoutLogger\\Models\\Exercise.cs",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\Models\\Exercise.cs*",
+              "RelativeToolTip": "WorkoutLogger\\Models\\Exercise.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T15:05:55.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WorkoutContext.cs",
+              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\Data\\WorkoutContext.cs",
+              "RelativeDocumentMoniker": "WorkoutLogger\\Data\\WorkoutContext.cs",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\Data\\WorkoutContext.cs*",
+              "RelativeToolTip": "WorkoutLogger\\Data\\WorkoutContext.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T15:05:09.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WorkoutService.cs",
+              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\Business\\WorkoutService.cs",
+              "RelativeDocumentMoniker": "WorkoutLogger\\Business\\WorkoutService.cs",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\Business\\WorkoutService.cs*",
+              "RelativeToolTip": "WorkoutLogger\\Business\\WorkoutService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T15:04:45.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\Business\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "WorkoutLogger\\Business\\AuthenticationService.cs",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\Business\\AuthenticationService.cs*",
+              "RelativeToolTip": "WorkoutLogger\\Business\\AuthenticationService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T15:04:41.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\Business\\AccountService.cs",
+              "RelativeDocumentMoniker": "WorkoutLogger\\Business\\AccountService.cs",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\Business\\AccountService.cs*",
+              "RelativeToolTip": "WorkoutLogger\\Business\\AccountService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T15:04:25.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "WorkoutLogger\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\Controllers\\AccountController.cs*",
+              "RelativeToolTip": "WorkoutLogger\\Controllers\\AccountController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T15:02:47.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ForgotPassword.cshtml.cs",
+              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml.cs",
+              "RelativeDocumentMoniker": "WorkoutLogger\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml.cs",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\WorkoutLogger\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml.cs",
+              "RelativeToolTip": "WorkoutLogger\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T15:02:07.775Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -40,10 +211,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             }
           ]
         }

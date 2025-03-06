@@ -296,3 +296,4 @@ C:\xampp 3\htdocs\nerdy\UC3\WorkoutLogger\bin\Debug\net8.0\runtimes\win-arm\nati
 C:\xampp 3\htdocs\nerdy\UC3\WorkoutLogger\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\xampp 3\htdocs\nerdy\UC3\WorkoutLogger\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\xampp 3\htdocs\nerdy\UC3\WorkoutLogger\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\xampp 3\htdocs\nerdy\UC3\WorkoutLogger\bin\Debug\net8.0\Dapper.dll
