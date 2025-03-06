@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,13 +46,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "UC3\\Views\\Account\\Register.cshtml",
               "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Account\\Register.cshtml",
               "RelativeToolTip": "UC3\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-06T10:49:22.792Z",
               "EditorCaption": ""
@@ -72,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "UC3\\Controllers\\AccountController.cs",
