@@ -18,9 +18,8 @@ namespace UC3
             {
                 options.BaseAddress = new Uri("https://localhost:7205");
             });
-                
-                
-          
+
+
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
