@@ -163,6 +163,12 @@ namespace UC3.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(string? email, string? password, string? name, User user)
         {
+            if ((from u in _context.UserModels where u.email == email select u).Count() != 0)
+            {
+                _toastNotification.AddWarningToastMessage("Emailadres is al in gebruik");
+                return View();
+            }
+
             //overbodig
             var users = await _context.UserModels
             .FirstOrDefaultAsync(m => m.email == email);
