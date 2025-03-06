@@ -24,30 +24,30 @@
                 <input type="checkbox" onclick="HidePassword()">Hide Password
             </div>
             <div class="form-group">
-                <input type="submit" value="Send verification" class="btn btn-primary" />
+                <input type="submit" name="action" value="Send verification" class="btn btn-primary" />
             </div>
         </form>
         <br /> <br /> <br />
+        <form asp-action="Login">
+            <div class="form-group">
+                <label type="text" value="Enter Verification">Enter Verification Code 
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" id="vericode" />
+            </div>
+            <div class="form-group">
+                <input type="submit" name="action" value="Log in" class="btn btn-primary" />
+            </div>
+        </form>
 
-            @{ // @{ weghalen}
+        @{
+            // @{ weghalen}
             //<div class="form-group" >-->
             //      <form method="post" action="@Url.Action("SendMail", "AccountController")" -->
             //      <input type="button" value="Send Verificationmail" id="SendMail" class="btn btn-primary" />
             //  </form>
             //</div>
-            }
-            <form asp-action="Login2">
-                <div class="form-group">
-                    <label type="text" value="Enter Verification">Enter Verification Code 
-                </div>
-                <div class="form-group">
-                    <input type="number" class="form-control" id="vericode" />
-                </div>
-                <div class="form-group">
-                    <input type="button" value="Log in" class="btn btn-primary" />
-                </div>
-            <br />
-        </form>
+        }
     </div>
 </div>
 

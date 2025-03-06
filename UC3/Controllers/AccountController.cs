@@ -47,115 +47,82 @@ namespace UC3.Controllers
             return View();
         }
 
-        //POST Login
+        // POST Login
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(string? email, string? password, User usersession)
+        public async Task<IActionResult> Login(string? email, string? password, int? vericode, string action)
         {
-
-
-            if (email == null || password == null)
+            
+            if (action == "Send verification")
             {
-                return NotFound();
-            }
+                if (email == null || password == null)
+                {
+                    return NotFound();
+                }
 
-            if ((from u in _context.UserModels where u.email == email select u).Count() == 0)
-            {
-                ModelState.AddModelError("", "This email does not exist in our database");
-                return View();
-            }
+                var user = await _context.UserModels.FirstOrDefaultAsync(m => m.email == email);
+                if (user == null)
+                {
+                    ModelState.AddModelError("", "This email does not exist in our database");
+                    return View();
+                }
 
-            var user = await _context.UserModels
-                .FirstOrDefaultAsync(m => m.email == email);
-            if (user == null)
-            {
-                return NotFound();
-            }
 
-            if (!_accountService.ValidLogin(email, password) == true)
-            {
-                ModelState.AddModelError("", "The username or password is incorrect");
-                return View();
-            }
+                if (!_accountService.ValidLogin(email, password))
+                {
+                    ModelState.AddModelError("", "The username or password is incorrect");
+                    return View();
+                }
+
+
+                TempData["email"] = email;
+                TempData["password"] = password;
 
                 _toastNotification.AddSuccessToastMessage("De verificatiecode is verstuurd");
 
+                // Verzend verificatiecode (implementatie API-aanroep)
+                var json = JsonConvert.SerializeObject(user, new JsonSerializerSettings { ContractResolver = new CamelCasePropertyNamesContractResolver() });
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                HttpResponseMessage response = await _httpClient.PostAsync("https://localhost:7205/api/mail", content);
 
-            var settings = new JsonSerializerSettings
-            {
-                ContractResolver = new CamelCasePropertyNamesContractResolver()
-            };
-
-            var json = JsonConvert.SerializeObject(user, settings);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-            HttpResponseMessage response = await _httpClient.PostAsync("https://localhost:7205/api/mail", content);
-
-
-            if (!response.IsSuccessStatusCode)
-            {
-
-                ViewBag.Message = $"Er is iets misgegaan. Statuscode: {response.StatusCode}, Response inhoud: {response.Content}";
+                if (!response.IsSuccessStatusCode)
+                {
+                    ViewBag.Message = $"Er is iets misgegaan. Statuscode: {response.StatusCode}, Response inhoud: {response.Content}";
+                    return View();
+                }
                 return View();
             }
+
+            if (action == "Log in")
+            {
+                string storedEmail = TempData["email"]?.ToString();
+                string storedPassword = TempData["password"]?.ToString();
+
+                var user = await _context.UserModels.FirstOrDefaultAsync(m => m.email == storedEmail);
+
+                // Controleer verificatiecode
+                var currentVericode = HttpContext.Session.GetInt32("randomNumber");
+                if (vericode != currentVericode)
+                {
+                    _toastNotification.AddWarningToastMessage("De verificatiecode was onjuist");
+                    return View();
+                }
+
+                
+                    // Sla gebruiker gegevens op in de sessie
+                    HttpContext.Session.SetString("userId", user.userId.ToString());
+                    HttpContext.Session.SetString("email", user.email);
+                    HttpContext.Session.SetString("name", user.name);
+                    HttpContext.Session.SetString("IsLoggedIn", "true");
+
+                    return RedirectToAction("Index", "Home");
+       
+            }
+
             return View();
         }
 
-        //POST Login
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login2(string? email, string? password, int? vericode, User usersession)
-        {
-            if (email == null || password == null)
-            {
-                return NotFound();
-            }
 
-            if ((from u in _context.UserModels where u.email == email select u).Count() == 0)
-            {
-                ModelState.AddModelError("", "This email does not exist in our database");
-                return View();
-            }
-
-            var user = await _context.UserModels
-                .FirstOrDefaultAsync(m => m.email == email);
-            if (user == null)
-            {
-                return NotFound();
-            }
-
-
-            var currentVericode = HttpContext.Session.GetInt32("randomNumber");
-            if (vericode != currentVericode)
-            {
-                _toastNotification.AddWarningToastMessage("De verificatiecode was onjuist");
-                return View();
-            }
-
-
-
-
-            if (_accountService.ValidLogin(email, password) == true)
-            {
-                var profileData = new User
-                {
-                    userId = user.userId,
-                    email = user.email,
-                    name = user.name,
-                };
-                HttpContext.Session.SetString("userId", profileData.userId.ToString());
-                HttpContext.Session.SetString("email", profileData.email);
-                HttpContext.Session.SetString("name", profileData.name);
-                HttpContext.Session.SetString("IsLoggedIn", "true");
-
-                return RedirectToAction("Index", "Home");
-            }
-            else
-            {
-                ModelState.AddModelError("", "The username or password is incorrect");
-                return View();
-            }
-        }
 
 
 
