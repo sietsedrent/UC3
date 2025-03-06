@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Mail;
 using System.Net;
+using System.ComponentModel.DataAnnotations;
 
 namespace MailAPI.Controllers
 {
@@ -12,13 +13,9 @@ namespace MailAPI.Controllers
         Random r = new Random();
         private readonly Contactform _contactform;
         private readonly HttpClient _httpClient;
-        public MailController(Contactform contactform, HttpClient httpClient)
-        {
-            _contactform = contactform;
-            _httpClient = httpClient;
-        }
+       
         [HttpPost]
-        public ActionResult Post([Bind("authenticationCode, email")] Contactform form)
+        public ActionResult Post([FromBody] Contactform form)
         {
             try
             {
@@ -34,13 +31,13 @@ namespace MailAPI.Controllers
                 var mailMessage = new MailMessage
                 {
                     //nog verbeteren
-                    From = new MailAddress("123"),
+                    From = new MailAddress("sietsedrent@gmail.com"),
                     Subject = "Authenticatiecode",
                     Body = $"authenticatiecode {authcode}",
                     IsBodyHtml = false
                 };
 
-                mailMessage.To.Add("email");
+                mailMessage.To.Add($"{form.email}");
 
                 client.Send(mailMessage);
 

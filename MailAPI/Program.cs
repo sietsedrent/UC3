@@ -14,7 +14,13 @@ namespace MailAPI
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddMicrosoftIdentityWebApi(builder.Configuration.GetSection("AzureAd"));
 
-            
+            builder.Services.AddDistributedMemoryCache();  // Zet de sessie in het geheugen (voor ontwikkeling)
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(30); // Stel de tijd in voor de sessie
+                options.Cookie.HttpOnly = true; // Veiligheid
+                options.Cookie.IsEssential = true; // Essentiële cookies
+            });
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -30,6 +36,7 @@ namespace MailAPI
             }
 
             app.UseHttpsRedirection();
+            app.UseSession();
 
             app.UseAuthorization();
 

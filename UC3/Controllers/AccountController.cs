@@ -50,11 +50,17 @@ namespace UC3.Controllers
         // POST Login
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(string? email, string? password, int? vericode, string action)
+        public async Task<IActionResult> Login(string? email, string? password, int vericode, string action)
         {
-            
+            if (vericode != null && vericode != 0)
+            {
+                HttpContext.Session.SetInt32("vericode", vericode);
+            }
+            Random r = new Random();
+
             if (action == "Send verification")
             {
+
                 if (email == null || password == null)
                 {
                     return NotFound();
@@ -74,49 +80,61 @@ namespace UC3.Controllers
                     return View();
                 }
 
+                // Sla gebruiker gegevens op in de sessie
+                HttpContext.Session.SetString("userId", user.userId.ToString());
+                HttpContext.Session.SetString("email", user.email);
+                HttpContext.Session.SetString("name", user.name);
+                HttpContext.Session.SetString("password", user.password);
 
-                TempData["email"] = email;
-                TempData["password"] = password;
+                var authcode = r.Next(1000);
+                HttpContext.Session.SetInt32("randomNumber", authcode);
 
-                _toastNotification.AddSuccessToastMessage("De verificatiecode is verstuurd");
+                _toastNotification.AddSuccessToastMessage($"De verificatiecode is {authcode}");
 
                 // Verzend verificatiecode (implementatie API-aanroep)
-                var json = JsonConvert.SerializeObject(user, new JsonSerializerSettings { ContractResolver = new CamelCasePropertyNamesContractResolver() });
-                var content = new StringContent(json, Encoding.UTF8, "application/json");
-                HttpResponseMessage response = await _httpClient.PostAsync("https://localhost:7205/api/mail", content);
+                //Schijnbaar stuurt mailtrap niet naar andere mails
+                //var json = JsonConvert.SerializeObject(user, new JsonSerializerSettings { ContractResolver = new CamelCasePropertyNamesContractResolver() });
+                //var content = new StringContent(JsonConvert.SerializeObject(new
+                //{
+                //    email = user.email
+                //}), Encoding.UTF8, "application/json");
+                //HttpResponseMessage response = await _httpClient.PostAsync("https://localhost:7205/api/mail", content);
 
-                if (!response.IsSuccessStatusCode)
-                {
-                    ViewBag.Message = $"Er is iets misgegaan. Statuscode: {response.StatusCode}, Response inhoud: {response.Content}";
-                    return View();
-                }
+                //if (!response.IsSuccessStatusCode)
+                //{
+                //    ViewBag.Message = $"Er is iets misgegaan. Statuscode: {response.StatusCode}, Response inhoud: {response.Content}";
+                //    return View();
+                //}
                 return View();
+
             }
 
             if (action == "Log in")
             {
-                string storedEmail = TempData["email"]?.ToString();
-                string storedPassword = TempData["password"]?.ToString();
+                string storedEmail = HttpContext.Session.GetString("email");
+                string storedPassword = HttpContext.Session.GetString("password");
 
-                var user = await _context.UserModels.FirstOrDefaultAsync(m => m.email == storedEmail);
+                HttpContext.Session.SetString("IsLoggedIn", "true");
+
 
                 // Controleer verificatiecode
                 var currentVericode = HttpContext.Session.GetInt32("randomNumber");
-                if (vericode != currentVericode)
+                var verrieverrie = HttpContext.Session.GetInt32("vericode");
+                if (verrieverrie != currentVericode)
                 {
                     _toastNotification.AddWarningToastMessage("De verificatiecode was onjuist");
                     return View();
                 }
 
-                
-                    // Sla gebruiker gegevens op in de sessie
-                    HttpContext.Session.SetString("userId", user.userId.ToString());
-                    HttpContext.Session.SetString("email", user.email);
-                    HttpContext.Session.SetString("name", user.name);
-                    HttpContext.Session.SetString("IsLoggedIn", "true");
 
-                    return RedirectToAction("Index", "Home");
-       
+                
+
+
+
+                
+
+                
+                return RedirectToAction("Index", "Home");
             }
 
             return View();
