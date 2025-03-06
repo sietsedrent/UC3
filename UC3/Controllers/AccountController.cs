@@ -30,7 +30,7 @@ namespace UC3.Controllers
         private readonly AccountService _accountService;
         private readonly HttpClient _httpClient;
         private readonly IToastNotification _toastNotification;
-
+        public bool inCooldown;
 
         public AccountController(WorkoutContext context, AccountService accountService, HttpClient httpClient, IToastNotification iToastNotification)
         {
@@ -56,10 +56,23 @@ namespace UC3.Controllers
             {
                 HttpContext.Session.SetInt32("vericode", vericode);
             }
+
             Random r = new Random();
 
             if (action == "Send verification")
             {
+                if (inCooldown)
+                {
+                    _toastNotification.AddErrorToastMessage($"Druk alstublieft eens per 5 seconden");
+                    return View();
+                }
+
+                inCooldown = true;
+                Task.Run(async () =>
+                {
+                    await Task.Delay(5000);
+                    inCooldown = false;
+                });
 
                 if (email == null || password == null)
                 {
