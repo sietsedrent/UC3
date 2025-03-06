@@ -111,9 +111,14 @@ namespace UC3.Controllers
 
             if (action == "Log in")
             {
+                
                 string storedEmail = HttpContext.Session.GetString("email");
                 string storedPassword = HttpContext.Session.GetString("password");
-
+                if (storedEmail == null)
+                {
+                    _toastNotification.AddErrorToastMessage($"Verificatie is verplicht");
+                    return View();
+                }
                 HttpContext.Session.SetString("IsLoggedIn", "true");
 
 
@@ -124,19 +129,9 @@ namespace UC3.Controllers
                 {
                     _toastNotification.AddWarningToastMessage("De verificatiecode was onjuist");
                     return View();
-                }
-
-
-                
-
-
-
-                
-
-                
+                }    
                 return RedirectToAction("Index", "Home");
             }
-
             return View();
         }
 
@@ -168,41 +163,13 @@ namespace UC3.Controllers
         }
 
 
-        // POST: SendAuthenticationController
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> SendMail(User user)
-        {
-
-            var settings = new JsonSerializerSettings
-            {
-                ContractResolver = new CamelCasePropertyNamesContractResolver()
-            };
-
-            var json = JsonConvert.SerializeObject(user, settings);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-            HttpResponseMessage response = await _httpClient.PostAsync("https://localhost:7205/api/mail", content);       
-
-
-            if (!response.IsSuccessStatusCode)
-            {
-                ViewBag.Message = $"Er is iets misgegaan. Statuscode: {response.StatusCode}, Response inhoud: {response.Content}";
-                return View();
-            }
-
-            ViewBag.Message = "De verificatiecode is verstuurd";
-            ModelState.Clear();
-
-            return View();
-        }
-        
-
 
         //Logout
         public IActionResult Logout()
         {
-            return View();
+            HttpContext.Session.SetString("IsLoggedIn", "false");
+            HttpContext.Session.Clear();
+            return RedirectToAction("Login", "Account");
         }
     }
 }
