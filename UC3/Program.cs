@@ -19,7 +19,13 @@ namespace UC3
                 options.BaseAddress = new Uri("https://localhost:7205");
             });
 
-
+            builder.Services.AddDistributedMemoryCache(); // Dit configureert een tijdelijke cache in het geheugen
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(180); // Stelt een timeout in voor sessies (optioneel)
+                options.Cookie.HttpOnly = true; // De cookie is alleen toegankelijk via HTTP (meer veiligheid)
+                options.Cookie.IsEssential = true; // Nodig voor de werking van de sessie
+            });
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
@@ -34,6 +40,7 @@ namespace UC3
                 app.UseHsts();
             }
 
+            app.UseSession();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

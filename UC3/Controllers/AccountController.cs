@@ -13,6 +13,10 @@ using Newtonsoft.Json.Serialization;
 using Newtonsoft.Json;
 using System.Text;
 using System.Net.Http;
+using Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.AspNetCore.Http;
+
 
 
 
@@ -42,7 +46,7 @@ namespace UC3.Controllers
         //POST Login
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(string? email, string? password, int? vericode)
+        public async Task<IActionResult> Login(string? email, string? password, int? vericode, User usersession)
         {
             
 
@@ -66,6 +70,17 @@ namespace UC3.Controllers
 
             if (_accountService.ValidLogin(email, password) == true)
             {
+                var profileData = new User
+                {
+                    userId = user.userId,
+                    email = user.email,
+                    name = user.name,
+                };
+                HttpContext.Session.SetString("userId", profileData.userId.ToString());
+                HttpContext.Session.SetString("email", profileData.email);
+                HttpContext.Session.SetString("name", profileData.name);
+                HttpContext.Session.SetString("IsLoggedIn", "true");
+                
                 return RedirectToAction("Index", "Home");
             }
             else

@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="NewFolder\**" />
+    <Content Remove="NewFolder\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <None Remove="NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="Views\Account\Create.cshtml" />
     <Content Remove="Views\Account\Delete.cshtml" />
     <Content Remove="Views\Account\Details.cshtml" />
@@ -29,7 +36,6 @@
 
   <ItemGroup>
     <Folder Include="Areas\Identity\Pages\Account\" />
-    <Folder Include="NewFolder\" />
     <Folder Include="Views\Account\" />
   </ItemGroup>
 
