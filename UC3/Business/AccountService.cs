@@ -43,7 +43,9 @@ namespace UC3.Business
                     name = name,
                     bio = "empty",
                     profilepicture = "empty",
-                    RegisteryDate = registerDate
+                    RegisteryDate = registerDate,
+                    role = 1
+
                 };
                 _context.UserModels.Add(newUser);
                 _context.SaveChanges();
