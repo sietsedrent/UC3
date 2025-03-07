@@ -3,6 +3,7 @@
 }
 
 <div class="text-center">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
     <div class="parent">
@@ -11,6 +12,8 @@
             <label type="text" value="Picture">Profile Picture </label>
         </div>
         <div class="div2">
+            
+            
             <br />  <br />
             <br />  <br />
             <br />  <br />
@@ -27,21 +30,30 @@
             <br />  <br />
         </div>
         <div class="div5">
-            <br />  <br />
-            <br />  <br />
+            <br /> 
+            <div class="bio">
+                <p>Bio</p>
+                <br /><br /><br /><br /><br /><br />
+            </div>
+            <div id="calendar">
+            </div>
+            <script>
+                $(document).ready(function() {
+                    $("#calendar").calendarWidget({
+                        month: 3,
+                        year: 2025
+                    });
+                });
+            </script>
             <br />  <br /> 
             <br />  <br /> 
             <br />  <br /> 
             <br />  <br />
             <br />  <br />
             <br />  <br /> 
-            <br />  <br /> 
-            <br />  <br /> 
             <br />  <br />
             <br />  <br />
-            <br />  <br /> 
             <br />  <br />
         </div>
     </div>
-
 </div>
