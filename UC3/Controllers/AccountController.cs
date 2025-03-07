@@ -30,7 +30,6 @@ namespace UC3.Controllers
         private readonly AccountService _accountService;
         private readonly HttpClient _httpClient;
         private readonly IToastNotification _toastNotification;
-        public bool inCooldown;
 
         public AccountController(WorkoutContext context, AccountService accountService, HttpClient httpClient, IToastNotification iToastNotification)
         {
@@ -61,17 +60,17 @@ namespace UC3.Controllers
 
             if (action == "Send verification")
             {
-                if (inCooldown)
+                if (HttpContext.Session.GetString("inCooldown") == "true")
                 {
-                    _toastNotification.AddErrorToastMessage($"Druk alstublieft eens per 5 seconden");
+                    _toastNotification.AddErrorToastMessage($"Druk alstublieft eens per 30 seconden");
                     return View();
                 }
 
-                inCooldown = true;
+                HttpContext.Session.SetString("inCooldown", "true");
                 Task.Run(async () =>
                 {
-                    await Task.Delay(5000);
-                    inCooldown = false;
+                    await Task.Delay(30000);
+                    HttpContext.Session.SetString("inCooldown", "false");
                 });
 
                 if (email == null || password == null)
@@ -138,6 +137,11 @@ namespace UC3.Controllers
                 // Controleer verificatiecode
                 var currentVericode = HttpContext.Session.GetInt32("randomNumber");
                 var verrieverrie = HttpContext.Session.GetInt32("vericode");
+                if (verrieverrie == null || verrieverrie == 0)
+                {
+                    _toastNotification.AddWarningToastMessage("Verificatie is verplicht");
+                    return View();
+                }
                 if (verrieverrie != currentVericode)
                 {
                     _toastNotification.AddWarningToastMessage("De verificatiecode was onjuist");
