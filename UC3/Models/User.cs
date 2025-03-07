@@ -12,7 +12,7 @@ namespace UC3.Models
         public string bio { get; set; }
         public string profilepicture { get; set; }
         public DateOnly RegisteryDate { get; set; }
-        public int randomNumber { get; set; }
+        public int role { get; set; }
         
     }
 }
