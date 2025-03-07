@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\views\\home\\track.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -87,13 +87,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "site.css",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "UC3\\wwwroot\\css\\site.css",
               "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\css\\site.css",
               "RelativeToolTip": "UC3\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAiwBYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-03-07T20:43:24.816Z",
               "EditorCaption": ""
@@ -162,13 +162,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "UC3\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "UC3\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-06T23:13:31.738Z",
               "EditorCaption": ""

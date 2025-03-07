@@ -35,13 +35,16 @@ body {
 
 .div1 {
     grid-column: span 5 / span 5;
-    outline: 1px dashed magenta;
+    outline: 1px dashed magenta;;
+    background-color: lightpink;
+        
 }
 
 .div2 {
     grid-row: span 4 / span 4;
     grid-row-start: 2;
     outline: 1px dashed magenta;
+    background-color: lightgrey
 }
 
 .div5 {
@@ -49,5 +52,6 @@ body {
     grid-row: span 4 / span 4;
     grid-row-start: 2;
     outline: 1px dashed magenta;
+    background-color: beige;
 }
         
