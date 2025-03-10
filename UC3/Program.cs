@@ -1,3 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using UC3.Data;
+using UC3.Business;
+using UC3.Controllers;
+
 namespace UC3
 {
     public class Program
@@ -6,10 +11,31 @@ namespace UC3
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+            builder.Services.AddDbContext<WorkoutContext>(x => x.UseSqlite(connectionString));
+            builder.Services.AddScoped<AccountService>();
+            builder.Services.AddHttpClient<AccountController>(options =>
+            {
+                options.BaseAddress = new Uri("https://localhost:7205");
+            });
+            builder.Services.AddMvc().AddNToastNotifyToastr();
+
+            builder.Services.AddDistributedMemoryCache(); // Dit configureert een tijdelijke cache in het geheugen
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(180); // Stelt een timeout in voor sessies (optioneel)
+                options.Cookie.HttpOnly = true; // De cookie is alleen toegankelijk via HTTP (meer veiligheid)
+                options.Cookie.IsEssential = true; // Nodig voor de werking van de sessie
+            });
+
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
+
+            app.UseNToastNotify();
+
+            
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
@@ -19,6 +45,7 @@ namespace UC3
                 app.UseHsts();
             }
 
+            app.UseSession();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -28,8 +55,13 @@ namespace UC3
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Account}/{action=Login}/{id?}");
 
+            using (var scope = app.Services.CreateScope())
+            {
+                var context = scope.ServiceProvider.GetRequiredService<WorkoutContext>();
+                context.Database.Migrate(); // Of gebruik context.Database.EnsureCreated(); voor een eenvoudige setup
+            }
             app.Run();
         }
     }

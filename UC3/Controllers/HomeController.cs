@@ -15,17 +15,42 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        var isLoggedIn = HttpContext.Session.GetString("IsLoggedIn");
+        if (isLoggedIn == "true")
+        {
+            return View();
+        }
+        else
+        {
+            return RedirectToAction("Login", "Account");
+        }
     }
 
     public IActionResult Privacy()
     {
-        return View();
+        var isLoggedIn = HttpContext.Session.GetString("IsLoggedIn");
+        if (isLoggedIn == "true")
+        {
+            return View();
+        }
+        else
+        {
+            return RedirectToAction("Login", "Account");
+        }
     }
     public IActionResult Track()
     {
-        return View();
+        var isLoggedIn = HttpContext.Session.GetString("IsLoggedIn");
+        if (isLoggedIn == "true")
+        {
+            return View();
+        }
+        else
+        {
+            return RedirectToAction("Login", "Account");
+        }
     }
+   
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

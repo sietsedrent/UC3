@@ -1,6 +1,14 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\siets\\.nuget\\packages\\ntoastnotify\\8.0.0\\contentFiles\\any\\net6.0\\wwwroot\\noty.js",
+      "PackagePath": "staticwebassets\\noty.js"
+    },
+    {
+      "Id": "C:\\Users\\siets\\.nuget\\packages\\ntoastnotify\\8.0.0\\contentFiles\\any\\net6.0\\wwwroot\\toastr.js",
+      "PackagePath": "staticwebassets\\toastr.js"
+    },
+    {
       "Id": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\UC3.bundle.scp.css",
       "PackagePath": "staticwebassets\\UC3.x8p75vc0nn.bundle.scp.css"
     },

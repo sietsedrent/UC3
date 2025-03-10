@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "MailAPI.Controllers.MailController",
+    "Method": "Post",
+    "RelativePath": "api/Mail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "MailAPI.Models.Contactform",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
