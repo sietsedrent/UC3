@@ -32,19 +32,26 @@ body {
 }
 
 .div1 {
-    grid-column: span 5 / span 5;
-    background-color: lightpink;
-    height: 150px;
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    padding: 0 20px; 
+    background-color: lightpink;
+    height: 150px;
+    padding: 0 20px;
 }
 
-.name {
-    font-weight: bold;
+.profile-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 5px; 
 }
 
+.name-label {
+    font-size: 48px; 
+    font-weight: bold; 
+    color: #333; 
+}
 .profilepic {
     width: 50px; 
     height: 50px;
@@ -66,15 +73,36 @@ body {
 }
 
 
-
 .bio {
-    grid-column: span 3 / span 3;
-    grid-row: span 2 / span 2;
-    grid-column-start: 2;
-    grid-row-start: 2;
-    outline: 1px dashed magenta;
-    background-color: lightgrey
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius: 5px;
 }
+
+.bio-header {
+    display: flex;
+    justify-content: space-between; /* Zorgt ervoor dat "Bio" links staat en de knop rechts */
+    align-items: center;
+}
+
+.bio-btn {
+    font-size: 14px;
+    padding: 5px 10px;
+    height: auto;
+}
+
+.bio-content {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 200px; /* Zorg dat er ruimte is om de bio weer te geven */
+    display: flex;
+    align-items: center;
+}
+
 
 
 
@@ -87,3 +115,16 @@ body {
     font-size: 17px;
 }
 
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.small-btn {
+    padding: 2px 8px; /* Minder ruimte binnen de knop */
+    font-size: 12px; /* Kleinere tekst */
+    height: 24px; /* Kleinere hoogte */
+    line-height: 1;
+}

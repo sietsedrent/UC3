@@ -55,11 +55,18 @@
                         <section>
 
                             <div class="div1">
-
-                                <label id="name"  type="text" value="Name"> @HttpContextAccessor.HttpContext.Session.GetString("name") 
+                                <!-- Naam links -->
+                                <label id="name" class="name-label">
+                                    @HttpContextAccessor.HttpContext.Session.GetString("name")
                                 </label>
-                                <label id="profilepic"  type="text" value="Picture">Profile Picture </label>
+
+                                <!-- Avatar + Knop in een container rechts -->
+                                <div class="profile-container">
+                                    <img id="Avatar.png" alt="Avatar" class="avatar" />
+                                    <input type="submit" name="action" value="Change picture" class="btn btn-primary small-btn" />
+                                </div>
                             </div>
+
                         </section>
                     }
                 }

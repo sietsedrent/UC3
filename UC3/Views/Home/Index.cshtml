@@ -1,4 +1,8 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@model UC3.Models.User
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -16,9 +20,15 @@
         <div class="div3">
             <br /> 
             <div class="bio">
-                <p>Bio</p>
-                <br /><br /><br /><br /><br /><br />
+                <div class="bio-header">
+                    <p>Bio</p>
+                    <input type="submit" name="action" value="Input Bio" class="btn btn-primary bio-btn" />
+                </div>
+                <div class="bio-content">
+                    <label id="bio-text">@HttpContextAccessor.HttpContext.Session.GetString("bio")</label>
+                </div>
             </div>
+
             <div id="calendar">
             </div>
             <script>
