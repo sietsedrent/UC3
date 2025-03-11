@@ -15,6 +15,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        HttpContext.Session.SetString("Photo", "p1");
         var isLoggedIn = HttpContext.Session.GetString("IsLoggedIn");
         if (isLoggedIn == "true")
         {
@@ -40,6 +41,7 @@ public class HomeController : Controller
     }
     public IActionResult Track()
     {
+        HttpContext.Session.SetString("Photo", "p1");
         var isLoggedIn = HttpContext.Session.GetString("IsLoggedIn");
         if (isLoggedIn == "true")
         {

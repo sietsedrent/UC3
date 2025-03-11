@@ -27,6 +27,7 @@ namespace UC3
                 options.Cookie.HttpOnly = true; // De cookie is alleen toegankelijk via HTTP (meer veiligheid)
                 options.Cookie.IsEssential = true; // Nodig voor de werking van de sessie
             });
+            builder.Services.AddHttpContextAccessor();
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
