@@ -106,5 +106,39 @@ public class HomeController : Controller
         return RedirectToAction("Index");
     }
 
+    [HttpPost] // Dit zorgt ervoor dat de zoekterm via een formulier naar de actie wordt verzonden
+    public IActionResult Search(string searchTerm)
+    {
+        if (string.IsNullOrEmpty(searchTerm))
+        {
+            // Als de zoekterm leeg is, stuur je de gebruiker terug naar de homepagina
+            return RedirectToAction("Index");
+        }
 
+        // Zoek de gebruiker die overeenkomt met de naam
+        var user = _context.UserModels.FirstOrDefault(u => u.name.Contains(searchTerm));
+
+        if (user != null)
+        {
+            // Als een gebruiker is gevonden, stuur je door naar de profielpagina van deze gebruiker
+            return RedirectToAction("Profile", new { userId = user.userId });
+        }
+        else
+        {
+            // Als er geen gebruiker is gevonden, geef dan een bericht en stuur de gebruiker terug naar de homepagina
+            ViewBag.Message = "User not found!";
+            return View("Index"); // Dit zou de homepagina moeten zijn
+        }
+    }
+
+    // Profielpagina van de gebruiker
+    public IActionResult Profile(int userId)
+    {
+        var user = _context.UserModels.FirstOrDefault(u => u.userId == userId);
+        if (user == null)
+        {
+            return RedirectToAction("Index");
+        }
+        return View(user); // Toon de profielpagina van de gebruiker
+    }
 }

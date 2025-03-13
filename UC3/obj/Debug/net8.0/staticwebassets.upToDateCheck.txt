@@ -61,6 +61,7 @@ wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 wwwroot\ProfilePictures\1e7be26f-3352-412a-b24f-f66997f9386f_Cookie.webp
+wwwroot\ProfilePictures\206c62f7-2738-4cf6-b4b3-06167e8b0c21_Screenshot 2023-12-07 115213.png
 wwwroot\ProfilePictures\78b49711-4139-462f-b147-ee8c969246c0_Cookie.webp
 wwwroot\ProfilePictures\a77a4ad4-00a5-4b55-9db7-924ab0b08972_Screenshot 2023-11-07 151012.png
 wwwroot\ProfilePictures\de049a93-d719-411e-94dc-861cb1921dbd_Cookie.webp
