@@ -31,9 +31,23 @@ public class HomeController : Controller
     {
         HttpContext.Session.SetString("Photo", "p1");
         var isLoggedIn = HttpContext.Session.GetString("IsLoggedIn");
+
         if (isLoggedIn == "true")
         {
-            return View();
+            // Haal de huidige gebruiker op uit de database, bijvoorbeeld op basis van de userId uit de sessie
+            var userId = HttpContext.Session.GetInt32("userId");
+            var user = _context.UserModels.FirstOrDefault(u => u.userId == userId);
+
+            // Stuur het user object naar de view
+            if (user != null)
+            {
+                return View(user);
+            }
+            else
+            {
+                // Redirect naar Login als er geen gebruiker is
+                return RedirectToAction("Login", "Account");
+            }
         }
         else
         {
