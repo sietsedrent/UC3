@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,10 +55,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1776241114:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:959924162:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
             },
             {
               "$type": "Bookmark",
@@ -143,9 +139,9 @@
               "Title": "Profile.cshtml",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Home\\Profile.cshtml",
               "RelativeDocumentMoniker": "UC3\\Views\\Home\\Profile.cshtml",
-              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Home\\Profile.cshtml*",
-              "RelativeToolTip": "UC3\\Views\\Home\\Profile.cshtml*",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACEAAAASAAAAAAAAAA==",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Home\\Profile.cshtml",
+              "RelativeToolTip": "UC3\\Views\\Home\\Profile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-13T18:50:50.104Z",
               "EditorCaption": ""
