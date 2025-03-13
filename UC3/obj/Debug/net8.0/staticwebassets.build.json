@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SOep9raZGInPEHtir9TnTEySlZ91B8xuSflILMXAKfs=",
+  "Hash": "7/iDhtYA5pwR45ETpIGafS7n3sqosoMpjZHPgQCUz+U=",
   "Source": "UC3",
   "BasePath": "_content/UC3",
   "Mode": "Default",
@@ -2724,6 +2724,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ProfilePictures\\78b49711-4139-462f-b147-ee8c969246c0_Cookie.webp"
+    },
+    {
+      "Identity": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\84dbb53a-2022-44a6-8bc5-bac220eddb72_Cookie.webp",
+      "SourceId": "UC3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\",
+      "BasePath": "_content/UC3",
+      "RelativePath": "ProfilePictures/84dbb53a-2022-44a6-8bc5-bac220eddb72_Cookie#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mpxr83ikec",
+      "Integrity": "avdqDdvecsQREGjphdFnBV+5TUkJr/A9kB+/0r0+LYI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProfilePictures\\84dbb53a-2022-44a6-8bc5-bac220eddb72_Cookie.webp"
     },
     {
       "Identity": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\a77a4ad4-00a5-4b55-9db7-924ab0b08972_Screenshot 2023-11-07 151012.png",
@@ -10298,6 +10319,88 @@
         {
           "Name": "Last-Modified",
           "Value": "Thu, 13 Mar 2025 18:03:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-avdqDdvecsQREGjphdFnBV+5TUkJr/A9kB+/0r0+LYI="
+        }
+      ]
+    },
+    {
+      "Route": "ProfilePictures/84dbb53a-2022-44a6-8bc5-bac220eddb72_Cookie.mpxr83ikec.webp",
+      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\84dbb53a-2022-44a6-8bc5-bac220eddb72_Cookie.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "121500"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"avdqDdvecsQREGjphdFnBV+5TUkJr/A9kB+/0r0+LYI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 19:51:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mpxr83ikec"
+        },
+        {
+          "Name": "label",
+          "Value": "ProfilePictures/84dbb53a-2022-44a6-8bc5-bac220eddb72_Cookie.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-avdqDdvecsQREGjphdFnBV+5TUkJr/A9kB+/0r0+LYI="
+        }
+      ]
+    },
+    {
+      "Route": "ProfilePictures/84dbb53a-2022-44a6-8bc5-bac220eddb72_Cookie.webp",
+      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\84dbb53a-2022-44a6-8bc5-bac220eddb72_Cookie.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "121500"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"avdqDdvecsQREGjphdFnBV+5TUkJr/A9kB+/0r0+LYI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 19:51:29 GMT"
         },
         {
           "Name": "Cache-Control",

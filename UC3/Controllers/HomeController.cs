@@ -148,7 +148,7 @@ public class HomeController : Controller
         {
             // Als er geen gebruiker is gevonden, geef dan een bericht en stuur de gebruiker terug naar de homepagina
             _toastNotification.AddWarningToastMessage("Deze gebruiker bestaat niet");
-            return View("Index"); // Dit zou de homepagina moeten zijn
+            return RedirectToAction("Index");
         }
     }
 
