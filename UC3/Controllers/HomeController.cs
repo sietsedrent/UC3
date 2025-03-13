@@ -31,6 +31,7 @@ public class HomeController : Controller
     {
         HttpContext.Session.SetString("Photo", "p1");
         var isLoggedIn = HttpContext.Session.GetString("IsLoggedIn");
+        HttpContext.Session.SetString("Friends", "false");
 
         if (isLoggedIn == "true")
         {
@@ -57,6 +58,7 @@ public class HomeController : Controller
 
     public IActionResult Privacy()
     {
+
         var isLoggedIn = HttpContext.Session.GetString("IsLoggedIn");
         if (isLoggedIn == "true")
         {
@@ -69,6 +71,7 @@ public class HomeController : Controller
     }
     public IActionResult Track()
     {
+        HttpContext.Session.SetString("Friends", "false");
         HttpContext.Session.SetString("Photo", "p1");
         var isLoggedIn = HttpContext.Session.GetString("IsLoggedIn");
         if (isLoggedIn == "true")
@@ -129,6 +132,7 @@ public class HomeController : Controller
         if (string.IsNullOrEmpty(searchTerm))
         {
             // Als de zoekterm leeg is, stuur je de gebruiker terug naar de homepagina
+            _toastNotification.AddWarningToastMessage("Voer een naam in");
             return RedirectToAction("Index");
         }
 
@@ -156,6 +160,7 @@ public class HomeController : Controller
         {
             return RedirectToAction("Index");
         }
+        HttpContext.Session.SetString("Friends", "true");
         return View(user); // Toon de profielpagina van de gebruiker
     }
 }

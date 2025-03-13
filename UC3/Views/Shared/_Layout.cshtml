@@ -51,7 +51,10 @@
             <section>
                 @{
                     if (HttpContextAccessor.HttpContext.Session.GetString("IsLoggedIn") == "true")
+
                     {
+                        if (HttpContextAccessor.HttpContext.Session.GetString("Friends") != "true") {
+                        
                         <section>
                             <div class="div1">
                                 <!-- Naam links -->
@@ -78,6 +81,7 @@
                                 </div>
                             </div>
                         </section>
+                    }
                     }
                 }
             </section>
