@@ -4,6 +4,7 @@ using UC3.Data;
 using UC3.Models;
 using UC3.Business;
 using Microsoft.EntityFrameworkCore;
+using NToastNotify;
 
 namespace UC3.Controllers;
 
@@ -13,15 +14,17 @@ public class HomeController : Controller
     private readonly WorkoutContext _context;
     private readonly HomeService _homeService;
     private readonly IHttpContextAccessor _httpContextAccessor;
+    private readonly IToastNotification _toastNotification;
 
 
 
-    public HomeController(ILogger<HomeController> logger, WorkoutContext context, HomeService homeService, IHttpContextAccessor httpContextAccessor)
+    public HomeController(ILogger<HomeController> logger, WorkoutContext context, HomeService homeService, IHttpContextAccessor httpContextAccessor, IToastNotification itoastnotification)
     {
         _logger = logger;
         _context = context;
         _homeService = homeService;
         _httpContextAccessor = httpContextAccessor;
+        _toastNotification = itoastnotification;
     }
 
     public IActionResult Index()
@@ -116,7 +119,7 @@ public class HomeController : Controller
         }
 
         // Zoek de gebruiker die overeenkomt met de naam
-        var user = _context.UserModels.FirstOrDefault(u => u.name.Contains(searchTerm));
+        var user = _context.UserModels.FirstOrDefault(u => u.name.Equals(searchTerm));
 
         if (user != null)
         {
@@ -126,7 +129,7 @@ public class HomeController : Controller
         else
         {
             // Als er geen gebruiker is gevonden, geef dan een bericht en stuur de gebruiker terug naar de homepagina
-            ViewBag.Message = "User not found!";
+            _toastNotification.AddWarningToastMessage("Deze gebruiker bestaat niet");
             return View("Index"); // Dit zou de homepagina moeten zijn
         }
     }
