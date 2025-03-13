@@ -93,10 +93,12 @@ namespace UC3.Controllers
                 }
 
                 // Sla gebruiker gegevens op in de sessie
-                HttpContext.Session.SetString("userId", user.userId.ToString());
+                HttpContext.Session.SetInt32("userId", user.userId);
                 HttpContext.Session.SetString("email", user.email);
                 HttpContext.Session.SetString("name", user.name);
                 HttpContext.Session.SetString("password", user.password);
+                HttpContext.Session.SetString("profilepicture", user.profilepicture);
+
 
                 var authcode = r.Next(1000);
                 HttpContext.Session.SetInt32("randomNumber", authcode);

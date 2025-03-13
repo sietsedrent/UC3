@@ -14,6 +14,9 @@ namespace UC3
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
             builder.Services.AddDbContext<WorkoutContext>(x => x.UseSqlite(connectionString));
             builder.Services.AddScoped<AccountService>();
+            builder.Services.AddScoped<HomeService>();
+            builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
             builder.Services.AddHttpClient<AccountController>(options =>
             {
                 options.BaseAddress = new Uri("https://localhost:7205");

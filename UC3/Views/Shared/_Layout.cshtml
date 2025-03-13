@@ -53,7 +53,6 @@
                     if (HttpContextAccessor.HttpContext.Session.GetString("IsLoggedIn") == "true")
                     {
                         <section>
-
                             <div class="div1">
                                 <!-- Naam links -->
                                 <label id="name" class="name-label">
@@ -62,11 +61,22 @@
 
                                 <!-- Avatar + Knop in een container rechts -->
                                 <div class="profile-container">
-                                    <img id="Avatar.png" alt="Avatar" class="avatar" />
-                                    <input type="submit" name="action" value="Change picture" class="btn btn-primary small-btn" />
+                                    @if (HttpContextAccessor.HttpContext.Session.GetString("profilepicture") != null)
+                                    {
+                                        <img src="@Url.Content(HttpContextAccessor.HttpContext.Session.GetString("profilepicture"))" alt="Avatar" class="avatar" />
+                                    }
+                                    else
+                                    {
+                                        <img src="/ProfilePictures/default-avatar.png" alt="Avatar" class="avatar" />
+                                    }
+
+                                    <!-- Form to upload new profile picture -->
+                                    <form method="post" asp-action="UpdateProfilePicture" asp-controller="Home" enctype="multipart/form-data">
+                                        <input type="file" name="profilePicture" accept="image/*" class="form-control" required />
+                                        <input type="submit" name="action" value="Change picture" class="btn btn-primary small-btn" />
+                                    </form>
                                 </div>
                             </div>
-
                         </section>
                     }
                 }
