@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7/iDhtYA5pwR45ETpIGafS7n3sqosoMpjZHPgQCUz+U=",
+  "Hash": "KqF5HFSFKmcr3ggZThylpiCNF3SW3dvodPh+/OSnVbE=",
   "Source": "UC3",
   "BasePath": "_content/UC3",
   "Mode": "Default",
@@ -2703,6 +2703,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ProfilePictures\\206c62f7-2738-4cf6-b4b3-06167e8b0c21_Screenshot 2023-12-07 115213.png"
+    },
+    {
+      "Identity": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\338b3718-effc-4afd-961f-cb522f82a731_Screenshot 2025-03-03 155705.png",
+      "SourceId": "UC3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\",
+      "BasePath": "_content/UC3",
+      "RelativePath": "ProfilePictures/338b3718-effc-4afd-961f-cb522f82a731_Screenshot 2025-03-03 155705#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p5w3muym36",
+      "Integrity": "jXNqo6JQ2+1l3j7PfdJDdlJkvx0Nb6cTpAs8LK5DZZk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProfilePictures\\338b3718-effc-4afd-961f-cb522f82a731_Screenshot 2025-03-03 155705.png"
     },
     {
       "Identity": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\78b49711-4139-462f-b147-ee8c969246c0_Cookie.webp",
@@ -10247,6 +10268,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-lZPnktC6vdBQSon+WyKbfWcYGlHBCRR2+0zNRak0+wo="
+        }
+      ]
+    },
+    {
+      "Route": "ProfilePictures/338b3718-effc-4afd-961f-cb522f82a731_Screenshot 2025-03-03 155705.p5w3muym36.png",
+      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\338b3718-effc-4afd-961f-cb522f82a731_Screenshot 2025-03-03 155705.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "260105"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jXNqo6JQ2+1l3j7PfdJDdlJkvx0Nb6cTpAs8LK5DZZk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 20:01:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p5w3muym36"
+        },
+        {
+          "Name": "label",
+          "Value": "ProfilePictures/338b3718-effc-4afd-961f-cb522f82a731_Screenshot 2025-03-03 155705.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jXNqo6JQ2+1l3j7PfdJDdlJkvx0Nb6cTpAs8LK5DZZk="
+        }
+      ]
+    },
+    {
+      "Route": "ProfilePictures/338b3718-effc-4afd-961f-cb522f82a731_Screenshot 2025-03-03 155705.png",
+      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\338b3718-effc-4afd-961f-cb522f82a731_Screenshot 2025-03-03 155705.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "260105"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jXNqo6JQ2+1l3j7PfdJDdlJkvx0Nb6cTpAs8LK5DZZk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 20:01:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jXNqo6JQ2+1l3j7PfdJDdlJkvx0Nb6cTpAs8LK5DZZk="
         }
       ]
     },

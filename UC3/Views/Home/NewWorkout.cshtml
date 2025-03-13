@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Nieuwe Workout Registreren";
+}
+
+<div class="text-center">
+    <h3>Nieuwe Workout Registreren</h3>
+    <form id="workout-form">
+        <div>
+            <label for="typeWorkout">Type Workout:</label>
+            <input type="text" id="typeWorkout" name="typeWorkout" required>
+        </div>
+        <div>
+            <label for="workoutDate">Datum:</label>
+            <input type="date" id="workoutDate" name="workoutDate" required>
+        </div>
+        <div>
+            <label for="comments">Opmerkingen:</label>
+            <textarea id="comments" name="comments"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Opslaan</button>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById('workout-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const workoutData = {
+                typeWorkout: document.getElementById('typeWorkout').value,
+                workoutDate: document.getElementById('workoutDate').value,
+                comments: document.getElementById('comments').value
+            };
+
+            fetch('@Url.Action("SaveWorkout", "Track")', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(workoutData)
+            }).then(response => {
+                if (response.ok) {
+                    window.location.href = '@Url.Action("Index", "Track")';
+                }
+            });
+        });
+    </script>
+}

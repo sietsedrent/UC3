@@ -1,91 +1,63 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Track Workout";
 }
 
 <div class="text-center">
-
-
     <div class="parent">
-        
+        <!-- Div 2: Log a Workout Button -->
         <div class="div2">
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
+            <button class="log-workout-btn" onclick="navigateToNewWorkout()">Log a Workout</button>
         </div>
+
+        <!-- Div 3: Previous Workouts -->
         <div class="div3">
-            <style>
-                p {
-                    font-weight: bold;
-                    color: blue;
-                }
-            </style>
-            <p> Dit is de normale tekst</p>
-            <template id="my_component_tpl">
-                <p>Dit is de tekst uit het template</p>
-                <style>
-                    p {
-                        font-weight: bold;
-                        color: red;
-                        align-items: end
-                    }
-                </style>
-            </template>
-            <my-component>
-                <!--<div slot="tekst">De nieuwe tekst</div> -->
-            </my-component>
-            <my-component>
-                <!--<div slot="tekst">De nieuwe tekst</div> -->
-            </my-component>
-            <my-component>
-                <!--<div slot="tekst">De nieuwe tekst</div> -->
-            </my-component>
-            <my-component>
-                <!--<div slot="tekst">De nieuwe tekst</div> -->
-            </my-component>
-
-            <script>
-                class my_component extends HTMLElement {
-                    constructor() {
-                        super();
-                        let template = document.getElementById("my_component_tpl");
-                        let templateContent = template.content;
-                        const shadowRoot = this.attachShadow({ mode:"closed"});
-                        shadowRoot.appendChild(templateContent.cloneNode(true));
-                    }
-                }
-                customElements.define(
-                    "my-component", my_component
-                );
-
-            </script>
-
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
+            <h3>Previous Workouts</h3>
+            <div id="workout-list">
+                <!-- Workout items worden hier dynamisch ingevoegd -->
+                <div class="workout-item">
+                    <p><strong>Datum:</strong> 2023-10-01</p>
+                    <p><strong>Type:</strong> Hardlopen</p>
+                </div>
+                <div class="workout-item">
+                    <p><strong>Datum:</strong> 2023-10-03</p>
+                    <p><strong>Type:</strong> Fietsen</p>
+                </div>
+                <div class="workout-item">
+                    <p><strong>Datum:</strong> 2023-10-05</p>
+                    <p><strong>Type:</strong> Gewichtheffen</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-                   
+@section Scripts {
+    <script>
+                function navigateToNewWorkout() {
+            window.location.href = '@Url.Action("NewWorkout", "Track")';
+                }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // Laad workouts vanuit de database
+            loadWorkouts();
+        });
+
+        function loadWorkouts() {
+            fetch('@Url.Action("GetWorkouts", "Track")')
+                .then(response => response.json())
+                .then(data => {
+                    const workoutList = document.getElementById('workout-list');
+                    workoutList.innerHTML = ''; // Leeg de lijst eerst
+                    data.forEach(workout => {
+                        const workoutItem = document.createElement('div');
+                        workoutItem.className = 'workout-item';
+                        workoutItem.innerHTML = `
+                            <p><strong>Datum:</strong> ${workout.workoutDate}</p>
+                            <p><strong>Type:</strong> ${workout.typeWorkout}</p>
+                        `;
+                        workoutList.appendChild(workoutItem);
+                    });
+                });
+        }
+    </script>
+}
