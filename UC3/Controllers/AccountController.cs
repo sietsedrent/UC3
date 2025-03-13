@@ -174,6 +174,11 @@ namespace UC3.Controllers
                 _toastNotification.AddWarningToastMessage("Emailadres is al in gebruik");
                 return View();
             }
+            if ((from u in _context.UserModels where u.name == name select u).Count() != 0)
+            {
+                _toastNotification.AddWarningToastMessage("Username is al in gebruik");
+                return View();
+            }
 
             //overbodig
             var users = await _context.UserModels

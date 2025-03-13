@@ -1134,6 +1134,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePictures\78b49711-4139-462f-b147-ee8c969246c0_Cookie.webp'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePictures\a77a4ad4-00a5-4b55-9db7-924ab0b08972_Screenshot 2023-11-07 151012.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>UC3</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/UC3</BasePath>
+      <RelativePath>ProfilePictures/a77a4ad4-00a5-4b55-9db7-924ab0b08972_Screenshot 2023-11-07 151012.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>d414q771a5</Fingerprint>
+      <Integrity>U5uyb7VI6e7neoZTjlkwi8lBtTeQx031VeNz2koInM8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePictures\a77a4ad4-00a5-4b55-9db7-924ab0b08972_Screenshot 2023-11-07 151012.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePictures\de049a93-d719-411e-94dc-861cb1921dbd_Cookie.webp'))">
       <SourceType>Package</SourceType>
       <SourceId>UC3</SourceId>
