@@ -1,11 +1,23 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 using UC3.Models;
+using UC3.Business;
+using UC3.Data;
 
 namespace UC3.Controllers
 {
     public class TrackController : Controller
     {
+        private readonly WorkoutContext _context;
+
+        public TrackController(WorkoutContext context)
+        {
+            _context = context;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -18,93 +30,146 @@ namespace UC3.Controllers
         }
 
         [HttpGet]
-        public JsonResult GetWorkouts()
+        public async Task<JsonResult> GetWorkouts()
         {
-            // Haal workouts op uit de database (voorbeeld data)
-            var workouts = new List<Workout>
-            {
-                new Workout {
-                    workoutId = 1,
-                    userId = 1,
-                    workoutDate = DateOnly.Parse("2023-10-01"),
-                    typeWorkout = "Hardlopen",
-                    comments = "Goede run!"
-                },
-                new Workout {
-                    workoutId = 2,
-                    userId = 1,
-                    workoutDate = DateOnly.Parse("2023-10-03"),
-                    typeWorkout = "Fietsen",
-                    comments = "Mooie route"
-                },
-                new Workout {
-                    workoutId = 3,
-                    userId = 1,
-                    workoutDate = DateOnly.Parse("2023-10-05"),
-                    typeWorkout = "Gewichtheffen",
-                    comments = "Zware training"
-                }
-            };
+            // Haal workouts op uit de database met WorkoutContext
+            var workouts = await _context.WorkoutModels
+                .Where(w => w.userId == 1) // In een echte app zou dit uit de gebruikerssessie komen
+                .ToListAsync();
+
             return Json(workouts);
         }
 
+
+
         [HttpGet]
-        public JsonResult GetWorkoutDetails(int workoutId)
+        public async Task<JsonResult> GetWorkoutDetails(int id)
         {
-            // Haal details van een specifieke workout op (voorbeeld data)
-            var workout = new Workout { workoutId = workoutId, userId = 1, workoutDate = DateOnly.FromDateTime(DateTime.Now), typeWorkout = "Hardlopen", comments = "Goede run!" };
-            return Json(workout);
+            // Haal workout op met alle gerelateerde gegevens
+            var workout = await _context.WorkoutModels
+                .Where(w => w.workoutId == id && w.userId == 1) // In een echte app zou userId uit de gebruikerssessie komen
+                .FirstOrDefaultAsync();
+
+            if (workout == null)
+            {
+                return Json(new { error = "Workout niet gevonden" });
+            }
+
+            // Haal alle trainingsgegevens op voor deze workout
+            var trainingDataList = await _context.TrainingDataModels
+                .Where(td => td.workoutId == id)
+                .ToListAsync();
+
+            // Maak lijst om oefeningen en bijbehorende trainingsgegevens te verzamelen
+            var exercisesList = new List<object>();
+
+            foreach (var trainingData in trainingDataList)
+            {
+                // Haal oefening op voor deze trainingsgegevens
+                var exercise = await _context.ExerciseModels
+                    .FirstOrDefaultAsync(e => e.exerciseId == trainingData.exerciseId);
+
+                if (exercise != null)
+                {
+                    // Voeg oefening toe aan de lijst met bijbehorende trainingsgegevens
+                    exercisesList.Add(new
+                    {
+                        exerciseName = exercise.exerciseName,
+                        muscleGroup = exercise.muscleGroup,
+                        trainingData = new
+                        {
+                            amountOfSets = trainingData.amountOfSets,
+                            amountOfReps = trainingData.amountOfReps,
+                            liftedWeight = trainingData.liftedWeight,
+                            e1RM = trainingData.e1RM,
+                            pr = trainingData.pr
+                        }
+                    });
+                }
+            }
+
+            // Stel het volledige resultaat samen
+            var result = new
+            {
+                workoutId = workout.workoutId,
+                typeWorkout = workout.typeWorkout,
+                workoutDate = workout.workoutDate.ToString("yyyy-MM-dd"),
+                comments = workout.comments,
+                exercises = exercisesList
+            };
+
+            return Json(result);
         }
 
         [HttpPost]
-        public IActionResult SaveWorkout([FromBody] WorkoutViewModel workoutViewModel)
+        public async Task<IActionResult> SaveWorkout([FromBody] WorkoutViewModel workoutViewModel)
         {
-            // In een echte applicatie zou je hier de workout en exercises opslaan in de database
-            // Voor nu maken we een nieuw Workout object aan en retourneren we OK
-
             // 1. Eerste de workout opslaan en de workoutId ophalen
             var workout = new Workout
             {
-                userId = 1, // In een echte app zou dit uit de gebruikersessie komen
+                userId = 1, // In een echte app zou dit uit de gebruikerssessie komen
                 workoutDate = DateOnly.Parse(workoutViewModel.workoutDate),
                 typeWorkout = workoutViewModel.typeWorkout,
                 comments = workoutViewModel.comments
             };
 
-            // In een echte app: workoutId = dbContext.Workouts.Add(workout).Entity.workoutId;
-            int workoutId = 123; // Voorbeeld ID
+            _context.WorkoutModels.Add(workout);
+            await _context.SaveChangesAsync();
+
+            // Nu hebben we een workoutId
+            int workoutId = workout.workoutId;
 
             // 2. Voor elke exercise in de viewmodel:
             foreach (var exerciseVM in workoutViewModel.exercises)
             {
                 // a. Zoek de exercise op basis van naam of maak een nieuwe aan
-                var exercise = new Exercise
+                var exercise = await _context.ExerciseModels
+                    .FirstOrDefaultAsync(e => e.exerciseName == exerciseVM.exerciseName);
+
+                if (exercise == null)
                 {
-                    exerciseName = exerciseVM.exerciseName,
-                    muscleGroup = exerciseVM.muscleGroup
-                };
+                    // Maak een nieuwe exercise aan als deze nog niet bestaat
+                    exercise = new Exercise
+                    {
+                        exerciseName = exerciseVM.exerciseName,
+                        muscleGroup = exerciseVM.muscleGroup
+                    };
 
-                // In een echte app: int exerciseId = dbContext.Exercises.Add(exercise).Entity.exerciseId;
-                int exerciseId = 456; // Voorbeeld ID
+                    _context.ExerciseModels.Add(exercise);
+                    await _context.SaveChangesAsync();
+                }
 
-                // b. Maak TrainingData aan en koppel aan de workout en exercise
+                // b. Controleer of dit een PR is door te vergelijken met eerdere resultaten
+                bool isPR = false;
+                var calculatedE1RM = CalculateE1RM(exerciseVM.trainingData.liftedWeight, exerciseVM.trainingData.amountOfReps);
+
+                var previousTrainingData = await _context.TrainingDataModels
+                    .Where(td => td.exerciseId == exercise.exerciseId)
+                    .ToListAsync();
+
+                if (!previousTrainingData.Any() || previousTrainingData.All(td => td.e1RM < calculatedE1RM))
+                {
+                    isPR = true;
+                }
+
+                // c. Maak TrainingData aan en koppel aan de workout en exercise
                 var trainingData = new TrainingData
                 {
                     workoutId = workoutId,
-                    exerciseId = exerciseId,
+                    exerciseId = exercise.exerciseId,
                     amountOfSets = exerciseVM.trainingData.amountOfSets,
                     amountOfReps = exerciseVM.trainingData.amountOfReps,
                     liftedWeight = exerciseVM.trainingData.liftedWeight,
-                    e1RM = CalculateE1RM(exerciseVM.trainingData.liftedWeight, exerciseVM.trainingData.amountOfReps),
-                    pr = false // Dit zou je kunnen bepalen door te vergelijken met eerdere resultaten
+                    e1RM = calculatedE1RM,
+                    pr = isPR
                 };
 
-                // In een echte app: dbContext.TrainingData.Add(trainingData);
+                _context.TrainingDataModels.Add(trainingData);
             }
 
-            // In een echte app: dbContext.SaveChanges();
+            await _context.SaveChangesAsync();
 
-            return Ok();
+            return RedirectToAction("Track", "Home");
         }
 
         // Helper methode om geschatte 1 rep max te berekenen (Brzycki formule)

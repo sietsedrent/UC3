@@ -3,44 +3,115 @@
 }
 
 <div class="text-center">
-    <div class="parent">
-        <!-- Div 2: Log a Workout Button -->
-        <div class="div2">
-            <button class="log-workout-btn" onclick="navigateToNewWorkout()">Log a Workout</button>
+    <div class="div3">
+        <h3>Workout Geschiedenis</h3>
+
+        <div class="workout-header">
+            <button class="btn btn-primary log-workout-btn" onclick="navigateToNewWorkout()">Nieuwe Workout Registreren</button>
         </div>
 
-        <!-- Div 3: Previous Workouts -->
-        <div class="div3">
-            <h3>Previous Workouts</h3>
+        <div id="workouts-container">
             <div id="workout-list">
                 <!-- Workout items worden hier dynamisch ingevoegd -->
-                <div class="workout-item">
-                    <p><strong>Datum:</strong> 2023-10-01</p>
-                    <p><strong>Type:</strong> Hardlopen</p>
-                </div>
-                <div class="workout-item">
-                    <p><strong>Datum:</strong> 2023-10-03</p>
-                    <p><strong>Type:</strong> Fietsen</p>
-                </div>
-                <div class="workout-item">
-                    <p><strong>Datum:</strong> 2023-10-05</p>
-                    <p><strong>Type:</strong> Gewichtheffen</p>
-                </div>
             </div>
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
+            <!-- Placeholder voor als er geen workouts zijn -->
+            <div id="no-workouts" class="text-center py-5" style="display: none;">
+                <p>Geen workouts gevonden. Begin met het loggen van je eerste workout!</p>
+            </div>
         </div>
     </div>
 </div>
 
+<style>
+    .div3 {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .workout-header {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .log-workout-btn {
+        padding: 10px 20px;
+    }
+
+    #workouts-container {
+        margin-top: 20px;
+    }
+
+    .workout-item {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 20px;
+        background-color: #f9f9f9;
+        text-align: left;
+    }
+
+    .workout-title {
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .workout-details {
+        margin-top: 10px;
+    }
+
+    .exercise-list {
+        margin-top: 10px;
+    }
+
+    .exercise-item {
+        background-color: #f0f0f0;
+        padding: 10px;
+        margin-bottom: 8px;
+        border-radius: 4px;
+    }
+
+    .workout-date {
+        color: #666;
+        font-size: 0.9em;
+    }
+
+    .workout-type {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .workout-actions {
+        margin-top: 15px;
+        text-align: right;
+    }
+
+        .workout-actions button {
+            margin-left: 10px;
+        }
+
+    .comments-section {
+        margin-top: 15px;
+        padding-top: 10px;
+        border-top: 1px solid #ddd;
+    }
+</style>
+
 @section Scripts {
     <script>
-                function navigateToNewWorkout() {
+        function navigateToNewWorkout() {
             window.location.href = '@Url.Action("NewWorkout", "Track")';
-                }
+        }
 
+        // Laad workouts zodra de pagina geladen is
         document.addEventListener("DOMContentLoaded", function() {
-            // Laad workouts vanuit de database
             loadWorkouts();
         });
 
@@ -49,17 +120,84 @@
                 .then(response => response.json())
                 .then(data => {
                     const workoutList = document.getElementById('workout-list');
+                    const noWorkoutsMsg = document.getElementById('no-workouts');
                     workoutList.innerHTML = ''; // Leeg de lijst eerst
-                    data.forEach(workout => {
-                        const workoutItem = document.createElement('div');
-                        workoutItem.className = 'workout-item';
-                        workoutItem.innerHTML = `
-                            <p><strong>Datum:</strong> ${workout.workoutDate}</p>
-                            <p><strong>Type:</strong> ${workout.typeWorkout}</p>
-                        `;
-                        workoutList.appendChild(workoutItem);
-                    });
+
+                    if (data && data.length > 0) {
+                        data.forEach(workout => {
+                            const workoutItem = createWorkoutItem(workout);
+                            workoutList.appendChild(workoutItem);
+                        });
+                        noWorkoutsMsg.style.display = 'none';
+                    } else {
+                        noWorkoutsMsg.style.display = 'block';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error loading workouts:', error);
+                    alert('Er is een fout opgetreden bij het laden van de workouts.');
                 });
+        }
+
+        function createWorkoutItem(workout) {
+            // Formatteer de datum
+            const date = new Date(workout.workoutDate);
+            const formattedDate = date.toLocaleDateString('nl-NL');
+
+            // Maak het workout item element
+            const workoutItem = document.createElement('div');
+            workoutItem.className = 'workout-item';
+
+            // Bouw de basis workout info op
+            let workoutHTML = `
+                <div class="workout-title">
+                    <span class="workout-type">${workout.typeWorkout}</span>
+                    <span class="workout-date">${formattedDate}</span>
+                </div>
+            `;
+
+            // Voeg oefeningen toe als ze bestaan
+            if (workout.exercises && workout.exercises.length > 0) {
+                workoutHTML += `<div class="exercise-list">`;
+                workout.exercises.forEach(exercise => {
+                    workoutHTML += `
+                        <div class="exercise-item">
+                            <div><strong>${exercise.exerciseName}</strong> (${exercise.muscleGroup})</div>
+                            <div>${exercise.trainingData.amountOfSets} sets × ${exercise.trainingData.amountOfReps} reps × ${exercise.trainingData.liftedWeight} kg</div>
+                        </div>
+                    `;
+                });
+                workoutHTML += `</div>`;
+            }
+
+            // Voeg opmerkingen toe als die bestaan
+            if (workout.comments && workout.comments.trim() !== '') {
+                workoutHTML += `
+                    <div class="comments-section">
+                        <strong>Opmerkingen:</strong>
+                        <p>${workout.comments}</p>
+                    </div>
+                `;
+            }
+
+            // Voeg actieknoppen toe
+            workoutHTML += `
+                <div class="workout-actions">
+                </div>
+            `;
+
+            workoutItem.innerHTML = workoutHTML;
+            return workoutItem;
+        }
+
+        function viewWorkoutDetails(workoutId) {
+            // Implementeer navigatie naar de details pagina
+            window.location.href = `@Url.Action("WorkoutDetails", "Track")?id=${workoutId}`;
+        }
+
+        function editWorkout(workoutId) {
+            // Implementeer navigatie naar de bewerk pagina
+            window.location.href = `@Url.Action("EditWorkout", "Track")?id=${workoutId}`;
         }
     </script>
 }
