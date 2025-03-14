@@ -19,10 +19,17 @@
             <div class="bio">
                 <div class="bio-header">
                     <p>Bio</p>
-                    <input type="submit" name="setBio" value="Change Bio" class="btn btn-primary bio-btn" />
+                    <button type="button" id="changeBioBtn" class="btn btn-primary bio-btn">Change Bio</button>
                 </div>
-                <div class="bio-content">
+                <div class="bio-content" id="bioViewContent">
                     <p>Bio: @Model.bio</p>
+                </div>
+                <div class="bio-edit" id="bioEditContent" style="display: none;">
+                    <textarea id="bioTextarea" class="form-control" rows="5">@Model.bio</textarea>
+                    <div class="bio-edit-actions">
+                        <button type="button" id="saveBioBtn" class="btn btn-success mt-2">Save</button>
+                        <button type="button" id="cancelBioBtn" class="btn btn-secondary mt-2 ml-2">Cancel</button>
+                    </div>
                 </div>
             </div>
             <div id="weekCalendar" class="workout-week-view">
@@ -31,6 +38,43 @@
             <script>
                 $(document).ready(function() {
                     renderSimpleWeekView();
+
+                    // Bio veranderen functionaliteit
+                    $("#changeBioBtn").click(function() {
+                        // Verberg de weergave en toon het bewerkingsformulier
+                        $("#bioViewContent").hide();
+                        $("#bioEditContent").show();
+                    });
+
+                    $("#cancelBioBtn").click(function() {
+                        // Verberg het bewerkingsformulier en toon de weergave
+                        $("#bioEditContent").hide();
+                        $("#bioViewContent").show();
+                    });
+
+                    $("#saveBioBtn").click(function() {
+                        const newBio = $("#bioTextarea").val();
+
+                        // Stuur AJAX-verzoek om de bio bij te werken
+                        $.ajax({
+                            url: '/Home/UpdateBio',
+                            type: 'POST',
+                            data: { bio: newBio },
+                            success: function(response) {
+                                if (response.success) {
+                                    // Werk de weergave bij met de nieuwe bio
+                                    $("#bioViewContent p").text("Bio: " + newBio);
+                                    $("#bioEditContent").hide();
+                                    $("#bioViewContent").show();
+                                } else {
+                                    alert("Er is een fout opgetreden bij het opslaan van de bio.");
+                                }
+                            },
+                            error: function() {
+                                alert("Er is een fout opgetreden bij het opslaan van de bio.");
+                            }
+                        });
+                    });
 
                     // Lokale opslag voor workouts (in een echte applicatie zou je dit server-side opslaan)
                     if (!localStorage.getItem('workoutDays')) {
@@ -59,8 +103,6 @@
                         }
 
                         localStorage.setItem('workoutDays', JSON.stringify(workoutDays));
-
-                        
                     });
                 });
 
@@ -142,7 +184,7 @@
     html {
         font-size: 14px;
     }
-    
+
 
     .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
         box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
@@ -235,6 +277,19 @@
             line-height: 1.5;
         }
 
+    .bio-edit {
+        background-color: white;
+        padding: 15px;
+        border-radius: 6px;
+        min-height: 150px;
+    }
+
+    .bio-edit-actions {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+    }
+
     input[type=text] {
         padding: 8px;
         border: 1px solid #ddd;
@@ -252,6 +307,14 @@
             background-color: #4A704A;
             border-color: #4A704A;
         }
+
+    .ml-2 {
+        margin-left: 10px;
+    }
+
+    .mt-2 {
+        margin-top: 10px;
+    }
 
     /* Workout Week View Styles */
     .workout-week-view {

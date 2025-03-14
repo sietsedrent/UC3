@@ -163,4 +163,40 @@ public class HomeController : Controller
         HttpContext.Session.SetString("Friends", "true");
         return View(user); // Toon de profielpagina van de gebruiker
     }
+
+    [HttpPost]
+    public IActionResult UpdateBio(string bio)
+    {
+        try
+        {
+            // Haal de huidige ingelogde gebruiker op
+            // (Dit is een voorbeeldimplementatie - pas aan naar je authenticatiemethode)
+            var userId = HttpContext.Session.GetInt32("userId");
+            if (userId == null)
+            {
+                return Json(new { success = false, message = "Gebruiker niet ingelogd" });
+            }
+
+            // Haal de gebruiker op uit de database
+            var user = _context.UserModels.Find(userId);
+            if (user == null)
+            {
+                return Json(new { success = false, message = "Gebruiker niet gevonden" });
+            }
+
+            // Update de bio
+            user.bio = bio;
+
+            // Sla de wijzigingen op in de database
+            _context.SaveChanges();
+
+            return Json(new { success = true });
+        }
+        catch (Exception ex)
+        {
+            // Log de exception
+            Console.WriteLine(ex.Message);
+            return Json(new { success = false, message = ex.Message });
+        }
+    }
 }

@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\ProfilePictures\\de049a93-d719-411e-94dc-861cb1921dbd_Cookie.webp"
     },
     {
+      "Id": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\ff3e5040-df6b-4d03-8b2d-9dd9e76c50b9_Cookie.webp",
+      "PackagePath": "staticwebassets\\ProfilePictures\\ff3e5040-df6b-4d03-8b2d-9dd9e76c50b9_Cookie.webp"
+    },
+    {
       "Id": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hqI2CwEymQivadqmTb00u4c8hnr+vPw5fI0/dzyV364=",
+  "Hash": "yqCJckvIDpFGqWUmck4kP/SAasN4kXNSa1hRJvi1mgY=",
   "Source": "UC3",
   "BasePath": "_content/UC3",
   "Mode": "Default",
@@ -2808,6 +2808,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ProfilePictures\\de049a93-d719-411e-94dc-861cb1921dbd_Cookie.webp"
+    },
+    {
+      "Identity": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\ff3e5040-df6b-4d03-8b2d-9dd9e76c50b9_Cookie.webp",
+      "SourceId": "UC3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\",
+      "BasePath": "_content/UC3",
+      "RelativePath": "ProfilePictures/ff3e5040-df6b-4d03-8b2d-9dd9e76c50b9_Cookie#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mpxr83ikec",
+      "Integrity": "avdqDdvecsQREGjphdFnBV+5TUkJr/A9kB+/0r0+LYI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProfilePictures\\ff3e5040-df6b-4d03-8b2d-9dd9e76c50b9_Cookie.webp"
     }
   ],
   "Endpoints": [
@@ -10668,6 +10689,88 @@
         {
           "Name": "Last-Modified",
           "Value": "Thu, 13 Mar 2025 18:03:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-avdqDdvecsQREGjphdFnBV+5TUkJr/A9kB+/0r0+LYI="
+        }
+      ]
+    },
+    {
+      "Route": "ProfilePictures/ff3e5040-df6b-4d03-8b2d-9dd9e76c50b9_Cookie.mpxr83ikec.webp",
+      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\ff3e5040-df6b-4d03-8b2d-9dd9e76c50b9_Cookie.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "121500"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"avdqDdvecsQREGjphdFnBV+5TUkJr/A9kB+/0r0+LYI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 20:18:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mpxr83ikec"
+        },
+        {
+          "Name": "label",
+          "Value": "ProfilePictures/ff3e5040-df6b-4d03-8b2d-9dd9e76c50b9_Cookie.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-avdqDdvecsQREGjphdFnBV+5TUkJr/A9kB+/0r0+LYI="
+        }
+      ]
+    },
+    {
+      "Route": "ProfilePictures/ff3e5040-df6b-4d03-8b2d-9dd9e76c50b9_Cookie.webp",
+      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\ff3e5040-df6b-4d03-8b2d-9dd9e76c50b9_Cookie.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "121500"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"avdqDdvecsQREGjphdFnBV+5TUkJr/A9kB+/0r0+LYI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 20:18:59 GMT"
         },
         {
           "Name": "Cache-Control",
