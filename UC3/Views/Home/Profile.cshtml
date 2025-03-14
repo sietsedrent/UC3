@@ -1,44 +1,205 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@model UC3.Models.User
+@{
+    ViewData["Title"] = "Profile Page";
 }
-
 <div class="text-center">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <div class="parent">
-
         <div class="div2">
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
+            <br />
+            <form method="post" action="/Home/Search">
+                <input type="text" name="searchTerm" placeholder="Search Friends.." />
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
         </div>
         <div class="div3">
+            <div class="profile-header">
+                <div class="profile-container">
+                    @if (string.IsNullOrEmpty(Model.profilepicture))
+                    {
+                        <div class="profilepic-placeholder"></div>
+                    }
+                    else
+                    {
+                        <img src="@Model.profilepicture" alt="Profile Picture" class="profilepic" />
+                    }
+                    <h2 class="name-label">@Model.name</h2>
+                </div>
+            </div>
             <br />
             <div class="bio">
                 <div class="bio-header">
                     <p>Bio</p>
                 </div>
                 <div class="bio-content">
-                    <p>Bio: @Model.bio</p>
-
+                    <p>@Model.bio</p>
                 </div>
             </div>
-
             <div id="calendar">
             </div>
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
-            <br />  <br />
+            <script>
+                $(document).ready(function() {
+                    $("#calendar").calendarWidget({
+                        month: 3,
+                        year: 2025
+                    });
+                });
+            </script>
         </div>
     </div>
 </div>
+
+<style>
+    html {
+        font-size: 14px;
+    }
+   
+
+    .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+        box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    }
+
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+
+    body {
+        margin-bottom: 60px;
+        background-color: #A7C4A0;
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 0px;
+    }
+
+    .profile-header {
+        background-color: #FFD8B1;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .name-label {
+        font-size: 32px;
+        font-weight: bold;
+        color: #333;
+        margin: 10px 0;
+    }
+
+    .profilepic {
+        width: 120px;
+        height: 120px;
+        background-color: #e0e0e0;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .profilepic-placeholder {
+        width: 120px;
+        height: 120px;
+        background-color: #e0e0e0;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 4px solid #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .div2 {
+        grid-row: span 5 / span 5;
+        background-color: #F8E1E7;
+        padding: 15px;
+        border-radius: 0 0 0 8px;
+    }
+
+    .div3 {
+        grid-column: span 4 / span 4;
+        grid-row: span 5 / span 5;
+        background-color: #E3F2E1;
+        padding: 20px;
+        border-radius: 0 0 8px 0;
+    }
+
+    .bio {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #f0f0f0;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .bio-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 8px;
+    }
+
+        .bio-header p {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+    .bio-content {
+        background-color: white;
+        padding: 15px;
+        border-radius: 6px;
+        min-height: 150px;
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+        .bio-content p {
+            margin: 0;
+            line-height: 1.5;
+        }
+
+    input[type=text] {
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        width: 70%;
+        margin-right: 5px;
+    }
+
+    .btn-primary {
+        background-color: #5D8C5D;
+        border-color: #5D8C5D;
+    }
+
+        .btn-primary:hover {
+            background-color: #4A704A;
+            border-color: #4A704A;
+        }
+
+    #calendar {
+        margin-top: 20px;
+        background-color: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+</style>
