@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using UC3.Models;
 using UC3.Business;
 using UC3.Data;
+using Microsoft.AspNetCore.Http;
 
 namespace UC3.Controllers
 {
@@ -32,22 +33,34 @@ namespace UC3.Controllers
         [HttpGet]
         public async Task<JsonResult> GetWorkouts()
         {
+            // Haal de gebruikers-id op uit de sessie
+            var userId = HttpContext.Session.GetInt32("userId");
+            if (userId == null)
+            {
+                return Json(new { error = "Niet ingelogd" });
+            }
+
             // Haal workouts op uit de database met WorkoutContext
             var workouts = await _context.WorkoutModels
-                .Where(w => w.userId == 1) // In een echte app zou dit uit de gebruikerssessie komen
+                .Where(w => w.userId == userId)
                 .ToListAsync();
 
             return Json(workouts);
         }
 
-
-
         [HttpGet]
         public async Task<JsonResult> GetWorkoutDetails(int id)
         {
+            // Haal de gebruikers-id op uit de sessie
+            var userId = HttpContext.Session.GetInt32("userId");
+            if (userId == null)
+            {
+                return Json(new { error = "Niet ingelogd" });
+            }
+
             // Haal workout op met alle gerelateerde gegevens
             var workout = await _context.WorkoutModels
-                .Where(w => w.workoutId == id && w.userId == 1) // In een echte app zou userId uit de gebruikerssessie komen
+                .Where(w => w.workoutId == id && w.userId == userId)
                 .FirstOrDefaultAsync();
 
             if (workout == null)
@@ -104,10 +117,17 @@ namespace UC3.Controllers
         [HttpPost]
         public async Task<IActionResult> SaveWorkout([FromBody] WorkoutViewModel workoutViewModel)
         {
+            // Haal de gebruikers-id op uit de sessie
+            var userId = HttpContext.Session.GetInt32("userId");
+            if (userId == null)
+            {
+                return Unauthorized(); // Of een andere gepaste actie
+            }
+
             // 1. Eerste de workout opslaan en de workoutId ophalen
             var workout = new Workout
             {
-                userId = 1, // In een echte app zou dit uit de gebruikerssessie komen
+                userId = userId.Value,
                 workoutDate = DateOnly.Parse(workoutViewModel.workoutDate),
                 typeWorkout = workoutViewModel.typeWorkout,
                 comments = workoutViewModel.comments
