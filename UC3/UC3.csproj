@@ -7,13 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="NewFolder\**" />
-    <Content Remove="NewFolder\**" />
-    <EmbeddedResource Remove="NewFolder\**" />
-    <None Remove="NewFolder\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Remove="Views\Account\Create.cshtml" />
     <Content Remove="Views\Account\Delete.cshtml" />
     <Content Remove="Views\Account\Details.cshtml" />
@@ -23,6 +16,7 @@
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="Mailkit" Version="4.11.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.2">
@@ -37,6 +31,7 @@
 
   <ItemGroup>
     <Folder Include="Areas\Identity\Pages\Account\" />
+    <Folder Include="NewFolder\" />
   </ItemGroup>
 
 </Project>

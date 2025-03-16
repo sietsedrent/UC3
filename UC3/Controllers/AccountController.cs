@@ -18,9 +18,10 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Hosting;
 using NToastNotify;
-
-
-
+using Microsoft.Extensions.Configuration;
+using MailKit.Net.Smtp;
+using MailKit.Security;
+using MimeKit;
 
 namespace UC3.Controllers
 {
@@ -30,13 +31,15 @@ namespace UC3.Controllers
         private readonly AccountService _accountService;
         private readonly HttpClient _httpClient;
         private readonly IToastNotification _toastNotification;
+        private readonly IConfiguration _configuration;
 
-        public AccountController(WorkoutContext context, AccountService accountService, HttpClient httpClient, IToastNotification iToastNotification)
+        public AccountController(WorkoutContext context, AccountService accountService, HttpClient httpClient, IToastNotification iToastNotification, IConfiguration configuration)
         {
             _context = context;
             _accountService = accountService;
             _httpClient = httpClient;
             _toastNotification = iToastNotification;
+            _configuration = configuration;
             _httpClient.BaseAddress = new Uri("https://localhost:7205");
         }
 
@@ -99,33 +102,27 @@ namespace UC3.Controllers
                 HttpContext.Session.SetString("password", user.password);
                 HttpContext.Session.SetString("profilepicture", user.profilepicture);
 
-
-                var authcode = r.Next(1000);
+                // Genereer 4-cijferige verificatiecode (tussen 1000-9999)
+                var authcode = r.Next(1000, 10000);
                 HttpContext.Session.SetInt32("randomNumber", authcode);
 
-                _toastNotification.AddSuccessToastMessage($"De verificatiecode is {authcode}");
+                try
+                {
+                    // Stuur e-mail met verificatiecode
+                    await SendVerificationEmail(user.email, authcode);
+                    _toastNotification.AddSuccessToastMessage($"Verificatiecode is verstuurd naar {user.email}");
+                }
+                catch (Exception ex)
+                {
+                    // Als e-mail versturen mislukt, toon de code alsnog
+                    _toastNotification.AddWarningToastMessage($"E-mail kon niet worden verstuurd. De verificatiecode is: {authcode}");
+                }
 
-                // Verzend verificatiecode (implementatie API-aanroep)
-                //Schijnbaar stuurt mailtrap niet naar andere mails
-                //var json = JsonConvert.SerializeObject(user, new JsonSerializerSettings { ContractResolver = new CamelCasePropertyNamesContractResolver() });
-                //var content = new StringContent(JsonConvert.SerializeObject(new
-                //{
-                //    email = user.email
-                //}), Encoding.UTF8, "application/json");
-                //HttpResponseMessage response = await _httpClient.PostAsync("https://localhost:7205/api/mail", content);
-
-                //if (!response.IsSuccessStatusCode)
-                //{
-                //    ViewBag.Message = $"Er is iets misgegaan. Statuscode: {response.StatusCode}, Response inhoud: {response.Content}";
-                //    return View();
-                //}
                 return View();
-
             }
 
             if (action == "Log in")
             {
-                
                 string storedEmail = HttpContext.Session.GetString("email");
                 string storedPassword = HttpContext.Session.GetString("password");
                 if (storedEmail == null)
@@ -148,15 +145,56 @@ namespace UC3.Controllers
                 {
                     _toastNotification.AddWarningToastMessage("De verificatiecode was onjuist");
                     return View();
-                }    
+                }
                 return RedirectToAction("Index", "Home");
             }
             return View();
         }
 
+        // Methode om verificatie-email te versturen
+        private async Task SendVerificationEmail(string toEmail, int verificationCode)
+        {
+            var emailSettings = _configuration.GetSection("EmailSettings");
+            var mail = new MimeMessage();
 
+            mail.From.Add(new MailboxAddress(emailSettings["DisplayName"], emailSettings["Mail"]));
+            mail.To.Add(MailboxAddress.Parse(toEmail));
 
+            mail.Subject = "Je verificatiecode voor WorkoutLogger";
 
+            var body = new TextPart("html")
+            {
+                Text = $@"
+                    <h1>Verificatiecode</h1>
+                    <p>Gebruik de volgende code om in te loggen op WorkoutLogger:</p>
+                    <h2 style='background-color: #f0f0f0; padding: 10px; text-align: center;'>{verificationCode}</h2>
+                    <p>Deze code is 10 minuten geldig.</p>
+                    <p>Als je geen toegang hebt aangevraagd, kun je deze e-mail negeren.</p>
+                "
+            };
+
+            mail.Body = body;
+
+            using var smtp = new SmtpClient();
+
+            try
+            {
+                await smtp.ConnectAsync(
+                    emailSettings["Host"],
+                    int.Parse(emailSettings["Port"]),
+                    SecureSocketOptions.StartTls
+                );
+
+                await smtp.AuthenticateAsync(emailSettings["Mail"], emailSettings["Password"]);
+                await smtp.SendAsync(mail);
+                await smtp.DisconnectAsync(true);
+            }
+            catch (Exception ex)
+            {
+                // Log de fout of gooi deze door
+                throw new Exception($"Fout bij het verzenden van e-mail: {ex.Message}", ex);
+            }
+        }
 
         //GET Register
         public IActionResult Register()
@@ -191,8 +229,6 @@ namespace UC3.Controllers
             }
             return View();
         }
-
-
 
         //Logout
         public IActionResult Logout()

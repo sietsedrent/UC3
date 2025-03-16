@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using UC3.Data;
 using UC3.Business;
 using UC3.Controllers;
+using UC3.Services;
 
 namespace UC3
 {
@@ -22,6 +23,7 @@ namespace UC3
                 options.BaseAddress = new Uri("https://localhost:7205");
             });
             builder.Services.AddMvc().AddNToastNotifyToastr();
+            builder.Services.AddScoped<EmailService>();
 
             builder.Services.AddDistributedMemoryCache(); // Dit configureert een tijdelijke cache in het geheugen
             builder.Services.AddSession(options =>
