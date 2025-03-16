@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function () {
             body: JSON.stringify(workoutData)
         }).then(response => {
             if (response.ok) {
-                window.location.href = '/Track/Index';
+                window.location.href = '/Home/Track';
             } else {
                 modal.style.display = 'none';
                 alert('Er is een fout opgetreden bij het opslaan van de workout.');
