@@ -51,14 +51,14 @@
     <StaticWebAssetEndpoint Include="_content/UC3/js/workout-form.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\workout-form.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-sFj0nzGWZH4ti3gQ/J85\u002Bh5I1ReoCQsSmSi4PjSmsYw="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"9544"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022sFj0nzGWZH4ti3gQ/J85\u002Bh5I1ReoCQsSmSi4PjSmsYw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 16 Mar 2025 03:13:47 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-REoQezvU3K8aG9qOirpuYBh31rRWXU/UEPwTu63iVls="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"9543"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022REoQezvU3K8aG9qOirpuYBh31rRWXU/UEPwTu63iVls=\u0022"},{"Name":"Last-Modified","Value":"Sun, 16 Mar 2025 03:57:59 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/UC3/js/workout-form.oqfglgf92k.js">
+    <StaticWebAssetEndpoint Include="_content/UC3/js/workout-form.smx8uk0tn4.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\workout-form.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"oqfglgf92k"},{"Name":"integrity","Value":"sha256-sFj0nzGWZH4ti3gQ/J85\u002Bh5I1ReoCQsSmSi4PjSmsYw="},{"Name":"label","Value":"_content/UC3/js/workout-form.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9544"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022sFj0nzGWZH4ti3gQ/J85\u002Bh5I1ReoCQsSmSi4PjSmsYw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 16 Mar 2025 03:13:47 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"smx8uk0tn4"},{"Name":"integrity","Value":"sha256-REoQezvU3K8aG9qOirpuYBh31rRWXU/UEPwTu63iVls="},{"Name":"label","Value":"_content/UC3/js/workout-form.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9543"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022REoQezvU3K8aG9qOirpuYBh31rRWXU/UEPwTu63iVls=\u0022"},{"Name":"Last-Modified","Value":"Sun, 16 Mar 2025 03:57:59 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/UC3/lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>

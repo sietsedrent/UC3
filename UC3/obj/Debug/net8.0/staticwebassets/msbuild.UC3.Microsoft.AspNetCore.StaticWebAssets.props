@@ -84,8 +84,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>oqfglgf92k</Fingerprint>
-      <Integrity>sFj0nzGWZH4ti3gQ/J85+h5I1ReoCQsSmSi4PjSmsYw=</Integrity>
+      <Fingerprint>smx8uk0tn4</Fingerprint>
+      <Integrity>REoQezvU3K8aG9qOirpuYBh31rRWXU/UEPwTu63iVls=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\workout-form.js'))</OriginalItemSpec>
