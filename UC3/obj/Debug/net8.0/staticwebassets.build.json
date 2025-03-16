@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yqCJckvIDpFGqWUmck4kP/SAasN4kXNSa1hRJvi1mgY=",
+  "Hash": "5lV6exGSXzhiSxZQ4zhPyPwTqhh20mPvl0zFMuAZMCs=",
   "Source": "UC3",
   "BasePath": "_content/UC3",
   "Mode": "Default",
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "gcz9par02m",
-      "Integrity": "MOxiszra7y8PRx6lfBx0sM0TeRKiUnm4rCkzPXNv+4w=",
+      "Fingerprint": "tcyh6swc6t",
+      "Integrity": "LX5323jbcyoayn4r9SGMsfRn9nz/b6CHy2pC8nfUIQ4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1459,11 +1459,53 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "wu6z2u28m1",
-      "Integrity": "iFiaDFukC6qyrpvuBKL+P13acl1l4ba3CmRsBEK4YfE=",
+      "Fingerprint": "xwry58qo8q",
+      "Integrity": "0aY7orAVtjwn1qkI7afH48AouxvhPGGKlwCcNtgh6Fc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\track-workout.js",
+      "SourceId": "UC3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\",
+      "BasePath": "_content/UC3",
+      "RelativePath": "js/track-workout#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qadh4burt6",
+      "Integrity": "bnLuepnNny6UzXuy0hLTOlecTa+lATicYaSrvQAqnqk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\track-workout.js"
+    },
+    {
+      "Identity": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\workout-form.js",
+      "SourceId": "UC3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\",
+      "BasePath": "_content/UC3",
+      "RelativePath": "js/workout-form#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oqfglgf92k",
+      "Integrity": "sFj0nzGWZH4ti3gQ/J85+h5I1ReoCQsSmSi4PjSmsYw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\workout-form.js"
     },
     {
       "Identity": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
@@ -2705,6 +2747,27 @@
       "OriginalItemSpec": "wwwroot\\ProfilePictures\\206c62f7-2738-4cf6-b4b3-06167e8b0c21_Screenshot 2023-12-07 115213.png"
     },
     {
+      "Identity": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\28fdc814-a69c-440f-a98c-64c02732aa2a_Screenshot 2023-11-07 151012.png",
+      "SourceId": "UC3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\",
+      "BasePath": "_content/UC3",
+      "RelativePath": "ProfilePictures/28fdc814-a69c-440f-a98c-64c02732aa2a_Screenshot 2023-11-07 151012#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d414q771a5",
+      "Integrity": "U5uyb7VI6e7neoZTjlkwi8lBtTeQx031VeNz2koInM8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProfilePictures\\28fdc814-a69c-440f-a98c-64c02732aa2a_Screenshot 2023-11-07 151012.png"
+    },
+    {
       "Identity": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\338b3718-effc-4afd-961f-cb522f82a731_Screenshot 2025-03-03 155705.png",
       "SourceId": "UC3",
       "SourceType": "Discovered",
@@ -2766,6 +2829,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ProfilePictures\\84dbb53a-2022-44a6-8bc5-bac220eddb72_Cookie.webp"
+    },
+    {
+      "Identity": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\901e563d-525e-4864-ab55-ea7300fe72ac_Screenshot 2025-02-07 212100.png",
+      "SourceId": "UC3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\",
+      "BasePath": "_content/UC3",
+      "RelativePath": "ProfilePictures/901e563d-525e-4864-ab55-ea7300fe72ac_Screenshot 2025-02-07 212100#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "06pvtoqpwu",
+      "Integrity": "KA7RABl0moFR0TWru5oElrmx4oK6w6WeibgOrMIZzgM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProfilePictures\\901e563d-525e-4864-ab55-ea7300fe72ac_Screenshot 2025-02-07 212100.png"
     },
     {
       "Identity": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\a77a4ad4-00a5-4b55-9db7-924ab0b08972_Screenshot 2023-11-07 151012.png",
@@ -2917,7 +3001,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2303"
+          "Value": "9051"
         },
         {
           "Name": "Content-Type",
@@ -2925,11 +3009,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MOxiszra7y8PRx6lfBx0sM0TeRKiUnm4rCkzPXNv+4w=\""
+          "Value": "\"LX5323jbcyoayn4r9SGMsfRn9nz/b6CHy2pC8nfUIQ4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 16:39:21 GMT"
+          "Value": "Sun, 16 Mar 2025 03:22:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2939,12 +3023,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-MOxiszra7y8PRx6lfBx0sM0TeRKiUnm4rCkzPXNv+4w="
+          "Value": "sha256-LX5323jbcyoayn4r9SGMsfRn9nz/b6CHy2pC8nfUIQ4="
         }
       ]
     },
     {
-      "Route": "css/site.gcz9par02m.css",
+      "Route": "css/site.tcyh6swc6t.css",
       "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2954,7 +3038,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2303"
+          "Value": "9051"
         },
         {
           "Name": "Content-Type",
@@ -2962,11 +3046,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MOxiszra7y8PRx6lfBx0sM0TeRKiUnm4rCkzPXNv+4w=\""
+          "Value": "\"LX5323jbcyoayn4r9SGMsfRn9nz/b6CHy2pC8nfUIQ4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 16:39:21 GMT"
+          "Value": "Sun, 16 Mar 2025 03:22:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2976,7 +3060,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gcz9par02m"
+          "Value": "tcyh6swc6t"
         },
         {
           "Name": "label",
@@ -2984,7 +3068,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-MOxiszra7y8PRx6lfBx0sM0TeRKiUnm4rCkzPXNv+4w="
+          "Value": "sha256-LX5323jbcyoayn4r9SGMsfRn9nz/b6CHy2pC8nfUIQ4="
         }
       ]
     },
@@ -5301,7 +5385,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "442"
+          "Value": "8204"
         },
         {
           "Name": "Content-Type",
@@ -5309,11 +5393,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"iFiaDFukC6qyrpvuBKL+P13acl1l4ba3CmRsBEK4YfE=\""
+          "Value": "\"0aY7orAVtjwn1qkI7afH48AouxvhPGGKlwCcNtgh6Fc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 20:03:38 GMT"
+          "Value": "Sun, 16 Mar 2025 03:22:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5323,12 +5407,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-iFiaDFukC6qyrpvuBKL+P13acl1l4ba3CmRsBEK4YfE="
+          "Value": "sha256-0aY7orAVtjwn1qkI7afH48AouxvhPGGKlwCcNtgh6Fc="
         }
       ]
     },
     {
-      "Route": "js/site.wu6z2u28m1.js",
+      "Route": "js/site.xwry58qo8q.js",
       "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5338,7 +5422,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "442"
+          "Value": "8204"
         },
         {
           "Name": "Content-Type",
@@ -5346,11 +5430,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"iFiaDFukC6qyrpvuBKL+P13acl1l4ba3CmRsBEK4YfE=\""
+          "Value": "\"0aY7orAVtjwn1qkI7afH48AouxvhPGGKlwCcNtgh6Fc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 20:03:38 GMT"
+          "Value": "Sun, 16 Mar 2025 03:22:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5360,7 +5444,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "wu6z2u28m1"
+          "Value": "xwry58qo8q"
         },
         {
           "Name": "label",
@@ -5368,7 +5452,171 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-iFiaDFukC6qyrpvuBKL+P13acl1l4ba3CmRsBEK4YfE="
+          "Value": "sha256-0aY7orAVtjwn1qkI7afH48AouxvhPGGKlwCcNtgh6Fc="
+        }
+      ]
+    },
+    {
+      "Route": "js/track-workout.js",
+      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\track-workout.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3202"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bnLuepnNny6UzXuy0hLTOlecTa+lATicYaSrvQAqnqk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 03:13:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bnLuepnNny6UzXuy0hLTOlecTa+lATicYaSrvQAqnqk="
+        }
+      ]
+    },
+    {
+      "Route": "js/track-workout.qadh4burt6.js",
+      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\track-workout.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3202"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bnLuepnNny6UzXuy0hLTOlecTa+lATicYaSrvQAqnqk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 03:13:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qadh4burt6"
+        },
+        {
+          "Name": "label",
+          "Value": "js/track-workout.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bnLuepnNny6UzXuy0hLTOlecTa+lATicYaSrvQAqnqk="
+        }
+      ]
+    },
+    {
+      "Route": "js/workout-form.js",
+      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\workout-form.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9544"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sFj0nzGWZH4ti3gQ/J85+h5I1ReoCQsSmSi4PjSmsYw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 03:13:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sFj0nzGWZH4ti3gQ/J85+h5I1ReoCQsSmSi4PjSmsYw="
+        }
+      ]
+    },
+    {
+      "Route": "js/workout-form.oqfglgf92k.js",
+      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\workout-form.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9544"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sFj0nzGWZH4ti3gQ/J85+h5I1ReoCQsSmSi4PjSmsYw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 03:13:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oqfglgf92k"
+        },
+        {
+          "Name": "label",
+          "Value": "js/workout-form.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sFj0nzGWZH4ti3gQ/J85+h5I1ReoCQsSmSi4PjSmsYw="
         }
       ]
     },
@@ -10293,6 +10541,88 @@
       ]
     },
     {
+      "Route": "ProfilePictures/28fdc814-a69c-440f-a98c-64c02732aa2a_Screenshot 2023-11-07 151012.d414q771a5.png",
+      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\28fdc814-a69c-440f-a98c-64c02732aa2a_Screenshot 2023-11-07 151012.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "69589"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"U5uyb7VI6e7neoZTjlkwi8lBtTeQx031VeNz2koInM8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 22:14:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d414q771a5"
+        },
+        {
+          "Name": "label",
+          "Value": "ProfilePictures/28fdc814-a69c-440f-a98c-64c02732aa2a_Screenshot 2023-11-07 151012.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-U5uyb7VI6e7neoZTjlkwi8lBtTeQx031VeNz2koInM8="
+        }
+      ]
+    },
+    {
+      "Route": "ProfilePictures/28fdc814-a69c-440f-a98c-64c02732aa2a_Screenshot 2023-11-07 151012.png",
+      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\28fdc814-a69c-440f-a98c-64c02732aa2a_Screenshot 2023-11-07 151012.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "69589"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"U5uyb7VI6e7neoZTjlkwi8lBtTeQx031VeNz2koInM8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 22:14:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-U5uyb7VI6e7neoZTjlkwi8lBtTeQx031VeNz2koInM8="
+        }
+      ]
+    },
+    {
       "Route": "ProfilePictures/338b3718-effc-4afd-961f-cb522f82a731_Screenshot 2025-03-03 155705.p5w3muym36.png",
       "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\338b3718-effc-4afd-961f-cb522f82a731_Screenshot 2025-03-03 155705.png",
       "Selectors": [],
@@ -10535,6 +10865,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-avdqDdvecsQREGjphdFnBV+5TUkJr/A9kB+/0r0+LYI="
+        }
+      ]
+    },
+    {
+      "Route": "ProfilePictures/901e563d-525e-4864-ab55-ea7300fe72ac_Screenshot 2025-02-07 212100.06pvtoqpwu.png",
+      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\901e563d-525e-4864-ab55-ea7300fe72ac_Screenshot 2025-02-07 212100.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1048282"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KA7RABl0moFR0TWru5oElrmx4oK6w6WeibgOrMIZzgM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 22:17:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "06pvtoqpwu"
+        },
+        {
+          "Name": "label",
+          "Value": "ProfilePictures/901e563d-525e-4864-ab55-ea7300fe72ac_Screenshot 2025-02-07 212100.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KA7RABl0moFR0TWru5oElrmx4oK6w6WeibgOrMIZzgM="
+        }
+      ]
+    },
+    {
+      "Route": "ProfilePictures/901e563d-525e-4864-ab55-ea7300fe72ac_Screenshot 2025-02-07 212100.png",
+      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\901e563d-525e-4864-ab55-ea7300fe72ac_Screenshot 2025-02-07 212100.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1048282"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KA7RABl0moFR0TWru5oElrmx4oK6w6WeibgOrMIZzgM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 22:17:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KA7RABl0moFR0TWru5oElrmx4oK6w6WeibgOrMIZzgM="
         }
       ]
     },

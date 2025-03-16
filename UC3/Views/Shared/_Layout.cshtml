@@ -18,7 +18,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">WorkoutLogger</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
@@ -31,7 +31,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Track">Track</a>
                         </li>
 
-                        <li class="nav-item" >
+                        <li class="nav-item">
                             <a class="btn" asp-controller="Account" asp-action="Logout">Logout</a>
                         </li>
 
@@ -44,44 +44,45 @@
             </div>
         </nav>
     </header>
-   
+
     <div class="container">
-        
+
         <main role="main" class="pb-3">
             <section>
                 @{
                     if (HttpContextAccessor.HttpContext.Session.GetString("IsLoggedIn") == "true")
 
                     {
-                        if (HttpContextAccessor.HttpContext.Session.GetString("Friends") != "true") {
-                        
-                        <section>
-                            <div class="div1">
-                                <!-- Naam links -->
-                                <label id="name" class="name-label">
-                                    @HttpContextAccessor.HttpContext.Session.GetString("name")
-                                </label>
+                        if (HttpContextAccessor.HttpContext.Session.GetString("Friends") != "true")
+                        {
 
-                                <!-- Avatar + Knop in een container rechts -->
-                                <div class="profile-container">
-                                    @if (HttpContextAccessor.HttpContext.Session.GetString("profilepicture") != null)
-                                    {
-                                        <img src="@Url.Content(HttpContextAccessor.HttpContext.Session.GetString("profilepicture"))" alt="Avatar" class="avatar" />
-                                    }
-                                    else
-                                    {
-                                        <img src="/ProfilePictures/default-avatar.png" alt="Avatar" class="avatar" />
-                                    }
+                            <section>
+                                <div class="div1">
+                                    <!-- Naam links -->
+                                    <label id="name" class="name-label">
+                                        @HttpContextAccessor.HttpContext.Session.GetString("name")
+                                    </label>
 
-                                    <!-- Form to upload new profile picture -->
-                                    <form method="post" asp-action="UpdateProfilePicture" asp-controller="Home" enctype="multipart/form-data">
-                                        <input type="file" name="profilePicture" accept="image/*" class="form-control" required />
-                                        <input type="submit" name="action" value="Change picture" class="btn btn-primary small-btn" />
-                                    </form>
+                                    <!-- Avatar + Knop in een container rechts -->
+                                    <div class="profile-container">
+                                        @if (HttpContextAccessor.HttpContext.Session.GetString("profilepicture") != null)
+                                        {
+                                            <img src="@Url.Content(HttpContextAccessor.HttpContext.Session.GetString("profilepicture"))" alt="Avatar" class="avatar" />
+                                        }
+                                        else
+                                        {
+                                            <img src="/ProfilePictures/default-avatar.png" alt="Avatar" class="avatar" />
+                                        }
+
+                                        <!-- Form to upload new profile picture -->
+                                        <form method="post" asp-action="UpdateProfilePicture" asp-controller="Home" enctype="multipart/form-data">
+                                            <input type="file" name="profilePicture" accept="image/*" class="form-control" required />
+                                            <input type="submit" name="action" value="Change picture" class="btn btn-primary small-btn" />
+                                        </form>
+                                    </div>
                                 </div>
-                            </div>
-                        </section>
-                    }
+                            </section>
+                        }
                     }
                 }
             </section>

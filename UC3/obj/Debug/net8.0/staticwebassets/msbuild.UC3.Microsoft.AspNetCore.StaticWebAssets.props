@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>gcz9par02m</Fingerprint>
-      <Integrity>MOxiszra7y8PRx6lfBx0sM0TeRKiUnm4rCkzPXNv+4w=</Integrity>
+      <Fingerprint>tcyh6swc6t</Fingerprint>
+      <Integrity>LX5323jbcyoayn4r9SGMsfRn9nz/b6CHy2pC8nfUIQ4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
@@ -48,11 +48,47 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>wu6z2u28m1</Fingerprint>
-      <Integrity>iFiaDFukC6qyrpvuBKL+P13acl1l4ba3CmRsBEK4YfE=</Integrity>
+      <Fingerprint>xwry58qo8q</Fingerprint>
+      <Integrity>0aY7orAVtjwn1qkI7afH48AouxvhPGGKlwCcNtgh6Fc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\track-workout.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>UC3</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/UC3</BasePath>
+      <RelativePath>js/track-workout.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>qadh4burt6</Fingerprint>
+      <Integrity>bnLuepnNny6UzXuy0hLTOlecTa+lATicYaSrvQAqnqk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\track-workout.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\workout-form.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>UC3</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/UC3</BasePath>
+      <RelativePath>js/workout-form.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>oqfglgf92k</Fingerprint>
+      <Integrity>sFj0nzGWZH4ti3gQ/J85+h5I1ReoCQsSmSi4PjSmsYw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\workout-form.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.css'))">
       <SourceType>Package</SourceType>
@@ -1134,6 +1170,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePictures\206c62f7-2738-4cf6-b4b3-06167e8b0c21_Screenshot 2023-12-07 115213.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePictures\28fdc814-a69c-440f-a98c-64c02732aa2a_Screenshot 2023-11-07 151012.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>UC3</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/UC3</BasePath>
+      <RelativePath>ProfilePictures/28fdc814-a69c-440f-a98c-64c02732aa2a_Screenshot 2023-11-07 151012.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>d414q771a5</Fingerprint>
+      <Integrity>U5uyb7VI6e7neoZTjlkwi8lBtTeQx031VeNz2koInM8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePictures\28fdc814-a69c-440f-a98c-64c02732aa2a_Screenshot 2023-11-07 151012.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePictures\338b3718-effc-4afd-961f-cb522f82a731_Screenshot 2025-03-03 155705.png'))">
       <SourceType>Package</SourceType>
       <SourceId>UC3</SourceId>
@@ -1187,6 +1241,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePictures\84dbb53a-2022-44a6-8bc5-bac220eddb72_Cookie.webp'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePictures\901e563d-525e-4864-ab55-ea7300fe72ac_Screenshot 2025-02-07 212100.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>UC3</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/UC3</BasePath>
+      <RelativePath>ProfilePictures/901e563d-525e-4864-ab55-ea7300fe72ac_Screenshot 2025-02-07 212100.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>06pvtoqpwu</Fingerprint>
+      <Integrity>KA7RABl0moFR0TWru5oElrmx4oK6w6WeibgOrMIZzgM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePictures\901e563d-525e-4864-ab55-ea7300fe72ac_Screenshot 2025-02-07 212100.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePictures\a77a4ad4-00a5-4b55-9db7-924ab0b08972_Screenshot 2023-11-07 151012.png'))">
       <SourceType>Package</SourceType>

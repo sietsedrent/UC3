@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\ProfilePictures\\206c62f7-2738-4cf6-b4b3-06167e8b0c21_Screenshot 2023-12-07 115213.png"
     },
     {
+      "Id": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\28fdc814-a69c-440f-a98c-64c02732aa2a_Screenshot 2023-11-07 151012.png",
+      "PackagePath": "staticwebassets\\ProfilePictures\\28fdc814-a69c-440f-a98c-64c02732aa2a_Screenshot 2023-11-07 151012.png"
+    },
+    {
       "Id": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\338b3718-effc-4afd-961f-cb522f82a731_Screenshot 2025-03-03 155705.png",
       "PackagePath": "staticwebassets\\ProfilePictures\\338b3718-effc-4afd-961f-cb522f82a731_Screenshot 2025-03-03 155705.png"
     },
@@ -31,6 +35,10 @@
     {
       "Id": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\84dbb53a-2022-44a6-8bc5-bac220eddb72_Cookie.webp",
       "PackagePath": "staticwebassets\\ProfilePictures\\84dbb53a-2022-44a6-8bc5-bac220eddb72_Cookie.webp"
+    },
+    {
+      "Id": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\901e563d-525e-4864-ab55-ea7300fe72ac_Screenshot 2025-02-07 212100.png",
+      "PackagePath": "staticwebassets\\ProfilePictures\\901e563d-525e-4864-ab55-ea7300fe72ac_Screenshot 2025-02-07 212100.png"
     },
     {
       "Id": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\ProfilePictures\\a77a4ad4-00a5-4b55-9db7-924ab0b08972_Screenshot 2023-11-07 151012.png",
@@ -55,6 +63,14 @@
     {
       "Id": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\track-workout.js",
+      "PackagePath": "staticwebassets\\js\\track-workout.js"
+    },
+    {
+      "Id": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\workout-form.js",
+      "PackagePath": "staticwebassets\\js\\workout-form.js"
     },
     {
       "Id": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\lib\\bootstrap\\LICENSE",

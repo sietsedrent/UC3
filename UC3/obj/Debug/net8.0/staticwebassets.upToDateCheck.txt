@@ -3,6 +3,8 @@ C:\Users\siets\.nuget\packages\ntoastnotify\8.0.0\contentFiles\any\net6.0\wwwroo
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
+wwwroot\js\track-workout.js
+wwwroot\js\workout-form.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
@@ -62,9 +64,11 @@ wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 wwwroot\ProfilePictures\1e7be26f-3352-412a-b24f-f66997f9386f_Cookie.webp
 wwwroot\ProfilePictures\206c62f7-2738-4cf6-b4b3-06167e8b0c21_Screenshot 2023-12-07 115213.png
+wwwroot\ProfilePictures\28fdc814-a69c-440f-a98c-64c02732aa2a_Screenshot 2023-11-07 151012.png
 wwwroot\ProfilePictures\338b3718-effc-4afd-961f-cb522f82a731_Screenshot 2025-03-03 155705.png
 wwwroot\ProfilePictures\78b49711-4139-462f-b147-ee8c969246c0_Cookie.webp
 wwwroot\ProfilePictures\84dbb53a-2022-44a6-8bc5-bac220eddb72_Cookie.webp
+wwwroot\ProfilePictures\901e563d-525e-4864-ab55-ea7300fe72ac_Screenshot 2025-02-07 212100.png
 wwwroot\ProfilePictures\a77a4ad4-00a5-4b55-9db7-924ab0b08972_Screenshot 2023-11-07 151012.png
 wwwroot\ProfilePictures\de049a93-d719-411e-94dc-861cb1921dbd_Cookie.webp
 wwwroot\ProfilePictures\ff3e5040-df6b-4d03-8b2d-9dd9e76c50b9_Cookie.webp
