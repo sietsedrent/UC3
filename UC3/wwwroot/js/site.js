@@ -8,7 +8,7 @@ function HidePassword() {
     }
 }
 
-// Calendar functionality uit Index.cshtml en Profile.cshtml
+// Calendar functionality
 $(document).ready(function () {
     // Controleer of we op de profielpagina zijn
     const isProfilePage = window.location.pathname.includes('/Profile');
@@ -20,44 +20,11 @@ $(document).ready(function () {
         // Controleer of de huidige gebruiker dezelfde is als de profielgebruiker
         const isOwnProfile = $('#weekCalendar').data('is-own-profile') === "true";
 
-        renderSimpleWeekView(profileUserId, isOwnProfile);
-
-        // Gebruikersspecifieke key voor workout-dagen
-        const workoutStorageKey = `workoutDays_user_${profileUserId}`;
-
-        // Initialiseer lokale opslag als deze nog niet bestaat voor deze gebruiker
-        if (!localStorage.getItem(workoutStorageKey)) {
-            localStorage.setItem(workoutStorageKey, JSON.stringify([]));
-        }
-
-        // Workout toevoegen functionaliteit - alleen beschikbaar als het je eigen profiel is
-        if (isOwnProfile) {
-            $(document).on('click', '.day-circle', function () {
-                const dayIndex = $(this).data('day-index');
-                $(this).toggleClass('has-workout');
-
-                // Update lokale opslag voor deze specifieke gebruiker
-                const workoutDays = JSON.parse(localStorage.getItem(workoutStorageKey));
-
-                if ($(this).hasClass('has-workout')) {
-                    // Toevoegen als het nog niet bestaat
-                    if (!workoutDays.includes(dayIndex)) {
-                        workoutDays.push(dayIndex);
-                    }
-                } else {
-                    // Verwijderen als het bestaat
-                    const index = workoutDays.indexOf(dayIndex);
-                    if (index > -1) {
-                        workoutDays.splice(index, 1);
-                    }
-                }
-
-                localStorage.setItem(workoutStorageKey, JSON.stringify(workoutDays));
-            });
-        }
+        loadWorkoutPlannings(profileUserId, isOwnProfile);
     } else {
         // Home pagina functionality
-        renderSimpleWeekView();
+        const userId = parseInt($('#weekCalendar').data('user-id') || 0);
+        loadWorkoutPlannings(userId, true);
 
         // Bio veranderen functionaliteit
         $("#changeBioBtn").click(function () {
@@ -95,39 +62,29 @@ $(document).ready(function () {
                 }
             });
         });
-
-        // Lokale opslag voor workouts
-        if (!localStorage.getItem('workoutDays')) {
-            localStorage.setItem('workoutDays', JSON.stringify([]));
-        }
-
-        // Add workout button functionality
-        $(document).on('click', '.day-circle', function () {
-            const dayIndex = $(this).data('day-index');
-            $(this).toggleClass('has-workout');
-
-            // Update lokale opslag
-            const workoutDays = JSON.parse(localStorage.getItem('workoutDays'));
-
-            if ($(this).hasClass('has-workout')) {
-                // Toevoegen als het nog niet bestaat
-                if (!workoutDays.includes(dayIndex)) {
-                    workoutDays.push(dayIndex);
-                }
-            } else {
-                // Verwijderen als het bestaat
-                const index = workoutDays.indexOf(dayIndex);
-                if (index > -1) {
-                    workoutDays.splice(index, 1);
-                }
-            }
-
-            localStorage.setItem('workoutDays', JSON.stringify(workoutDays));
-        });
     }
 });
 
-function renderSimpleWeekView(userId, isEditable) {
+// Functie om workout planningen van de server te laden
+function loadWorkoutPlannings(userId, isEditable) {
+    // Haal workout planningen op van server
+    $.ajax({
+        url: '/Home/GetWorkoutPlannings',
+        type: 'GET',
+        data: { userId: userId },
+        success: function (data) {
+            // Render de kalender met de ontvangen data
+            renderSimpleWeekView(userId, isEditable, data.plannings);
+        },
+        error: function () {
+            console.error('Fout bij ophalen workout planningen');
+            // Fallback naar een lege lijst
+            renderSimpleWeekView(userId, isEditable, []);
+        }
+    });
+}
+
+function renderSimpleWeekView(userId, isEditable, workoutDays) {
     // Get current date info
     const now = new Date();
     const currentDay = now.getDay(); // 0 = Sunday, 1 = Monday, ...
@@ -138,12 +95,6 @@ function renderSimpleWeekView(userId, isEditable) {
     date.setDate(date.getDate() + 3 - (date.getDay() + 6) % 7);
     const week1 = new Date(date.getFullYear(), 0, 4);
     const weekNumber = 1 + Math.round(((date.getTime() - week1.getTime()) / 86400000 - 3 + (week1.getDay() + 6) % 7) / 7);
-
-    // Gebruikersspecifieke key voor workout-dagen
-    const workoutStorageKey = userId ? `workoutDays_user_${userId}` : 'workoutDays';
-
-    // Workout dagen uit lokale opslag halen voor deze specifieke gebruiker
-    const workoutDays = JSON.parse(localStorage.getItem(workoutStorageKey) || '[]');
 
     // Create week view HTML
     let weekView = `
@@ -206,4 +157,30 @@ function renderSimpleWeekView(userId, isEditable) {
         // Navigate to next week (example implementation)
         alert('Naar volgende week');
     });
+
+    // Add workout button functionality - alleen als het bewerkbaar is
+    if (isEditable) {
+        $(document).on('click', '.day-circle.cursor-pointer', function () {
+            const dayIndex = $(this).data('day-index');
+            const hasWorkout = !$(this).hasClass('has-workout');
+
+            // Toggle class
+            $(this).toggleClass('has-workout');
+
+            // Update in database
+            $.ajax({
+                url: '/Home/UpdateWorkoutPlanning',
+                type: 'POST',
+                data: { dayIndex: dayIndex, hasWorkout: hasWorkout },
+                success: function (response) {
+                    if (!response.success) {
+                        console.error('Fout bij opslaan van workout planning');
+                    }
+                },
+                error: function () {
+                    console.error('Fout bij opslaan van workout planning');
+                }
+            });
+        });
+    }
 }

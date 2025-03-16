@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "X2cGI3sOXdW4sOt2VU22r1As4Al0d5G1WB0LlXrbTZk=",
+  "Hash": "nc6YrqFpagCggblJXpk/SsYijgK3LSX8L/ITrJy5lPs=",
   "Source": "UC3",
   "BasePath": "_content/UC3",
   "Mode": "Default",
@@ -1459,8 +1459,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xwry58qo8q",
-      "Integrity": "0aY7orAVtjwn1qkI7afH48AouxvhPGGKlwCcNtgh6Fc=",
+      "Fingerprint": "76wvb0nr3h",
+      "Integrity": "YTBdDVjXYr/b9s5B8U41jO3AgqYtetpry4AMZTNEtKM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -5375,6 +5375,51 @@
       ]
     },
     {
+      "Route": "js/site.76wvb0nr3h.js",
+      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7046"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YTBdDVjXYr/b9s5B8U41jO3AgqYtetpry4AMZTNEtKM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 04:15:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "76wvb0nr3h"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YTBdDVjXYr/b9s5B8U41jO3AgqYtetpry4AMZTNEtKM="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\site.js",
       "Selectors": [],
@@ -5385,7 +5430,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8204"
+          "Value": "7046"
         },
         {
           "Name": "Content-Type",
@@ -5393,11 +5438,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0aY7orAVtjwn1qkI7afH48AouxvhPGGKlwCcNtgh6Fc=\""
+          "Value": "\"YTBdDVjXYr/b9s5B8U41jO3AgqYtetpry4AMZTNEtKM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 03:22:20 GMT"
+          "Value": "Sun, 16 Mar 2025 04:15:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5407,52 +5452,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0aY7orAVtjwn1qkI7afH48AouxvhPGGKlwCcNtgh6Fc="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.xwry58qo8q.js",
-      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "8204"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0aY7orAVtjwn1qkI7afH48AouxvhPGGKlwCcNtgh6Fc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 03:22:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xwry58qo8q"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-0aY7orAVtjwn1qkI7afH48AouxvhPGGKlwCcNtgh6Fc="
+          "Value": "sha256-YTBdDVjXYr/b9s5B8U41jO3AgqYtetpry4AMZTNEtKM="
         }
       ]
     },

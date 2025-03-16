@@ -31,7 +31,7 @@
                     </div>
                 </div>
             </div>
-            <div id="weekCalendar" class="workout-week-view">
+            <div id="weekCalendar" class="workout-week-view" data-user-id="@HttpContextAccessor.HttpContext.Session.GetInt32("userId")">
                 <!-- Week calendar will be rendered here -->
             </div>
         </div>

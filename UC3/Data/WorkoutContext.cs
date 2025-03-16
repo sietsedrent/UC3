@@ -13,6 +13,7 @@ namespace UC3.Data
         public DbSet<Workout> WorkoutModels { get; set; }
         public DbSet<User> UserModels { get; set; }
 
-
+        // In WorkoutContext.cs
+        public DbSet<WorkoutPlanning> WorkoutPlanningModels { get; set; }
     }
 }

@@ -85,7 +85,72 @@ public class HomeController : Controller
     }
 
 
+    // HomeController.cs
+    [HttpGet]
+    public async Task<IActionResult> GetWorkoutPlannings(int userId)
+    {
+        // Huidige weeknummer
+        var now = DateTime.Now;
+        var date = new DateTime(now.Year, now.Month, now.Day);
+        date = date.AddDays(3 - (int)(date.DayOfWeek + 6) % 7);
+        var week1 = new DateTime(date.Year, 1, 4);
+        int weekNumber = 1 + (int)((date - week1).TotalDays / 7);
 
+        // Haal workoutplanningen op
+        var plannings = await _context.WorkoutPlanningModels
+            .Where(w => w.UserId == userId && w.WeekNumber == weekNumber)
+            .ToListAsync();
+
+        return Json(new { plannings = plannings.Select(p => p.DayOfWeek).ToList() });
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> UpdateWorkoutPlanning(int dayIndex, bool hasWorkout)
+    {
+        // Haal userId uit de sessie van deze controller
+        var userId = HttpContext.Session.GetInt32("userId");
+        if (userId == null)
+        {
+            return Json(new { success = false, message = "Niet ingelogd" });
+        }
+
+        // Huidige weeknummer
+        var now = DateTime.Now;
+        var date = new DateTime(now.Year, now.Month, now.Day);
+        date = date.AddDays(3 - (int)(date.DayOfWeek + 6) % 7);
+        var week1 = new DateTime(date.Year, 1, 4);
+        int weekNumber = 1 + (int)((date - week1).TotalDays / 7);
+
+        // Zoek bestaande planning
+        var existingPlanning = await _context.WorkoutPlanningModels
+            .FirstOrDefaultAsync(w => w.UserId == userId && w.DayOfWeek == dayIndex && w.WeekNumber == weekNumber);
+
+        if (hasWorkout)
+        {
+            // Als workout is gepland en nog niet bestaat, voeg toe
+            if (existingPlanning == null)
+            {
+                _context.WorkoutPlanningModels.Add(new WorkoutPlanning
+                {
+                    UserId = userId.Value,
+                    DayOfWeek = dayIndex,
+                    WeekNumber = weekNumber
+                });
+                await _context.SaveChangesAsync();
+            }
+        }
+        else
+        {
+            // Als workout niet gepland is en wel bestaat, verwijder
+            if (existingPlanning != null)
+            {
+                _context.WorkoutPlanningModels.Remove(existingPlanning);
+                await _context.SaveChangesAsync();
+            }
+        }
+
+        return Json(new { success = true });
+    }
 
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
