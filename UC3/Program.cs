@@ -16,6 +16,8 @@ namespace UC3
             builder.Services.AddDbContext<WorkoutContext>(x => x.UseSqlite(connectionString));
             builder.Services.AddScoped<AccountService>();
             builder.Services.AddScoped<HomeService>();
+            builder.Services.AddScoped<WorkoutService>();
+
             builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             builder.Services.AddHttpClient<AccountController>(options =>
