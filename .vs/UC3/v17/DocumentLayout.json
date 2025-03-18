@@ -3,48 +3,24 @@
   "WorkspaceRootPath": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9A8B217-EF8D-4D21-AD1F-C5BBCDDB0A7A}|Tests\\Tests.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\tests\\homecontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9A8B217-EF8D-4D21-AD1F-C5BBCDDB0A7A}|Tests\\Tests.csproj|solutionrelative:tests\\homecontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\views\\home\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\views\\home\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\views\\home\\newworkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\views\\home\\newworkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\wwwroot\\js\\workout-form.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\wwwroot\\js\\workout-form.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\wwwroot\\js\\track-workout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\wwwroot\\js\\track-workout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 195,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -69,151 +45,81 @@
               "Name": "ST:1776241114:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeControllerTests.cs",
-              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\Tests\\HomeControllerTests.cs",
-              "RelativeDocumentMoniker": "Tests\\HomeControllerTests.cs",
-              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\Tests\\HomeControllerTests.cs",
-              "RelativeToolTip": "Tests\\HomeControllerTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T18:45:45.014Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "UC3\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "UC3\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "UC3\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "UC3\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAgwGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T18:45:24.396Z",
+              "WhenOpened": "2025-03-18T19:07:14.573Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "UC3\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "UC3\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAOAAAAAAAAAAAAAIwAEBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T18:59:43.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Profile.cshtml",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Home\\Profile.cshtml",
               "RelativeDocumentMoniker": "UC3\\Views\\Home\\Profile.cshtml",
               "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Home\\Profile.cshtml",
               "RelativeToolTip": "UC3\\Views\\Home\\Profile.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwB8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-18T18:45:06.91Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NewWorkout.cshtml",
-              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Home\\NewWorkout.cshtml",
-              "RelativeDocumentMoniker": "UC3\\Views\\Home\\NewWorkout.cshtml",
-              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Home\\NewWorkout.cshtml",
-              "RelativeToolTip": "UC3\\Views\\Home\\NewWorkout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-18T18:45:02.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "UC3\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "UC3\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-18T18:44:53.276Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Program.cs",
+              "RelativeDocumentMoniker": "UC3\\Program.cs",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Program.cs",
+              "RelativeToolTip": "UC3\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwEkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T18:51:16.565Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "UC3\\Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "UC3\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-18T18:44:50.045Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "UC3\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "UC3\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-18T18:44:35.317Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "UC3\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "UC3\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-18T18:44:14.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "workout-form.js",
-              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\workout-form.js",
-              "RelativeDocumentMoniker": "UC3\\wwwroot\\js\\workout-form.js",
-              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\workout-form.js",
-              "RelativeToolTip": "UC3\\wwwroot\\js\\workout-form.js",
-              "ViewState": "AgIAAKYAAAAAAAAAAAAQwMoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-03-18T18:42:51.708Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "track-workout.js",
-              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\track-workout.js",
-              "RelativeDocumentMoniker": "UC3\\wwwroot\\js\\track-workout.js",
-              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\track-workout.js",
-              "RelativeToolTip": "UC3\\wwwroot\\js\\track-workout.js",
-              "ViewState": "AgIAACQAAAAAAAAAAAAYwFMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-03-18T18:42:21.157Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "site.js",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "UC3\\wwwroot\\js\\site.js",
               "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\site.js",
               "RelativeToolTip": "UC3\\wwwroot\\js\\site.js",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAYwI8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAgwI4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-03-18T18:41:29.334Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         },

@@ -100,6 +100,8 @@ namespace UC3.Controllers
                 HttpContext.Session.SetString("name", user.name);
                 HttpContext.Session.SetString("password", user.password);
                 HttpContext.Session.SetString("profilepicture", user.profilepicture);
+                HttpContext.Session.SetInt32("role", user.role);
+
 
                 var authcode = r.Next(1000, 10000);
                 HttpContext.Session.SetInt32("randomNumber", authcode);

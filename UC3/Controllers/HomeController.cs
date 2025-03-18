@@ -229,4 +229,49 @@ public class HomeController : Controller
             return Json(new { success = false, message = ex.Message });
         }
     }
+    [HttpPost]
+    public IActionResult DeleteAccount(int userId)
+    {
+        // Controleer of de huidige gebruiker admin-rechten heeft
+        var currentUserRole = HttpContext.Session.GetInt32("role");
+        if (currentUserRole != 0)
+        {
+            _toastNotification.AddErrorToastMessage("Je hebt geen rechten om accounts te verwijderen.");
+            return RedirectToAction("Index");
+        }
+
+        // Opahlen gebruiker die verwijderd moet worden
+        var userToDelete = _context.UserModels.FirstOrDefault(u => u.userId == userId);
+        if (userToDelete == null)
+        {
+            _toastNotification.AddErrorToastMessage("Gebruiker niet gevonden.");
+            return RedirectToAction("Index");
+        }
+
+        try
+        {
+            var workouts = _context.WorkoutModels.Where(w => w.userId == userId).ToList();
+            foreach (var workout in workouts)
+            {
+                var trainingData = _context.TrainingDataModels.Where(td => td.workoutId == workout.workoutId).ToList();
+                _context.TrainingDataModels.RemoveRange(trainingData);
+            }
+            _context.WorkoutModels.RemoveRange(workouts);
+
+            var workoutPlannings = _context.WorkoutPlanningModels.Where(wp => wp.UserId == userId).ToList();
+            _context.WorkoutPlanningModels.RemoveRange(workoutPlannings);
+
+            _context.UserModels.Remove(userToDelete);
+
+            _context.SaveChanges();
+
+            _toastNotification.AddSuccessToastMessage("Account is succesvol verwijderd.");
+            return RedirectToAction("Index");
+        }
+        catch (Exception ex)
+        {
+            _toastNotification.AddErrorToastMessage($"Fout bij verwijderen account: {ex.Message}");
+            return RedirectToAction("Index");
+        }
+    }
 }

@@ -3,9 +3,16 @@
 @model UC3.Models.User
 @{
     ViewData["Title"] = "Profile Page";
+    bool isOwnProfile = HttpContextAccessor.HttpContext.Session.GetInt32("userId") == Model.userId;
 
-    bool isOwnProfile = HttpContextAccessor.HttpContext.Session.GetInt32("UserId") == Model.userId;
+    // Haal de role-waarde correct op
+    int? userRole = HttpContextAccessor.HttpContext.Session.GetInt32("role");
+    bool isAdmin = userRole.HasValue && userRole.Value == 0;
+
+    // Debug informatie - verwijder dit later
+    var roleValue = HttpContextAccessor.HttpContext.Session.GetInt32("role");
 }
+
 <div class="text-center">
     <div class="parent">
         <div class="div2">
@@ -16,6 +23,8 @@
             </form>
         </div>
         <div class="div3">
+            
+
             <div class="profile-header">
                 <div class="profile-container">
                     @if (string.IsNullOrEmpty(Model.profilepicture))
@@ -38,8 +47,21 @@
                     <p>@Model.bio</p>
                 </div>
             </div>
+
+            @if (isAdmin && !isOwnProfile)
+            {
+                <div class="admin-actions mt-3 mb-3">
+                    <form method="post" action="/Home/DeleteAccount">
+                        <input type="hidden" name="userId" value="@Model.userId" />
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('Weet je zeker dat je dit account wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.');">
+                            Account verwijderen
+                        </button>
+                    </form>
+                </div>
+            }
+
             <div id="weekCalendar" class="workout-week-view" data-user-id="@Model.userId" data-is-own-profile="@isOwnProfile.ToString().ToLower()">
-                <!-- Week calendar will  be  rendered here -->
+                <!-- Week calendar will be rendered here -->
             </div>
         </div>
     </div>
