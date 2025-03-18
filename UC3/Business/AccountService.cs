@@ -1,9 +1,5 @@
-﻿using Microsoft.Data.Sqlite;
-using Dapper;
+﻿
 using UC3.Data;
-using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using System.Xml.Linq;
 using UC3.Models;
 
 namespace UC3.Business

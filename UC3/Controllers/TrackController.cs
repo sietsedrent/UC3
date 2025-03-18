@@ -1,12 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.EntityFrameworkCore;
-using System.Threading.Tasks;
-using UC3.Models;
 using UC3.Business;
 using UC3.Data;
-using Microsoft.AspNetCore.Http;
 
 namespace UC3.Controllers
 {
