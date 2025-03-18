@@ -6,14 +6,16 @@ namespace UC3.Data
     public class WorkoutContext : DbContext
     {
         public WorkoutContext(DbContextOptions<WorkoutContext> options) : base(options) { }
-        
 
+        public WorkoutContext() : base(new DbContextOptionsBuilder<WorkoutContext>().Options)
+        {
+            // Empty constructor for mocking purposes
+        }
         public DbSet<Exercise> ExerciseModels { get; set; }
         public DbSet<TrainingData> TrainingDataModels { get; set; }
         public DbSet<Workout> WorkoutModels { get; set; }
         public DbSet<User> UserModels { get; set; }
 
-        // In WorkoutContext.cs
         public DbSet<WorkoutPlanning> WorkoutPlanningModels { get; set; }
     }
 }
