@@ -30,26 +30,24 @@ namespace UC3
             builder.Services.AddDistributedMemoryCache(); // Dit configureert een tijdelijke cache in het geheugen
             builder.Services.AddSession(options =>
             {
-                options.IdleTimeout = TimeSpan.FromMinutes(180); // Stelt een timeout in voor sessies (optioneel)
+                options.IdleTimeout = TimeSpan.FromMinutes(180);
                 options.Cookie.HttpOnly = true; // De cookie is alleen toegankelijk via HTTP (meer veiligheid)
-                options.Cookie.IsEssential = true; // Nodig voor de werking van de sessie
+                options.Cookie.IsEssential = true; //Nodig voor werking sessie
             });
             builder.Services.AddHttpContextAccessor();
 
-            // Add services to the container.
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
 
             app.UseNToastNotify();
 
-            
 
-            // Configure the HTTP request pipeline.
+
+            // Configure HTTP pipeline.
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
@@ -68,9 +66,9 @@ namespace UC3
             using (var scope = app.Services.CreateScope())
             {
                 var context = scope.ServiceProvider.GetRequiredService<WorkoutContext>();
-                context.Database.Migrate(); // Of gebruik context.Database.EnsureCreated(); voor een eenvoudige setup
+                context.Database.Migrate();
+                app.Run();
             }
-            app.Run();
         }
     }
 }

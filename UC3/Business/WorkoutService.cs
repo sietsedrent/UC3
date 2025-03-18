@@ -26,7 +26,6 @@ namespace UC3.Business
 
         public async Task<object> GetWorkoutDetails(int workoutId, int userId)
         {
-            // Haal workout op met alle gerelateerde gegevens
             var workout = await _context.WorkoutModels
                 .Where(w => w.workoutId == workoutId && w.userId == userId)
                 .FirstOrDefaultAsync();
@@ -36,23 +35,19 @@ namespace UC3.Business
                 return null;
             }
 
-            // Haal alle trainingsgegevens op voor deze workout
             var trainingDataList = await _context.TrainingDataModels
                 .Where(td => td.workoutId == workoutId)
                 .ToListAsync();
 
-            // Maak lijst om oefeningen en bijbehorende trainingsgegevens te verzamelen
             var exercisesList = new List<object>();
 
             foreach (var trainingData in trainingDataList)
             {
-                // Haal oefening op voor deze trainingsgegevens
                 var exercise = await _context.ExerciseModels
                     .FirstOrDefaultAsync(e => e.exerciseId == trainingData.exerciseId);
 
                 if (exercise != null)
                 {
-                    // Voeg oefening toe aan de lijst met bijbehorende trainingsgegevens
                     exercisesList.Add(new
                     {
                         exerciseName = exercise.exerciseName,
@@ -69,7 +64,6 @@ namespace UC3.Business
                 }
             }
 
-            // Stel het volledige resultaat samen
             var result = new
             {
                 workoutId = workout.workoutId,
@@ -84,7 +78,6 @@ namespace UC3.Business
 
         public async Task<int> SaveWorkout(WorkoutDTO workoutDTO, int userId)
         {
-            // 1. Eerste de workout opslaan en de workoutId ophalen
             var workout = new Workout
             {
                 userId = userId,
@@ -96,19 +89,15 @@ namespace UC3.Business
             _context.WorkoutModels.Add(workout);
             await _context.SaveChangesAsync();
 
-            // Nu hebben we een workoutId
             int workoutId = workout.workoutId;
 
-            // 2. Voor elke exercise in de DTO:
             foreach (var exerciseDTO in workoutDTO.exercises)
             {
-                // a. Zoek de exercise op basis van naam of maak een nieuwe aan
                 var exercise = await _context.ExerciseModels
                     .FirstOrDefaultAsync(e => e.exerciseName == exerciseDTO.exerciseName);
 
                 if (exercise == null)
                 {
-                    // Maak een nieuwe exercise aan als deze nog niet bestaat
                     exercise = new Exercise
                     {
                         exerciseName = exerciseDTO.exerciseName,
@@ -119,7 +108,6 @@ namespace UC3.Business
                     await _context.SaveChangesAsync();
                 }
 
-                // b. Controleer of dit een PR is door te vergelijken met eerdere resultaten
                 bool isPR = false;
                 var calculatedE1RM = CalculateE1RM(exerciseDTO.trainingData.liftedWeight, exerciseDTO.trainingData.amountOfReps);
 
@@ -132,7 +120,6 @@ namespace UC3.Business
                     isPR = true;
                 }
 
-                // c. Maak TrainingData aan en koppel aan de workout en exercise
                 var trainingData = new TrainingData
                 {
                     workoutId = workoutId,
@@ -151,7 +138,6 @@ namespace UC3.Business
             return workoutId;
         }
 
-        // Helper methode om geschatte 1 rep max te berekenen (Brzycki formule)
         private float CalculateE1RM(float weight, int reps)
         {
             if (reps == 1) return weight;

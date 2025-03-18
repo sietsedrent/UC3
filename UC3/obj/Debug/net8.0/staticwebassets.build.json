@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dxKAenqdiIn/iG/FXMb1J9BQMxwYYv/OEXfjTLJEIkw=",
+  "Hash": "I3Jr41IoD2daWgw0eKLfduXr0pMfv8gmCN5X9stO4Ms=",
   "Source": "UC3",
   "BasePath": "_content/UC3",
   "Mode": "Default",
@@ -1459,8 +1459,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "76wvb0nr3h",
-      "Integrity": "YTBdDVjXYr/b9s5B8U41jO3AgqYtetpry4AMZTNEtKM=",
+      "Fingerprint": "sw1nmawn9l",
+      "Integrity": "bGe147Z4OcgOzpcAN4XXnPplVbkDpDn58jEDLtDjdCQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -1480,8 +1480,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "qadh4burt6",
-      "Integrity": "bnLuepnNny6UzXuy0hLTOlecTa+lATicYaSrvQAqnqk=",
+      "Fingerprint": "ijw0tyy2d3",
+      "Integrity": "QrY4AgVI+9LwbHKD/D1C0acGf6cNT+W4Zt1mKW7N4Ps=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\track-workout.js"
@@ -1501,8 +1501,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "smx8uk0tn4",
-      "Integrity": "REoQezvU3K8aG9qOirpuYBh31rRWXU/UEPwTu63iVls=",
+      "Fingerprint": "rtrvea6k9o",
+      "Integrity": "YctH2cmFD4ub3H+54aFF33PBHs0TqvrMc0zfhxT7SuE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\workout-form.js"
@@ -5375,51 +5375,6 @@
       ]
     },
     {
-      "Route": "js/site.76wvb0nr3h.js",
-      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7046"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YTBdDVjXYr/b9s5B8U41jO3AgqYtetpry4AMZTNEtKM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 17:11:45 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "76wvb0nr3h"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-YTBdDVjXYr/b9s5B8U41jO3AgqYtetpry4AMZTNEtKM="
-        }
-      ]
-    },
-    {
       "Route": "js/site.js",
       "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\site.js",
       "Selectors": [],
@@ -5430,7 +5385,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7046"
+          "Value": "5430"
         },
         {
           "Name": "Content-Type",
@@ -5438,11 +5393,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"YTBdDVjXYr/b9s5B8U41jO3AgqYtetpry4AMZTNEtKM=\""
+          "Value": "\"bGe147Z4OcgOzpcAN4XXnPplVbkDpDn58jEDLtDjdCQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 17:11:45 GMT"
+          "Value": "Tue, 18 Mar 2025 18:51:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5452,7 +5407,97 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-YTBdDVjXYr/b9s5B8U41jO3AgqYtetpry4AMZTNEtKM="
+          "Value": "sha256-bGe147Z4OcgOzpcAN4XXnPplVbkDpDn58jEDLtDjdCQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.sw1nmawn9l.js",
+      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bGe147Z4OcgOzpcAN4XXnPplVbkDpDn58jEDLtDjdCQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:51:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sw1nmawn9l"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bGe147Z4OcgOzpcAN4XXnPplVbkDpDn58jEDLtDjdCQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/track-workout.ijw0tyy2d3.js",
+      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\track-workout.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2873"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QrY4AgVI+9LwbHKD/D1C0acGf6cNT+W4Zt1mKW7N4Ps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 18:46:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ijw0tyy2d3"
+        },
+        {
+          "Name": "label",
+          "Value": "js/track-workout.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QrY4AgVI+9LwbHKD/D1C0acGf6cNT+W4Zt1mKW7N4Ps="
         }
       ]
     },
@@ -5467,7 +5512,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3202"
+          "Value": "2873"
         },
         {
           "Name": "Content-Type",
@@ -5475,11 +5520,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bnLuepnNny6UzXuy0hLTOlecTa+lATicYaSrvQAqnqk=\""
+          "Value": "\"QrY4AgVI+9LwbHKD/D1C0acGf6cNT+W4Zt1mKW7N4Ps=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 03:13:51 GMT"
+          "Value": "Tue, 18 Mar 2025 18:46:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5489,52 +5534,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bnLuepnNny6UzXuy0hLTOlecTa+lATicYaSrvQAqnqk="
-        }
-      ]
-    },
-    {
-      "Route": "js/track-workout.qadh4burt6.js",
-      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\track-workout.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3202"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bnLuepnNny6UzXuy0hLTOlecTa+lATicYaSrvQAqnqk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 03:13:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "qadh4burt6"
-        },
-        {
-          "Name": "label",
-          "Value": "js/track-workout.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-bnLuepnNny6UzXuy0hLTOlecTa+lATicYaSrvQAqnqk="
+          "Value": "sha256-QrY4AgVI+9LwbHKD/D1C0acGf6cNT+W4Zt1mKW7N4Ps="
         }
       ]
     },
@@ -5549,7 +5549,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9543"
+          "Value": "9207"
         },
         {
           "Name": "Content-Type",
@@ -5557,11 +5557,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"REoQezvU3K8aG9qOirpuYBh31rRWXU/UEPwTu63iVls=\""
+          "Value": "\"YctH2cmFD4ub3H+54aFF33PBHs0TqvrMc0zfhxT7SuE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 03:57:59 GMT"
+          "Value": "Tue, 18 Mar 2025 18:46:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5571,12 +5571,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-REoQezvU3K8aG9qOirpuYBh31rRWXU/UEPwTu63iVls="
+          "Value": "sha256-YctH2cmFD4ub3H+54aFF33PBHs0TqvrMc0zfhxT7SuE="
         }
       ]
     },
     {
-      "Route": "js/workout-form.smx8uk0tn4.js",
+      "Route": "js/workout-form.rtrvea6k9o.js",
       "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\workout-form.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5586,7 +5586,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9543"
+          "Value": "9207"
         },
         {
           "Name": "Content-Type",
@@ -5594,11 +5594,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"REoQezvU3K8aG9qOirpuYBh31rRWXU/UEPwTu63iVls=\""
+          "Value": "\"YctH2cmFD4ub3H+54aFF33PBHs0TqvrMc0zfhxT7SuE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 03:57:59 GMT"
+          "Value": "Tue, 18 Mar 2025 18:46:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5608,7 +5608,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "smx8uk0tn4"
+          "Value": "rtrvea6k9o"
         },
         {
           "Name": "label",
@@ -5616,7 +5616,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-REoQezvU3K8aG9qOirpuYBh31rRWXU/UEPwTu63iVls="
+          "Value": "sha256-YctH2cmFD4ub3H+54aFF33PBHs0TqvrMc0zfhxT7SuE="
         }
       ]
     },
@@ -11301,7 +11301,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 16:32:07 GMT"
+          "Value": "Tue, 18 Mar 2025 18:17:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11338,7 +11338,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 16:32:07 GMT"
+          "Value": "Tue, 18 Mar 2025 18:17:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11375,7 +11375,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 16:32:07 GMT"
+          "Value": "Tue, 18 Mar 2025 18:17:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11420,7 +11420,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 16:32:07 GMT"
+          "Value": "Tue, 18 Mar 2025 18:17:04 GMT"
         },
         {
           "Name": "Cache-Control",

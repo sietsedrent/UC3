@@ -66,7 +66,7 @@ namespace UC3.Services
             }
             catch (Exception ex)
             {
-                // Log de fout of gooi deze door
+                // Loggen fout ofd oorgeven
                 throw new Exception($"Fout bij het verzenden van e-mail: {ex.Message}", ex);
             }
         }

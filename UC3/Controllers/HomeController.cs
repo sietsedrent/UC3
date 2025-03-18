@@ -35,18 +35,15 @@ public class HomeController : Controller
 
         if (isLoggedIn == "true")
         {
-            // Haal de huidige gebruiker op uit de database, bijvoorbeeld op basis van de userId uit de sessie
             var userId = HttpContext.Session.GetInt32("userId");
             var user = _context.UserModels.FirstOrDefault(u => u.userId == userId);
 
-            // Stuur het user object naar de view
             if (user != null)
             {
                 return View(user);
             }
             else
             {
-                // Redirect naar Login als er geen gebruiker is
                 return RedirectToAction("Login", "Account");
             }
         }
@@ -56,19 +53,6 @@ public class HomeController : Controller
         }
     }
 
-    public IActionResult Privacy()
-    {
-
-        var isLoggedIn = HttpContext.Session.GetString("IsLoggedIn");
-        if (isLoggedIn == "true")
-        {
-            return View();
-        }
-        else
-        {
-            return RedirectToAction("Login", "Account");
-        }
-    }
     public IActionResult Track()
     {
         HttpContext.Session.SetString("Friends", "false");
@@ -85,18 +69,15 @@ public class HomeController : Controller
     }
 
 
-    // HomeController.cs
     [HttpGet]
     public async Task<IActionResult> GetWorkoutPlannings(int userId)
     {
-        // Huidige weeknummer
         var now = DateTime.Now;
         var date = new DateTime(now.Year, now.Month, now.Day);
         date = date.AddDays(3 - (int)(date.DayOfWeek + 6) % 7);
         var week1 = new DateTime(date.Year, 1, 4);
         int weekNumber = 1 + (int)((date - week1).TotalDays / 7);
 
-        // Haal workoutplanningen op
         var plannings = await _context.WorkoutPlanningModels
             .Where(w => w.UserId == userId && w.WeekNumber == weekNumber)
             .ToListAsync();
@@ -107,27 +88,23 @@ public class HomeController : Controller
     [HttpPost]
     public async Task<IActionResult> UpdateWorkoutPlanning(int dayIndex, bool hasWorkout)
     {
-        // Haal userId uit de sessie van deze controller
         var userId = HttpContext.Session.GetInt32("userId");
         if (userId == null)
         {
             return Json(new { success = false, message = "Niet ingelogd" });
         }
 
-        // Huidige weeknummer
         var now = DateTime.Now;
         var date = new DateTime(now.Year, now.Month, now.Day);
         date = date.AddDays(3 - (int)(date.DayOfWeek + 6) % 7);
         var week1 = new DateTime(date.Year, 1, 4);
         int weekNumber = 1 + (int)((date - week1).TotalDays / 7);
 
-        // Zoek bestaande planning
         var existingPlanning = await _context.WorkoutPlanningModels
             .FirstOrDefaultAsync(w => w.UserId == userId && w.DayOfWeek == dayIndex && w.WeekNumber == weekNumber);
 
         if (hasWorkout)
         {
-            // Als workout is gepland en nog niet bestaat, voeg toe
             if (existingPlanning == null)
             {
                 _context.WorkoutPlanningModels.Add(new WorkoutPlanning
@@ -141,7 +118,6 @@ public class HomeController : Controller
         }
         else
         {
-            // Als workout niet gepland is en wel bestaat, verwijder
             if (existingPlanning != null)
             {
                 _context.WorkoutPlanningModels.Remove(existingPlanning);
@@ -191,33 +167,28 @@ public class HomeController : Controller
         return RedirectToAction("Index");
     }
 
-    [HttpPost] // Dit zorgt ervoor dat de zoekterm via een formulier naar de actie wordt verzonden
+    [HttpPost] 
     public IActionResult Search(string searchTerm)
     {
         if (string.IsNullOrEmpty(searchTerm))
         {
-            // Als de zoekterm leeg is, stuur je de gebruiker terug naar de homepagina
             _toastNotification.AddWarningToastMessage("Voer een naam in");
             return RedirectToAction("Index");
         }
 
-        // Zoek de gebruiker die overeenkomt met de naam
         var user = _context.UserModels.FirstOrDefault(u => u.name.Equals(searchTerm));
 
         if (user != null)
         {
-            // Als een gebruiker is gevonden, stuur je door naar de profielpagina van deze gebruiker
             return RedirectToAction("Profile", new { userId = user.userId });
         }
         else
         {
-            // Als er geen gebruiker is gevonden, geef dan een bericht en stuur de gebruiker terug naar de homepagina
             _toastNotification.AddWarningToastMessage("Deze gebruiker bestaat niet");
             return RedirectToAction("Index");
         }
     }
 
-    // Profielpagina van de gebruiker
     public IActionResult Profile(int userId)
     {
         var user = _context.UserModels.FirstOrDefault(u => u.userId == userId);
@@ -226,7 +197,7 @@ public class HomeController : Controller
             return RedirectToAction("Index");
         }
         HttpContext.Session.SetString("Friends", "true");
-        return View(user); // Toon de profielpagina van de gebruiker
+        return View(user); 
     }
 
     [HttpPost]
@@ -234,32 +205,26 @@ public class HomeController : Controller
     {
         try
         {
-            // Haal de huidige ingelogde gebruiker op
-            // (Dit is een voorbeeldimplementatie - pas aan naar je authenticatiemethode)
             var userId = HttpContext.Session.GetInt32("userId");
             if (userId == null)
             {
                 return Json(new { success = false, message = "Gebruiker niet ingelogd" });
             }
 
-            // Haal de gebruiker op uit de database
             var user = _context.UserModels.Find(userId);
             if (user == null)
             {
                 return Json(new { success = false, message = "Gebruiker niet gevonden" });
             }
 
-            // Update de bio
             user.bio = bio;
 
-            // Sla de wijzigingen op in de database
             _context.SaveChanges();
 
             return Json(new { success = true });
         }
         catch (Exception ex)
         {
-            // Log de exception
             Console.WriteLine(ex.Message);
             return Json(new { success = false, message = ex.Message });
         }

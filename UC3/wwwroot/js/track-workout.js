@@ -32,15 +32,12 @@ function loadWorkouts() {
 }
 
 function createWorkoutItem(workout) {
-    // Formatteer de datum
     const date = new Date(workout.workoutDate);
     const formattedDate = date.toLocaleDateString('nl-NL');
 
-    // Maak het workout item element
     const workoutItem = document.createElement('div');
     workoutItem.className = 'workout-item';
 
-    // Bouw de basis workout info op
     let workoutHTML = `
         <div class="workout-title">
             <span class="workout-type">${workout.typeWorkout}</span>
@@ -48,7 +45,6 @@ function createWorkoutItem(workout) {
         </div>
     `;
 
-    // Voeg oefeningen toe als ze bestaan
     if (workout.exercises && workout.exercises.length > 0) {
         workoutHTML += `<div class="exercise-list">`;
         workout.exercises.forEach(exercise => {
@@ -62,7 +58,6 @@ function createWorkoutItem(workout) {
         workoutHTML += `</div>`;
     }
 
-    // Voeg opmerkingen toe als die bestaan
     if (workout.comments && workout.comments.trim() !== '') {
         workoutHTML += `
             <div class="comments-section">
@@ -72,7 +67,6 @@ function createWorkoutItem(workout) {
         `;
     }
 
-    // Voeg actieknoppen toe
     workoutHTML += `
         <div class="workout-actions">
         </div>
@@ -83,11 +77,9 @@ function createWorkoutItem(workout) {
 }
 
 function viewWorkoutDetails(workoutId) {
-    // Implementeer navigatie naar de details pagina
     window.location.href = `/Track/WorkoutDetails?id=${workoutId}`;
 }
 
 function editWorkout(workoutId) {
-    // Implementeer navigatie naar de bewerk pagina
     window.location.href = `/Track/EditWorkout?id=${workoutId}`;
 }

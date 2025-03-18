@@ -66,33 +66,7 @@ public class HomeControllerTests
         Assert.Equal("Account", redirectResult.ControllerName);
     }
 
-    [Fact]
-    public void Privacy_UserNotLoggedIn_RedirectsToLogin()
-    {
-        // Arrange
-        SetSessionString("IsLoggedIn", "false");
-
-        // Act
-        var result = _controller.Privacy();
-
-        // Assert
-        var redirectResult = Assert.IsType<RedirectToActionResult>(result);
-        Assert.Equal("Login", redirectResult.ActionName);
-        Assert.Equal("Account", redirectResult.ControllerName);
-    }
-
-    [Fact]
-    public void Privacy_UserLoggedIn_ReturnsView()
-    {
-        // Arrange
-        SetSessionString("IsLoggedIn", "true");
-
-        // Act
-        var result = _controller.Privacy();
-
-        // Assert
-        Assert.IsType<ViewResult>(result);
-    }
+   
 
     [Fact]
     public void Track_UserNotLoggedIn_RedirectsToLogin()

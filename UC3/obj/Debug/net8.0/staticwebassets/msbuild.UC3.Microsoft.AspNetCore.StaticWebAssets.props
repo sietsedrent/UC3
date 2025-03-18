@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>76wvb0nr3h</Fingerprint>
-      <Integrity>YTBdDVjXYr/b9s5B8U41jO3AgqYtetpry4AMZTNEtKM=</Integrity>
+      <Fingerprint>sw1nmawn9l</Fingerprint>
+      <Integrity>bGe147Z4OcgOzpcAN4XXnPplVbkDpDn58jEDLtDjdCQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</OriginalItemSpec>
@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qadh4burt6</Fingerprint>
-      <Integrity>bnLuepnNny6UzXuy0hLTOlecTa+lATicYaSrvQAqnqk=</Integrity>
+      <Fingerprint>ijw0tyy2d3</Fingerprint>
+      <Integrity>QrY4AgVI+9LwbHKD/D1C0acGf6cNT+W4Zt1mKW7N4Ps=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\track-workout.js'))</OriginalItemSpec>
@@ -84,8 +84,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>smx8uk0tn4</Fingerprint>
-      <Integrity>REoQezvU3K8aG9qOirpuYBh31rRWXU/UEPwTu63iVls=</Integrity>
+      <Fingerprint>rtrvea6k9o</Fingerprint>
+      <Integrity>YctH2cmFD4ub3H+54aFF33PBHs0TqvrMc0zfhxT7SuE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\workout-form.js'))</OriginalItemSpec>

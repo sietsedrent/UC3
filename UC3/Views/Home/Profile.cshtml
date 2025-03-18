@@ -4,7 +4,6 @@
 @{
     ViewData["Title"] = "Profile Page";
 
-    // Check if the current user is viewing their own profile
     bool isOwnProfile = HttpContextAccessor.HttpContext.Session.GetInt32("UserId") == Model.userId;
 }
 <div class="text-center">
@@ -40,7 +39,7 @@
                 </div>
             </div>
             <div id="weekCalendar" class="workout-week-view" data-user-id="@Model.userId" data-is-own-profile="@isOwnProfile.ToString().ToLower()">
-                <!-- Week calendar will be rendered here -->
+                <!-- Week calendar will  be  rendered here -->
             </div>
         </div>
     </div>

@@ -95,26 +95,22 @@ namespace UC3.Controllers
                     return View();
                 }
 
-                // Sla gebruiker gegevens op in de sessie
                 HttpContext.Session.SetInt32("userId", user.userId);
                 HttpContext.Session.SetString("email", user.email);
                 HttpContext.Session.SetString("name", user.name);
                 HttpContext.Session.SetString("password", user.password);
                 HttpContext.Session.SetString("profilepicture", user.profilepicture);
 
-                // Genereer 4-cijferige verificatiecode (tussen 1000-9999)
                 var authcode = r.Next(1000, 10000);
                 HttpContext.Session.SetInt32("randomNumber", authcode);
 
                 try
                 {
-                    // Stuur e-mail met verificatiecode
                     await SendVerificationEmail(user.email, authcode);
                     _toastNotification.AddSuccessToastMessage($"Verificatiecode is verstuurd naar {user.email}");
                 }
                 catch (Exception ex)
                 {
-                    // Als e-mail versturen mislukt, toon de code alsnog
                     _toastNotification.AddWarningToastMessage($"E-mail kon niet worden verstuurd. De verificatiecode is: {authcode}");
                 }
 
@@ -133,7 +129,6 @@ namespace UC3.Controllers
                 HttpContext.Session.SetString("IsLoggedIn", "true");
 
 
-                // Controleer verificatiecode
                 var currentVericode = HttpContext.Session.GetInt32("randomNumber");
                 var verrieverrie = HttpContext.Session.GetInt32("vericode");
                 if (verrieverrie == null || verrieverrie == 0)
@@ -151,7 +146,6 @@ namespace UC3.Controllers
             return View();
         }
 
-        // Methode om verificatie-email te versturen
         private async Task SendVerificationEmail(string toEmail, int verificationCode)
         {
             var emailSettings = _configuration.GetSection("EmailSettings");
@@ -191,7 +185,6 @@ namespace UC3.Controllers
             }
             catch (Exception ex)
             {
-                // Log de fout of gooi deze door
                 throw new Exception($"Fout bij het verzenden van e-mail: {ex.Message}", ex);
             }
         }

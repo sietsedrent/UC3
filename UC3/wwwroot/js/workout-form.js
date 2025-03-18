@@ -37,16 +37,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const newExerciseContainer = document.createElement('div');
         newExerciseContainer.className = 'exercise-container';
 
-        // Update exercise count
         exerciseCount++;
 
-        // Array van spiergroepen
         const muscleGroups = [
             "Borst", "Rug", "Schouders", "Biceps", "Triceps", "Benen", "Buik",
             "Kuiten", "Hamstrings", "Quadriceps", "Glutes", "Core", "Cardio", "Full Body"
         ];
 
-        // Maak de opties voor de dropdown
         let muscleGroupOptions = '<option value="">Selecteer spiergroep</option>';
         muscleGroups.forEach(group => {
             muscleGroupOptions += `<option value="${group}">${group}</option>`;
@@ -83,12 +80,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         exercisesContainer.appendChild(newExerciseContainer);
 
-        // Toon de verwijderknop voor de eerste oefening als er meer dan één oefening is
         if (exerciseCount > 1) {
             document.querySelector('.exercise-container .remove-exercise').style.display = 'block';
         }
 
-        // Voeg event listener toe aan de nieuwe verwijderknop
+        // event listener toe aan de nieuwe verwijderknop
         newExerciseContainer.querySelector('.remove-exercise').addEventListener('click', function () {
             newExerciseContainer.remove();
             exerciseCount--;
@@ -121,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        // Voorbereiden van de workout data voor zowel de modal als de server
         const workoutData = {
             typeWorkout: document.getElementById('typeWorkout').value,
             workoutDate: document.getElementById('workoutDate').value,
@@ -129,7 +124,6 @@ document.addEventListener('DOMContentLoaded', function () {
             exercises: []
         };
 
-        // Verzamel data van alle oefeningen
         const exerciseContainers = document.querySelectorAll('.exercise-container');
         exerciseContainers.forEach((container, index) => {
             const exerciseData = {
@@ -178,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
             `;
         });
 
-        // Voeg opmerkingen toe indien aanwezig
+        // Voeg opmerkingen toe als aanwezig
         if (workoutData.comments && workoutData.comments.trim() !== '') {
             summaryHTML += `
                 <div class="summary-footer">
@@ -209,7 +203,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Haal de workout data op
         const workoutData = JSON.parse(modal.dataset.workoutData);
 
-        // Stuur data naar de server
+        // Sturen data naar de serve r
         fetch('/Track/SaveWorkout', {
             method: 'POST',
             headers: {

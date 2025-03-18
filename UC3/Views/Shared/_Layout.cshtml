@@ -58,12 +58,11 @@
 
                             <section>
                                 <div class="div1">
-                                    <!-- Naam links -->
                                     <label id="name" class="name-label">
                                         @HttpContextAccessor.HttpContext.Session.GetString("name")
                                     </label>
 
-                                    <!-- Avatar + Knop in een container rechts -->
+                                    <!-- Avatar + Knop in container rechts -->
                                     <div class="profile-container">
                                         @if (HttpContextAccessor.HttpContext.Session.GetString("profilepicture") != null)
                                         {
@@ -74,7 +73,7 @@
                                             <img src="/ProfilePictures/default-avatar.png" alt="Avatar" class="avatar" />
                                         }
 
-                                        <!-- Form to upload new profile picture -->
+                                        <!-- Formulier to upload new profile picture -->
                                         <form method="post" asp-action="UpdateProfilePicture" asp-controller="Home" enctype="multipart/form-data">
                                             <input type="file" name="profilePicture" accept="image/*" class="form-control" required />
                                             <input type="submit" name="action" value="Change picture" class="btn btn-primary small-btn" />

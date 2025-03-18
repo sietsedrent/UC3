@@ -28,21 +28,18 @@ namespace UC3.Controllers
 
         public IActionResult NewWorkout()
         {
-            // Retourneer de view vanuit de Home-folder
             return View("~/Views/Home/NewWorkout.cshtml");
         }
 
         [HttpGet]
         public async Task<JsonResult> GetWorkouts()
         {
-            // Haal de gebruikers-id op uit de sessie
             var userId = HttpContext.Session.GetInt32("userId");
             if (userId == null)
             {
                 return Json(new { error = "Niet ingelogd" });
             }
 
-            // Gebruik de WorkoutService om workouts op te halen
             var workouts = await _workoutService.GetWorkoutsForUser(userId.Value);
             return Json(workouts);
         }
@@ -50,14 +47,12 @@ namespace UC3.Controllers
         [HttpGet]
         public async Task<JsonResult> GetWorkoutDetails(int id)
         {
-            // Haal de gebruikers-id op uit de sessie
             var userId = HttpContext.Session.GetInt32("userId");
             if (userId == null)
             {
                 return Json(new { error = "Niet ingelogd" });
             }
 
-            // Gebruik de WorkoutService om workout details op te halen
             var result = await _workoutService.GetWorkoutDetails(id, userId.Value);
 
             if (result == null)
@@ -71,14 +66,12 @@ namespace UC3.Controllers
         [HttpPost]
         public async Task<IActionResult> SaveWorkout([FromBody] WorkoutDTO workoutDTO)
         {
-            // Haal de gebruikers-id op uit de sessie
             var userId = HttpContext.Session.GetInt32("userId");
             if (userId == null)
             {
-                return Unauthorized(); // Of een andere gepaste actie
+                return Unauthorized(); 
             }
 
-            // Gebruik de WorkoutService om de workout op te slaan
             await _workoutService.SaveWorkout(workoutDTO, userId.Value);
 
             return RedirectToAction("Track", "Home");
