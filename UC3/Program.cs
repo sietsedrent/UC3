@@ -44,7 +44,7 @@ namespace UC3
 
 
 
-            // Configure HTTP pipeline.
+            // Configure HTTPpipeline.
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
