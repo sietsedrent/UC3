@@ -1,27 +1,27 @@
-﻿
-using UC3.Data;
+﻿using UC3.Data;
 using UC3.Models;
+using System;
+using System.Linq;
 
 namespace UC3.Business
 {
     public class AccountService
     {
-        private readonly WorkoutContext _context;
-        public AccountService(WorkoutContext context)
+        private readonly IWorkoutContext _context;
+
+        public AccountService(IWorkoutContext context)
         {
             _context = context;
         }
 
         public bool ValidLogin(string email, string password)
         {
-            
-
             bool emailAndPassword = _context.UserModels.Any(i => i.email == email && i.password == password);
-
             if (emailAndPassword)
             {
                 return true;
-            } else
+            }
+            else
             {
                 return false;
             }
@@ -41,7 +41,6 @@ namespace UC3.Business
                     profilepicture = "empty",
                     RegisteryDate = registerDate,
                     role = 1
-
                 };
                 _context.UserModels.Add(newUser);
                 _context.SaveChanges();
@@ -50,7 +49,6 @@ namespace UC3.Business
             {
                 return;
             }
-            
         }
     }
 }

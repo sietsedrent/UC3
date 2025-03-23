@@ -1,14 +1,18 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using UC3.Data;
 using UC3.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace UC3.Business
 {
     public class WorkoutService
     {
-        private readonly WorkoutContext _context;
+        private readonly IWorkoutContext _context;
 
-        public WorkoutService(WorkoutContext context)
+        public WorkoutService(IWorkoutContext context)
         {
             _context = context;
         }

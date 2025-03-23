@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Moq;
 using UC3.Business;
 using UC3.Models;
@@ -12,14 +13,14 @@ using System.Linq;
 public class AccountServiceTests
 {
     private readonly AccountService _service;
-    private readonly Mock<WorkoutContext> _mockContext;
+    private readonly Mock<IWorkoutContext> _mockContext;
 
     public AccountServiceTests()
     {
-        // Mock the WorkoutContext
-        _mockContext = new Mock<WorkoutContext>();
+        // Mock de interface in plaats van de concrete klasse
+        _mockContext = new Mock<IWorkoutContext>();
 
-        // Create the service with mocked context
+        // Maak de service met de gemockte context
         _service = new AccountService(_mockContext.Object);
     }
 
@@ -35,14 +36,15 @@ public class AccountServiceTests
             new User { userId = 1, email = email, password = password }
         }.AsQueryable();
 
-        var mockDbSet = new Mock<Microsoft.EntityFrameworkCore.DbSet<User>>();
+        var mockDbSet = new Mock<DbSet<User>>();
         mockDbSet.As<IQueryable<User>>().Setup(m => m.Provider).Returns(users.Provider);
         mockDbSet.As<IQueryable<User>>().Setup(m => m.Expression).Returns(users.Expression);
         mockDbSet.As<IQueryable<User>>().Setup(m => m.ElementType).Returns(users.ElementType);
         mockDbSet.As<IQueryable<User>>().Setup(m => m.GetEnumerator()).Returns(() => users.GetEnumerator());
 
-        mockDbSet.Setup(m => m.Any(It.IsAny<Func<User, bool>>()))
-            .Returns<Func<User, bool>>(predicate => users.Any(predicate));
+        // We verwijderen deze line omdat het een extension method is:
+        // mockDbSet.Setup(m => m.Any(It.IsAny<Func<User, bool>>()))
+        //    .Returns<Func<User, bool>>(predicate => users.Any(predicate));
 
         _mockContext.Setup(c => c.UserModels).Returns(mockDbSet.Object);
 
@@ -67,14 +69,15 @@ public class AccountServiceTests
             new User { userId = 1, email = validEmail, password = validPassword }
         }.AsQueryable();
 
-        var mockDbSet = new Mock<Microsoft.EntityFrameworkCore.DbSet<User>>();
+        var mockDbSet = new Mock<DbSet<User>>();
         mockDbSet.As<IQueryable<User>>().Setup(m => m.Provider).Returns(users.Provider);
         mockDbSet.As<IQueryable<User>>().Setup(m => m.Expression).Returns(users.Expression);
         mockDbSet.As<IQueryable<User>>().Setup(m => m.ElementType).Returns(users.ElementType);
         mockDbSet.As<IQueryable<User>>().Setup(m => m.GetEnumerator()).Returns(() => users.GetEnumerator());
 
-        mockDbSet.Setup(m => m.Any(It.IsAny<Func<User, bool>>()))
-            .Returns<Func<User, bool>>(predicate => users.Any(predicate));
+        // We verwijderen deze line omdat het een extension method is:
+        // mockDbSet.Setup(m => m.Any(It.IsAny<Func<User, bool>>()))
+        //    .Returns<Func<User, bool>>(predicate => users.Any(predicate));
 
         _mockContext.Setup(c => c.UserModels).Returns(mockDbSet.Object);
 
@@ -100,7 +103,7 @@ public class AccountServiceTests
         var users = new List<User>().AsQueryable();
         var usersCollection = new List<User>();
 
-        var mockDbSet = new Mock<Microsoft.EntityFrameworkCore.DbSet<User>>();
+        var mockDbSet = new Mock<DbSet<User>>();
         mockDbSet.As<IQueryable<User>>().Setup(m => m.Provider).Returns(users.Provider);
         mockDbSet.As<IQueryable<User>>().Setup(m => m.Expression).Returns(users.Expression);
         mockDbSet.As<IQueryable<User>>().Setup(m => m.ElementType).Returns(users.ElementType);
@@ -139,7 +142,7 @@ public class AccountServiceTests
 
         var usersCollection = new List<User>(users);
 
-        var mockDbSet = new Mock<Microsoft.EntityFrameworkCore.DbSet<User>>();
+        var mockDbSet = new Mock<DbSet<User>>();
         mockDbSet.As<IQueryable<User>>().Setup(m => m.Provider).Returns(users.Provider);
         mockDbSet.As<IQueryable<User>>().Setup(m => m.Expression).Returns(users.Expression);
         mockDbSet.As<IQueryable<User>>().Setup(m => m.ElementType).Returns(users.ElementType);

@@ -3,7 +3,7 @@ using UC3.Models;
 
 namespace UC3.Data
 {
-    public class WorkoutContext : DbContext
+    public class WorkoutContext : DbContext, IWorkoutContext
     {
         public WorkoutContext(DbContextOptions<WorkoutContext> options) : base(options) { }
 
@@ -11,11 +11,11 @@ namespace UC3.Data
         {
             // Empty constructor voor mock
         }
+
         public DbSet<Exercise> ExerciseModels { get; set; }
         public DbSet<TrainingData> TrainingDataModels { get; set; }
         public DbSet<Workout> WorkoutModels { get; set; }
         public DbSet<User> UserModels { get; set; }
-
         public DbSet<WorkoutPlanning> WorkoutPlanningModels { get; set; }
     }
 }

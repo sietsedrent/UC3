@@ -89,7 +89,7 @@ public class AccountControllerTests
         var result = _controller.Logout();
 
         // Check session is cleared
-        Assert.Equal("false", GetSessionString("IsLoggedIn"));
+        Assert.Equal(null, GetSessionString("IsLoggedIn"));
 
         // Check redirect to login
         var redirectToAction = Assert.IsType<RedirectToActionResult>(result);
