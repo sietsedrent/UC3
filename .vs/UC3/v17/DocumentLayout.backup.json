@@ -11,6 +11,18 @@
       "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\business\\workoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D9A8B217-EF8D-4D21-AD1F-C5BBCDDB0A7A}|Tests\\Tests.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\tests\\trackcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9A8B217-EF8D-4D21-AD1F-C5BBCDDB0A7A}|Tests\\Tests.csproj|solutionrelative:tests\\trackcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\controllers\\trackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\controllers\\trackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A8B217-EF8D-4D21-AD1F-C5BBCDDB0A7A}|Tests\\Tests.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\tests\\accountcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9A8B217-EF8D-4D21-AD1F-C5BBCDDB0A7A}|Tests\\Tests.csproj|solutionrelative:tests\\accountcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\data\\iworkoutcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\data\\iworkoutcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\data\\workoutcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|solutionrelative:uc3\\data\\workoutcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9A8B217-EF8D-4D21-AD1F-C5BBCDDB0A7A}|Tests\\Tests.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\tests\\accountcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9A8B217-EF8D-4D21-AD1F-C5BBCDDB0A7A}|Tests\\Tests.csproj|solutionrelative:tests\\accountcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B70943AD-6BC0-43F1-BE18-A46AE976C4D9}|UC3\\UC3.csproj|c:\\xampp 3\\htdocs\\nerdy\\uc3\\uc3\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -98,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "NewWorkout.cshtml",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Home\\NewWorkout.cshtml",
               "RelativeDocumentMoniker": "UC3\\Views\\Home\\NewWorkout.cshtml",
@@ -111,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "UC3\\Views\\Home\\Index.cshtml",
@@ -124,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Track.cshtml",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Views\\Home\\Track.cshtml",
               "RelativeDocumentMoniker": "UC3\\Views\\Home\\Track.cshtml",
@@ -137,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "UC3\\Controllers\\AccountController.cs",
@@ -150,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\appsettings.json",
               "RelativeDocumentMoniker": "UC3\\appsettings.json",
@@ -163,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Program.cs",
               "RelativeDocumentMoniker": "UC3\\Program.cs",
@@ -178,17 +186,43 @@
         },
         {
           "DockedWidth": 205,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TrackControllerTests.cs",
+              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\Tests\\TrackControllerTests.cs",
+              "RelativeDocumentMoniker": "Tests\\TrackControllerTests.cs",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\Tests\\TrackControllerTests.cs",
+              "RelativeToolTip": "Tests\\TrackControllerTests.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAD4v20AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T16:22:13.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TrackController.cs",
+              "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Controllers\\TrackController.cs",
+              "RelativeDocumentMoniker": "UC3\\Controllers\\TrackController.cs",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Controllers\\TrackController.cs",
+              "RelativeToolTip": "UC3\\Controllers\\TrackController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAIwEsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T16:22:23.865Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "WorkoutServiceTests.cs",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\Tests\\WorkoutServiceTests.cs",
               "RelativeDocumentMoniker": "Tests\\WorkoutServiceTests.cs",
-              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\Tests\\WorkoutServiceTests.cs*",
-              "RelativeToolTip": "Tests\\WorkoutServiceTests.cs*",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAkwOMAAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\Tests\\WorkoutServiceTests.cs",
+              "RelativeToolTip": "Tests\\WorkoutServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAO0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-23T16:02:29.841Z",
               "EditorCaption": ""
@@ -201,14 +235,14 @@
               "RelativeDocumentMoniker": "UC3\\Business\\WorkoutService.cs",
               "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Business\\WorkoutService.cs",
               "RelativeToolTip": "UC3\\Business\\WorkoutService.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAswKkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAAKkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-23T16:02:47.118Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "AccountService.cs",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Business\\AccountService.cs",
               "RelativeDocumentMoniker": "UC3\\Business\\AccountService.cs",
@@ -221,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "AccountServiceTests.cs",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\Tests\\AccountServiceTests.cs",
               "RelativeDocumentMoniker": "Tests\\AccountServiceTests.cs",
@@ -234,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "HomeService.cs",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Business\\HomeService.cs",
               "RelativeDocumentMoniker": "UC3\\Business\\HomeService.cs",
@@ -247,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "WorkoutContext.cs",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Data\\WorkoutContext.cs",
               "RelativeDocumentMoniker": "UC3\\Data\\WorkoutContext.cs",
@@ -260,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "IWorkoutContext.cs",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\Data\\IWorkoutContext.cs",
               "RelativeDocumentMoniker": "UC3\\Data\\IWorkoutContext.cs",
@@ -273,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "HomeServiceTests.cs",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\Tests\\HomeServiceTests.cs",
               "RelativeDocumentMoniker": "Tests\\HomeServiceTests.cs",
@@ -286,13 +320,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "AccountControllerTests.cs",
               "DocumentMoniker": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\Tests\\AccountControllerTests.cs",
               "RelativeDocumentMoniker": "Tests\\AccountControllerTests.cs",
               "ToolTip": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\Tests\\AccountControllerTests.cs",
               "RelativeToolTip": "Tests\\AccountControllerTests.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAkwFcAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAYwEIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-23T15:47:35.607Z",
               "EditorCaption": ""

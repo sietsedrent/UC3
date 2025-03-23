@@ -9,6 +9,7 @@ using UC3.Data;
 using Xunit;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 
 public class TrackControllerTests
 {
@@ -67,13 +68,89 @@ public class TrackControllerTests
     public async Task GetWorkouts_UserNotLoggedIn_ReturnsError()
     {
         // Act
-        var result = await _controller.GetWorkouts() as JsonResult;
+        var result = await _controller.GetWorkouts();
 
         // Assert
-        Assert.IsType<JsonResult>(result);
-        dynamic data = result.Value;
-        Assert.Equal("Niet ingelogd", data.error);
+        var jsonResult = Assert.IsType<JsonResult>(result);
+        var resultJson = JsonSerializer.Serialize(jsonResult.Value);
+        var resultData = JsonSerializer.Deserialize<Dictionary<string, string>>(resultJson);
+        Assert.Equal("Niet ingelogd", resultData["error"]);
     }
+
+    
+
+    [Fact]
+    public async Task GetWorkoutDetails_UserNotLoggedIn_ReturnsError()
+    {
+        // Act
+        var result = await _controller.GetWorkoutDetails(1);
+
+        // Assert
+        var jsonResult = Assert.IsType<JsonResult>(result);
+        var resultJson = JsonSerializer.Serialize(jsonResult.Value);
+        var resultData = JsonSerializer.Deserialize<Dictionary<string, string>>(resultJson);
+        Assert.Equal("Niet ingelogd", resultData["error"]);
+    }
+
+   
+
+    [Fact]
+    public async Task SaveWorkout_UserNotLoggedIn_ReturnsUnauthorized()
+    {
+        // Arrange
+        var workoutDTO = new WorkoutDTO();
+
+        // Act
+        var result = await _controller.SaveWorkout(workoutDTO);
+
+        // Assert
+        Assert.IsType<UnauthorizedResult>(result);
+    }
+
+  
+
+    [Fact]
+    public void ControllerConstructor_InitializesFields()
+    {
+        // Arrange & Act
+        var context = new Mock<WorkoutContext>().Object;
+        var service = new Mock<WorkoutService>(context).Object;
+        var controller = new TrackController(context, service);
+
+        // Assert
+        Assert.NotNull(controller);
+    }
+
+    [Fact]
+    public void ControllerContext_IsInitialized()
+    {
+        // Assert
+        Assert.NotNull(_controller.ControllerContext);
+        Assert.NotNull(_controller.ControllerContext.HttpContext);
+        Assert.NotNull(_controller.ControllerContext.HttpContext.Session);
+    }
+
+    [Fact]
+    public void SessionHelperMethods_WorkCorrectly()
+    {
+        // Arrange
+        string testKey = "testKey";
+        string testValue = "testValue";
+        int testIntValue = 42;
+
+        // Act
+        SetSessionString(testKey, testValue);
+        string retrievedValue = GetSessionString(testKey);
+
+        SetSessionInt32("intKey", testIntValue);
+
+        // Assert
+        Assert.Equal(testValue, retrievedValue);
+        Assert.True(_sessionData.ContainsKey("intKey"));
+    }
+
+
+
 
     // Helper methods for session
     private void SetSessionString(string key, string value)
