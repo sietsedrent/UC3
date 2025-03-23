@@ -10,7 +10,7 @@ function validateForm() {
         field.classList.remove('is-invalid');
     });
 
-    // Controleer elk verplicht veld
+    //Controleer elk verplicht veld
     requiredFields.forEach(field => {
         if (!field.value.trim()) {
             field.classList.add('is-invalid');
@@ -18,7 +18,7 @@ function validateForm() {
         }
     });
 
-    // Controleer of gewichten geldig zijn (geen negatieve waarden)
+    //Controleer of gewichten geldig zijn (geen negatieve waarden
     const weightFields = document.querySelectorAll('[id^="liftedWeight-"]');
     weightFields.forEach(field => {
         if (parseFloat(field.value) < 0) {
@@ -30,7 +30,7 @@ function validateForm() {
     return isValid;
 }
 
-// Voegt een nieuwe oefening toe
+//Voeg een nieuwe oefening toe
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('add-exercise').addEventListener('click', function () {
         const exercisesContainer = document.getElementById('exercises-container');

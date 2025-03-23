@@ -7,6 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Areas\**" />
+    <Compile Remove="NewFolder\**" />
+    <Content Remove="Areas\**" />
+    <Content Remove="NewFolder\**" />
+    <EmbeddedResource Remove="Areas\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <None Remove="Areas\**" />
+    <None Remove="NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="Views\Account\Create.cshtml" />
     <Content Remove="Views\Account\Delete.cshtml" />
     <Content Remove="Views\Account\Details.cshtml" />
@@ -27,11 +38,6 @@
     <PackageReference Include="NToastNotify" Version="8.0.0" />
     <PackageReference Include="System.Data.SQLite.Linq" Version="1.0.119" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.*" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Areas\Identity\Pages\Account\" />
-    <Folder Include="NewFolder\" />
   </ItemGroup>
 
 </Project>

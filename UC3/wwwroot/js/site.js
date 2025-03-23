@@ -8,7 +8,9 @@
 }
 
 // Calendar functionality
+//code wordt pas uitgevoerd als pagina is geladen (jquery)
 $(document).ready(function () {
+    //check of t de profilepage is
     const isProfilePage = window.location.pathname.includes('/Profile');
 
     if (isProfilePage) {
@@ -20,6 +22,7 @@ $(document).ready(function () {
         const userId = parseInt($('#weekCalendar').data('user-id') || 0);
         loadWorkoutPlannings(userId, true);
 
+        //anonieneme functie jquery
         $("#changeBioBtn").click(function () {
             $("#bioViewContent").hide();
             $("#bioEditContent").show();
@@ -33,6 +36,7 @@ $(document).ready(function () {
         $("#saveBioBtn").click(function () {
             const newBio = $("#bioTextarea").val();
 
+            //Stuurt de nieuwe bio naar de server zonder de pagina te verversen en verwerkt de reactie., ajax aanroep
             $.ajax({
                 url: '/Home/UpdateBio',
                 type: 'POST',
@@ -120,11 +124,12 @@ function renderSimpleWeekView(userId, isEditable, workoutDays) {
     $('#weekCalendar').html(weekView);
 
     if (isEditable) {
+        //duidelijkste realtime code
         $(document).on('click', '.day-circle.cursor-pointer', function () {
             const dayIndex = $(this).data('day-index');
             const hasWorkout = !$(this).hasClass('has-workout');
-            $(this).toggleClass('has-workout');
-
+            $(this).toggleClass('has-workout'); //dit zorgt voor directe visuele feedback voor de realtime impl. (KalenderUI wordt gelijk bijgewerkt en daarna wordt wijziging pas naar server gestuurd)
+            //dus zonder paginaverversing wordt t al getoond
             $.ajax({
                 url: '/Home/UpdateWorkoutPlanning',
                 type: 'POST',
