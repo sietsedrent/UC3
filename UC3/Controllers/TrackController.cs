@@ -38,8 +38,6 @@ namespace UC3.Controllers
             return Json(workouts);
         }
 
-
-
         [HttpGet]
         public async Task<JsonResult> GetWorkoutDetails(int id)
         {

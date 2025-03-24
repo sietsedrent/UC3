@@ -38,8 +38,6 @@ public class AccountControllerTests
             configuration
         );
 
-
-
         // Create a simple session
         _sessionData = new Dictionary<string, byte[]>();
         var session = new TestSession(_sessionData);
@@ -64,6 +62,14 @@ public class AccountControllerTests
     {
         var result = await _controller.Login(null, "password", 1234, "Send verification");
         Assert.IsType<NotFoundResult>(result);
+    }
+
+    [Fact]
+    public async Task Login_Post_UserNotFound_ReturnsViewWithError()
+    {
+        var result = await _controller.Login("test@example.com", "password", 1234, "Send verification");
+        var viewResult = Assert.IsType<ViewResult>(result);
+        Assert.True(viewResult.ViewData.ModelState.ContainsKey(""));
     }
 
     [Fact]
