@@ -17,6 +17,7 @@ namespace UC3
             builder.Services.AddScoped<AccountService>();
             builder.Services.AddScoped<HomeService>();
             builder.Services.AddScoped<WorkoutService>();
+            builder.Services.AddScoped<IWorkoutContext, WorkoutContext>();
 
             builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
