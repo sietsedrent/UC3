@@ -9,7 +9,7 @@ namespace UC3.Data
 
         public WorkoutContext() : base(new DbContextOptionsBuilder<WorkoutContext>().Options)
         {
-            //Empty constructor voor mock
+            // Empty constructor voor mock
         }
 
         public DbSet<Exercise> ExerciseModels { get; set; }

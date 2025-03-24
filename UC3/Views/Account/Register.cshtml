@@ -50,22 +50,33 @@
             $('#password-field').on('keyup blur', function() {
                 var password = $(this).val();
 
-                //oon wachtwoordvereisten alleen als wachtwoord is ingevuld en niet aan eisen voldoet
+                // Toon wachtwoordvereisten alleen als wachtwoord is ingevuld en niet aan eisen voldoet
                 if (password.length > 0) {
                     var isValid = true;
 
+                    // Controleer minimale lengte
                     if (password.length < 8) isValid = false;
+
+                    // Controleer kleine letter
                     if (!/[a-z]/.test(password)) isValid = false;
+
+                    // Controleer hoofdletter
                     if (!/[A-Z]/.test(password)) isValid = false;
+
+                    // Controleer cijfer
                     if (!/[0-9]/.test(password)) isValid = false;
+
+                    // Controleer speciaal teken
                     if (!/[^a-zA-Z0-9]/.test(password)) isValid = false;
 
+                    // Toon of verberg requirements
                     if (isValid) {
                         $('#password-requirements').hide();
                     } else {
                         $('#password-requirements').show();
                     }
                 } else {
+                    // Als wachtwoord leeg is, verberg requirements
                     $('#password-requirements').hide();
                 }
             });
