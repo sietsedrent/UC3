@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fMsvZFlJLhhehpoRoUmYdCC9AmHCJ8QUr41syEJ8xYo=",
+  "Hash": "qmJDyZNofsVERPO5Q+IVifBjzw/8mQz8dd72VAV1gAw=",
   "Source": "UC3",
   "BasePath": "_content/UC3",
   "Mode": "Default",
@@ -1445,6 +1445,27 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\bio-editor.js",
+      "SourceId": "UC3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\",
+      "BasePath": "_content/UC3",
+      "RelativePath": "js/bio-editor#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s70tpfoxf6",
+      "Integrity": "qEQ0xhY5vPra4wHwW3iHRLCuiHICRoAN+OU2HazzbS4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bio-editor.js"
+    },
+    {
       "Identity": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\site.js",
       "SourceId": "UC3",
       "SourceType": "Discovered",
@@ -1459,8 +1480,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "lfiqtaz6vp",
-      "Integrity": "L8tzddY74D2M4ovn2jGASv6GcFT3+oXCkg+8zFEpCPg=",
+      "Fingerprint": "lct0jldvqv",
+      "Integrity": "a3Tl7ghjX9ev8S4Z/WrH/PifB+dPt8xB1Z1R7HQ93hY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -5375,6 +5396,88 @@
       ]
     },
     {
+      "Route": "js/bio-editor.js",
+      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\bio-editor.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6680"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qEQ0xhY5vPra4wHwW3iHRLCuiHICRoAN+OU2HazzbS4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 07 Apr 2025 21:44:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qEQ0xhY5vPra4wHwW3iHRLCuiHICRoAN+OU2HazzbS4="
+        }
+      ]
+    },
+    {
+      "Route": "js/bio-editor.s70tpfoxf6.js",
+      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\bio-editor.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6680"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qEQ0xhY5vPra4wHwW3iHRLCuiHICRoAN+OU2HazzbS4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 07 Apr 2025 21:44:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s70tpfoxf6"
+        },
+        {
+          "Name": "label",
+          "Value": "js/bio-editor.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qEQ0xhY5vPra4wHwW3iHRLCuiHICRoAN+OU2HazzbS4="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\site.js",
       "Selectors": [],
@@ -5385,7 +5488,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5685"
+          "Value": "6918"
         },
         {
           "Name": "Content-Type",
@@ -5393,11 +5496,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"L8tzddY74D2M4ovn2jGASv6GcFT3+oXCkg+8zFEpCPg=\""
+          "Value": "\"a3Tl7ghjX9ev8S4Z/WrH/PifB+dPt8xB1Z1R7HQ93hY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 07 Apr 2025 21:31:45 GMT"
+          "Value": "Mon, 07 Apr 2025 21:41:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5407,12 +5510,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-L8tzddY74D2M4ovn2jGASv6GcFT3+oXCkg+8zFEpCPg="
+          "Value": "sha256-a3Tl7ghjX9ev8S4Z/WrH/PifB+dPt8xB1Z1R7HQ93hY="
         }
       ]
     },
     {
-      "Route": "js/site.lfiqtaz6vp.js",
+      "Route": "js/site.lct0jldvqv.js",
       "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5422,7 +5525,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5685"
+          "Value": "6918"
         },
         {
           "Name": "Content-Type",
@@ -5430,11 +5533,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"L8tzddY74D2M4ovn2jGASv6GcFT3+oXCkg+8zFEpCPg=\""
+          "Value": "\"a3Tl7ghjX9ev8S4Z/WrH/PifB+dPt8xB1Z1R7HQ93hY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 07 Apr 2025 21:31:45 GMT"
+          "Value": "Mon, 07 Apr 2025 21:41:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5444,7 +5547,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lfiqtaz6vp"
+          "Value": "lct0jldvqv"
         },
         {
           "Name": "label",
@@ -5452,7 +5555,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-L8tzddY74D2M4ovn2jGASv6GcFT3+oXCkg+8zFEpCPg="
+          "Value": "sha256-a3Tl7ghjX9ev8S4Z/WrH/PifB+dPt8xB1Z1R7HQ93hY="
         }
       ]
     },

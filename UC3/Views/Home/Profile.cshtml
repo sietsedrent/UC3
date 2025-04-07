@@ -9,7 +9,6 @@
     int? userRole = HttpContextAccessor.HttpContext.Session.GetInt32("role");
     bool isAdmin = userRole.HasValue && userRole.Value == 0;
 }
-
 <div class="text-center">
     <div class="parent">
         <div class="div2">
@@ -20,7 +19,7 @@
             </form>
         </div>
         <div class="div3">
-            
+
 
             <div class="profile-header">
                 <div class="profile-container">

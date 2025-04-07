@@ -3363,6 +3363,88 @@
       ]
     },
     {
+      "Route": "js/bio-editor.js",
+      "AssetFile": "js/bio-editor.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6680"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qEQ0xhY5vPra4wHwW3iHRLCuiHICRoAN+OU2HazzbS4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 07 Apr 2025 21:44:00 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qEQ0xhY5vPra4wHwW3iHRLCuiHICRoAN+OU2HazzbS4="
+        }
+      ]
+    },
+    {
+      "Route": "js/bio-editor.s70tpfoxf6.js",
+      "AssetFile": "js/bio-editor.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6680"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qEQ0xhY5vPra4wHwW3iHRLCuiHICRoAN+OU2HazzbS4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 07 Apr 2025 21:44:00 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s70tpfoxf6"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qEQ0xhY5vPra4wHwW3iHRLCuiHICRoAN+OU2HazzbS4="
+        },
+        {
+          "Name": "label",
+          "Value": "js/bio-editor.js"
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "js/site.js",
       "Selectors": [],
@@ -3377,7 +3459,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5685"
+          "Value": "6918"
         },
         {
           "Name": "Content-Type",
@@ -3385,22 +3467,22 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"L8tzddY74D2M4ovn2jGASv6GcFT3+oXCkg+8zFEpCPg=\""
+          "Value": "\"a3Tl7ghjX9ev8S4Z/WrH/PifB+dPt8xB1Z1R7HQ93hY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 07 Apr 2025 21:31:45 GMT"
+          "Value": "Mon, 07 Apr 2025 21:41:12 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-L8tzddY74D2M4ovn2jGASv6GcFT3+oXCkg+8zFEpCPg="
+          "Value": "sha256-a3Tl7ghjX9ev8S4Z/WrH/PifB+dPt8xB1Z1R7HQ93hY="
         }
       ]
     },
     {
-      "Route": "js/site.lfiqtaz6vp.js",
+      "Route": "js/site.lct0jldvqv.js",
       "AssetFile": "js/site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3414,7 +3496,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5685"
+          "Value": "6918"
         },
         {
           "Name": "Content-Type",
@@ -3422,21 +3504,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"L8tzddY74D2M4ovn2jGASv6GcFT3+oXCkg+8zFEpCPg=\""
+          "Value": "\"a3Tl7ghjX9ev8S4Z/WrH/PifB+dPt8xB1Z1R7HQ93hY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 07 Apr 2025 21:31:45 GMT"
+          "Value": "Mon, 07 Apr 2025 21:41:12 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lfiqtaz6vp"
+          "Value": "lct0jldvqv"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-L8tzddY74D2M4ovn2jGASv6GcFT3+oXCkg+8zFEpCPg="
+          "Value": "sha256-a3Tl7ghjX9ev8S4Z/WrH/PifB+dPt8xB1Z1R7HQ93hY="
         },
         {
           "Name": "label",

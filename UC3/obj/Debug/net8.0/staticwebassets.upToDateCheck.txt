@@ -2,6 +2,7 @@ C:\Users\siets\.nuget\packages\ntoastnotify\8.0.0\contentFiles\any\net6.0\wwwroo
 C:\Users\siets\.nuget\packages\ntoastnotify\8.0.0\contentFiles\any\net6.0\wwwroot\toastr.js
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\js\bio-editor.js
 wwwroot\js\site.js
 wwwroot\js\track-workout.js
 wwwroot\js\workout-form.js

@@ -15,29 +15,19 @@
         </div>
         <div class="div3">
             <br />
-            <div class="bio">
-                <div class="bio-header">
-                    <p>Bio</p>
-                    <button type="button" id="changeBioBtn" class="btn btn-primary bio-btn">Change Bio</button>
-                </div>
-                <div class="bio-content" id="bioViewContent">
-                    <p>Bio: @Model.bio</p>
-                </div>
-                <div class="bio-edit" id="bioEditContent" style="display: none;">
-                    <textarea id="bioTextarea" class="form-control" rows="5">@Model.bio</textarea>
-                    <div class="bio-edit-actions">
-                        <button type="button" id="saveBioBtn" class="btn btn-success mt-2">Save</button>
-                        <button type="button" id="cancelBioBtn" class="btn btn-secondary mt-2 ml-2">Cancel</button>
-                    </div>
-                </div>
-            </div>
+            <!-- Gebruik de bio-editor webcomponent in plaats van de hardcoded HTML -->
+            <bio-editor bio-text="@Model.bio"></bio-editor>
+
+            <!-- De rest van de pagina blijft hetzelfde -->
             <div id="weekCalendar" class="workout-week-view" data-user-id="@HttpContextAccessor.HttpContext.Session.GetInt32("userId")">
-                <!-- Week calendar will b e rendered here -->
+                <!-- Week calendar will be rendered here -->
             </div>
         </div>
     </div>
 </div>
 
 @section Scripts {
-    <script src="~/js/calendar.js" asp-append-version="true"></script>
+    <!-- Voeg het script toe voor de bio-editor webcomponent -->
+    <script src="~/js/bio-editor.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
 }
