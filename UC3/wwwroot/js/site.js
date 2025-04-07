@@ -12,31 +12,29 @@
 $(document).ready(function () {
     //check of t de profilepage is
     const isProfilePage = window.location.pathname.includes('/Profile');
-
     if (isProfilePage) {
         const profileUserId = parseInt($('#weekCalendar').data('user-id') || 0);
         const isOwnProfile = $('#weekCalendar').data('is-own-profile') === "true";
+
+        // Nieuwe toevoeging: laad workout planningen met de correcte isEditable flag
+        loadWorkoutPlannings(profileUserId, isOwnProfile);
 
         setupSignalR(profileUserId); // SignalR setup toevoegen
     } else {
         const userId = parseInt($('#weekCalendar').data('user-id') || 0);
         loadWorkoutPlannings(userId, true);
         setupSignalR(userId); // SignalR setup toevoegen
-
         //anonieneme functie jquery
         $("#changeBioBtn").click(function () {
             $("#bioViewContent").hide();
             $("#bioEditContent").show();
         });
-
         $("#cancelBioBtn").click(function () {
             $("#bioEditContent").hide();
             $("#bioViewContent").show();
         });
-
         $("#saveBioBtn").click(function () {
             const newBio = $("#bioTextarea").val();
-
             //Stuurt de nieuwe bio naar de server zonder de pagina te verversen en verwerkt de reactie., ajax aanroep
             $.ajax({
                 url: '/Home/UpdateBio',
