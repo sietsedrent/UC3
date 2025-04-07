@@ -5,6 +5,7 @@ using UC3.Models;
 using UC3.Business;
 using Microsoft.EntityFrameworkCore;
 using NToastNotify;
+using Microsoft.AspNetCore.SignalR;
 
 namespace UC3.Controllers;
 
@@ -15,16 +16,18 @@ public class HomeController : Controller
     private readonly HomeService _homeService;
     private readonly IHttpContextAccessor _httpContextAccessor;
     private readonly IToastNotification _toastNotification;
+    private readonly IHubContext<WorkoutHub> _hubContext;
 
 
 
-    public HomeController(ILogger<HomeController> logger, WorkoutContext context, HomeService homeService, IHttpContextAccessor httpContextAccessor, IToastNotification itoastnotification)
+    public HomeController(ILogger<HomeController> logger, WorkoutContext context, HomeService homeService, IHttpContextAccessor httpContextAccessor, IToastNotification itoastnotification, IHubContext<WorkoutHub> hubContext)
     {
         _logger = logger;
         _context = context;
         _homeService = homeService;
         _httpContextAccessor = httpContextAccessor;
         _toastNotification = itoastnotification;
+        _hubContext = hubContext;
     }
 
     public IActionResult Index()
@@ -124,6 +127,9 @@ public class HomeController : Controller
                 await _context.SaveChangesAsync();
             }
         }
+
+        // Stuur een SignalR bericht naar alle clients
+        await _hubContext.Clients.All.SendAsync("ReceiveWorkoutUpdate", userId.Value, dayIndex, hasWorkout);
 
         return Json(new { success = true });
     }

@@ -17,10 +17,11 @@ $(document).ready(function () {
         const profileUserId = parseInt($('#weekCalendar').data('user-id') || 0);
         const isOwnProfile = $('#weekCalendar').data('is-own-profile') === "true";
 
-        loadWorkoutPlannings(profileUserId, isOwnProfile);
+        setupSignalR(profileUserId); // SignalR setup toevoegen
     } else {
         const userId = parseInt($('#weekCalendar').data('user-id') || 0);
         loadWorkoutPlannings(userId, true);
+        setupSignalR(userId); // SignalR setup toevoegen
 
         //anonieneme functie jquery
         $("#changeBioBtn").click(function () {
@@ -58,6 +59,39 @@ $(document).ready(function () {
     }
 });
 
+// Voeg deze nieuwe functie toe om SignalR te configureren
+function setupSignalR(currentUserId) {
+    // Maak verbinding met de SignalR hub
+    const connection = new signalR.HubConnectionBuilder()
+        .withUrl("/workoutHub")
+        .withAutomaticReconnect()
+        .build();
+
+    // Start de verbinding
+    connection.start().then(function () {
+        console.log("SignalR verbinding succesvol");
+    }).catch(function (err) {
+        console.error("SignalR verbindingsfout: " + err);
+    });
+
+    // Luister naar workout updates
+    connection.on("ReceiveWorkoutUpdate", function (userId, dayIndex, hasWorkout) {
+        // Controleer of de update betrekking heeft op de gebruiker die we bekijken
+        if (userId === currentUserId) {
+            updateWorkoutDayUI(dayIndex, hasWorkout);
+        }
+    });
+}
+// Functie om de UI bij te werken zonder pagina te verversen
+function updateWorkoutDayUI(dayIndex, hasWorkout) {
+    const dayCircle = $(`.day-circle[data-day-index="${dayIndex}"]`);
+    if (hasWorkout) {
+        dayCircle.addClass('has-workout');
+    } else {
+        dayCircle.removeClass('has-workout');
+    }
+}
+
 function loadWorkoutPlannings(userId, isEditable) {
     $.ajax({
         url: '/Home/GetWorkoutPlannings',
@@ -72,6 +106,9 @@ function loadWorkoutPlannings(userId, isEditable) {
         }
     });
 }
+
+
+
 function renderSimpleWeekView(userId, isEditable, workoutDays) {
     const now = new Date();
     const currentDay = now.getDay();
@@ -128,8 +165,11 @@ function renderSimpleWeekView(userId, isEditable, workoutDays) {
         $(document).on('click', '.day-circle.cursor-pointer', function () {
             const dayIndex = $(this).data('day-index');
             const hasWorkout = !$(this).hasClass('has-workout');
-            $(this).toggleClass('has-workout'); //dit zorgt voor directe visuele feedback voor de realtime impl. (KalenderUI wordt gelijk bijgewerkt en daarna wordt wijziging pas naar server gestuurd)
-            //dus zonder paginaverversing wordt t al getoond
+
+            // Don't update UI immediately anymore
+            // The update will come through SignalR
+            // $(this).toggleClass('has-workout'); <- Remove this line
+
             $.ajax({
                 url: '/Home/UpdateWorkoutPlanning',
                 type: 'POST',
@@ -138,6 +178,7 @@ function renderSimpleWeekView(userId, isEditable, workoutDays) {
                     if (!response.success) {
                         console.error('Fout bij opslaan van workout planning');
                     }
+                    // No need to update UI here, will be handled by SignalR
                 },
                 error: function () {
                     console.error('Fout bij opslaan van workout planning');

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SaZEFe95deAx5K9DTBr0YOIyDcdXvx6/fnXyZEmDLKc=",
+  "Hash": "fMsvZFlJLhhehpoRoUmYdCC9AmHCJ8QUr41syEJ8xYo=",
   "Source": "UC3",
   "BasePath": "_content/UC3",
   "Mode": "Default",
@@ -1459,8 +1459,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xxjf8v5n25",
-      "Integrity": "S/nE3vt72YPQugODjT9/lkOCc81o38+ChfD5OaziAh4=",
+      "Fingerprint": "lfiqtaz6vp",
+      "Integrity": "L8tzddY74D2M4ovn2jGASv6GcFT3+oXCkg+8zFEpCPg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -1501,8 +1501,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "rtrvea6k9o",
-      "Integrity": "YctH2cmFD4ub3H+54aFF33PBHs0TqvrMc0zfhxT7SuE=",
+      "Fingerprint": "b7q1l5s87s",
+      "Integrity": "52OvZAdi02JaZjZlB5JIYLKO9tmujWglERk99DTj6bg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\workout-form.js"
@@ -5385,7 +5385,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5182"
+          "Value": "5685"
         },
         {
           "Name": "Content-Type",
@@ -5393,11 +5393,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"S/nE3vt72YPQugODjT9/lkOCc81o38+ChfD5OaziAh4=\""
+          "Value": "\"L8tzddY74D2M4ovn2jGASv6GcFT3+oXCkg+8zFEpCPg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 18:53:02 GMT"
+          "Value": "Mon, 07 Apr 2025 21:31:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5407,12 +5407,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-S/nE3vt72YPQugODjT9/lkOCc81o38+ChfD5OaziAh4="
+          "Value": "sha256-L8tzddY74D2M4ovn2jGASv6GcFT3+oXCkg+8zFEpCPg="
         }
       ]
     },
     {
-      "Route": "js/site.xxjf8v5n25.js",
+      "Route": "js/site.lfiqtaz6vp.js",
       "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5422,7 +5422,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5182"
+          "Value": "5685"
         },
         {
           "Name": "Content-Type",
@@ -5430,11 +5430,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"S/nE3vt72YPQugODjT9/lkOCc81o38+ChfD5OaziAh4=\""
+          "Value": "\"L8tzddY74D2M4ovn2jGASv6GcFT3+oXCkg+8zFEpCPg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 18:53:02 GMT"
+          "Value": "Mon, 07 Apr 2025 21:31:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5444,7 +5444,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xxjf8v5n25"
+          "Value": "lfiqtaz6vp"
         },
         {
           "Name": "label",
@@ -5452,7 +5452,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-S/nE3vt72YPQugODjT9/lkOCc81o38+ChfD5OaziAh4="
+          "Value": "sha256-L8tzddY74D2M4ovn2jGASv6GcFT3+oXCkg+8zFEpCPg="
         }
       ]
     },
@@ -5539,6 +5539,51 @@
       ]
     },
     {
+      "Route": "js/workout-form.b7q1l5s87s.js",
+      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\workout-form.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9202"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"52OvZAdi02JaZjZlB5JIYLKO9tmujWglERk99DTj6bg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 14:03:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b7q1l5s87s"
+        },
+        {
+          "Name": "label",
+          "Value": "js/workout-form.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-52OvZAdi02JaZjZlB5JIYLKO9tmujWglERk99DTj6bg="
+        }
+      ]
+    },
+    {
       "Route": "js/workout-form.js",
       "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\workout-form.js",
       "Selectors": [],
@@ -5549,7 +5594,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9207"
+          "Value": "9202"
         },
         {
           "Name": "Content-Type",
@@ -5557,11 +5602,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"YctH2cmFD4ub3H+54aFF33PBHs0TqvrMc0zfhxT7SuE=\""
+          "Value": "\"52OvZAdi02JaZjZlB5JIYLKO9tmujWglERk99DTj6bg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 18:46:26 GMT"
+          "Value": "Mon, 24 Mar 2025 14:03:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5571,52 +5616,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-YctH2cmFD4ub3H+54aFF33PBHs0TqvrMc0zfhxT7SuE="
-        }
-      ]
-    },
-    {
-      "Route": "js/workout-form.rtrvea6k9o.js",
-      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\workout-form.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9207"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YctH2cmFD4ub3H+54aFF33PBHs0TqvrMc0zfhxT7SuE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 18:46:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "rtrvea6k9o"
-        },
-        {
-          "Name": "label",
-          "Value": "js/workout-form.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-YctH2cmFD4ub3H+54aFF33PBHs0TqvrMc0zfhxT7SuE="
+          "Value": "sha256-52OvZAdi02JaZjZlB5JIYLKO9tmujWglERk99DTj6bg="
         }
       ]
     },
@@ -11301,7 +11301,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 18:17:04 GMT"
+          "Value": "Mon, 24 Mar 2025 13:51:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11338,7 +11338,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 18:17:04 GMT"
+          "Value": "Mon, 24 Mar 2025 13:51:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11375,7 +11375,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 18:17:04 GMT"
+          "Value": "Mon, 24 Mar 2025 13:51:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11420,7 +11420,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 18:17:04 GMT"
+          "Value": "Mon, 24 Mar 2025 13:51:49 GMT"
         },
         {
           "Name": "Cache-Control",

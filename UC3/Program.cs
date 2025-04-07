@@ -4,6 +4,7 @@ using UC3.Business;
 using UC3.Controllers;
 using UC3.Services;
 
+
 namespace UC3
 {
     public class Program
@@ -14,6 +15,9 @@ namespace UC3
 
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
             builder.Services.AddDbContext<WorkoutContext>(x => x.UseSqlite(connectionString));
+            builder.Services.AddScoped<IWorkoutContext>(provider =>
+    provider.GetRequiredService<WorkoutContext>());
+
             builder.Services.AddScoped<AccountService>();
             builder.Services.AddScoped<HomeService>();
             builder.Services.AddScoped<WorkoutService>();
@@ -26,7 +30,7 @@ namespace UC3
             });
             builder.Services.AddMvc().AddNToastNotifyToastr();
             builder.Services.AddScoped<EmailService>();
-
+            builder.Services.AddSignalR();
             builder.Services.AddDistributedMemoryCache(); // Dit configureert een tijdelijke cache in het geheugen
             builder.Services.AddSession(options =>
             {
@@ -54,6 +58,7 @@ namespace UC3
             app.UseSession();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.MapHub<WorkoutHub>("/workoutHub");
 
             app.UseRouting();
 

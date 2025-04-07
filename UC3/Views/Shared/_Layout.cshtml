@@ -36,9 +36,6 @@
                         </li>
 
                         @await Component.InvokeAsync("NToastNotify")
-
-
-
                     </ul>
                 </div>
             </div>
@@ -46,16 +43,13 @@
     </header>
 
     <div class="container">
-
         <main role="main" class="pb-3">
             <section>
                 @{
                     if (HttpContextAccessor.HttpContext.Session.GetString("IsLoggedIn") == "true")
-
                     {
                         if (HttpContextAccessor.HttpContext.Session.GetString("Friends") != "true")
                         {
-
                             <section>
                                 <div class="div1">
                                     <label id="name" class="name-label">
@@ -94,7 +88,9 @@
             &copy; 2025 - UC3 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+    <!-- Laad scripts in de juiste volgorde, slechts één keer -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.0/signalr.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
