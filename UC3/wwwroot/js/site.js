@@ -35,7 +35,6 @@ $(document).ready(function () {
         });
         $("#saveBioBtn").click(function () {
             const newBio = $("#bioTextarea").val();
-            //Stuurt de nieuwe bio naar de server zonder de pagina te verversen en verwerkt de reactie., ajax aanroep
             $.ajax({
                 url: '/Home/UpdateBio',
                 type: 'POST',
@@ -57,7 +56,6 @@ $(document).ready(function () {
     }
 });
 
-// Voeg deze nieuwe functie toe om SignalR te configureren
 function setupSignalR(currentUserId) {
     // Maak verbinding met de SignalR hub
     const connection = new signalR.HubConnectionBuilder()

@@ -6,10 +6,10 @@
 class BioEditor extends HTMLElement {
     constructor() {
         super();
-        // Shadow DOM gebruiken voor encapsulatie
+        //shadow dom voor encapsu
         this.attachShadow({ mode: 'open' });
 
-        // HTML template voor de structuur
+        // HTML template voo structuur
         this.shadowRoot.innerHTML = `
       <style>
         .bio {
@@ -89,7 +89,7 @@ class BioEditor extends HTMLElement {
       </div>
     `;
 
-        // Bind event handlers
+        //Bind event handlers
         this._changeBio = this._changeBio.bind(this);
         this._cancelBio = this._cancelBio.bind(this);
         this._saveBio = this._saveBio.bind(this);
@@ -129,19 +129,19 @@ class BioEditor extends HTMLElement {
         }
     }
 
-    // Event handler voor bio wijzigen
+    // Event handler bio wijzigen
     _changeBio() {
         this.shadowRoot.getElementById('bioViewContent').style.display = 'none';
         this.shadowRoot.getElementById('bioEditContent').style.display = 'block';
     }
 
-    // Event handler voor bio annuleren
+    //bio annuleren
     _cancelBio() {
         this.shadowRoot.getElementById('bioEditContent').style.display = 'none';
         this.shadowRoot.getElementById('bioViewContent').style.display = 'block';
     }
 
-    // Event handler voor bio opslaan
+    //bio opslaan
     _saveBio() {
         const newBio = this.shadowRoot.getElementById('bioTextarea').value;
 
@@ -180,5 +180,4 @@ class BioEditor extends HTMLElement {
     }
 }
 
-// Registreer het custom element
 customElements.define('bio-editor', BioEditor);
