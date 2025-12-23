@@ -31,12 +31,12 @@ namespace UC3
             builder.Services.AddMvc().AddNToastNotifyToastr();
             builder.Services.AddScoped<EmailService>();
             builder.Services.AddSignalR();
-            builder.Services.AddDistributedMemoryCache(); // Dit configureert een tijdelijke cache in het geheugen
+            builder.Services.AddDistributedMemoryCache(); 
             builder.Services.AddSession(options =>
             {
                 options.IdleTimeout = TimeSpan.FromMinutes(180);
-                options.Cookie.HttpOnly = true; // De cookie is alleen toegankelijk via HTTP (meer veiligheid)
-                options.Cookie.IsEssential = true; //Nodig voor werking sessie
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true; 
             });
             builder.Services.AddHttpContextAccessor();
 

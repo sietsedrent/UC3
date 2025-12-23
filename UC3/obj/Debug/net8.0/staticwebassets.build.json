@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6e7DEB5cQmm11xCq3rfMeZijllv+iFekKNj8dRK4+Xk=",
+  "Hash": "vYTRReQWKEZv8AB/8WTrfPP7DBLcnSoS99tl4Dw3aZU=",
   "Source": "UC3",
   "BasePath": "_content/UC3",
   "Mode": "Default",
@@ -1459,8 +1459,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "s70tpfoxf6",
-      "Integrity": "qEQ0xhY5vPra4wHwW3iHRLCuiHICRoAN+OU2HazzbS4=",
+      "Fingerprint": "cg8cknlhjr",
+      "Integrity": "NGr0B4hLMEvvgdEtZcGVmCPssFLB8uUAh29FF67q1bQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\bio-editor.js"
@@ -1480,8 +1480,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "f6cvioby5a",
-      "Integrity": "ZzF6aVKXccpgLLGWEmsXFg+0C+6d+Wk19jLEG3N03MA=",
+      "Fingerprint": "9y36up1386",
+      "Integrity": "gQvZXRkTA2V3/CYst7Vi2Zxht/YOStkg57f72rB9CSw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -5396,6 +5396,51 @@
       ]
     },
     {
+      "Route": "js/bio-editor.cg8cknlhjr.js",
+      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\bio-editor.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NGr0B4hLMEvvgdEtZcGVmCPssFLB8uUAh29FF67q1bQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 08:50:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cg8cknlhjr"
+        },
+        {
+          "Name": "label",
+          "Value": "js/bio-editor.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NGr0B4hLMEvvgdEtZcGVmCPssFLB8uUAh29FF67q1bQ="
+        }
+      ]
+    },
+    {
       "Route": "js/bio-editor.js",
       "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\bio-editor.js",
       "Selectors": [],
@@ -5406,7 +5451,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6680"
+          "Value": "6566"
         },
         {
           "Name": "Content-Type",
@@ -5414,11 +5459,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qEQ0xhY5vPra4wHwW3iHRLCuiHICRoAN+OU2HazzbS4=\""
+          "Value": "\"NGr0B4hLMEvvgdEtZcGVmCPssFLB8uUAh29FF67q1bQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 07 Apr 2025 21:44:00 GMT"
+          "Value": "Tue, 08 Apr 2025 08:50:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5428,57 +5473,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-qEQ0xhY5vPra4wHwW3iHRLCuiHICRoAN+OU2HazzbS4="
+          "Value": "sha256-NGr0B4hLMEvvgdEtZcGVmCPssFLB8uUAh29FF67q1bQ="
         }
       ]
     },
     {
-      "Route": "js/bio-editor.s70tpfoxf6.js",
-      "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\bio-editor.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6680"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qEQ0xhY5vPra4wHwW3iHRLCuiHICRoAN+OU2HazzbS4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 07 Apr 2025 21:44:00 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "s70tpfoxf6"
-        },
-        {
-          "Name": "label",
-          "Value": "js/bio-editor.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-qEQ0xhY5vPra4wHwW3iHRLCuiHICRoAN+OU2HazzbS4="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.f6cvioby5a.js",
+      "Route": "js/site.9y36up1386.js",
       "AssetFile": "C:\\xampp 3\\htdocs\\nerdy\\UC3\\UC3\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5488,7 +5488,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7057"
+          "Value": "6878"
         },
         {
           "Name": "Content-Type",
@@ -5496,11 +5496,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZzF6aVKXccpgLLGWEmsXFg+0C+6d+Wk19jLEG3N03MA=\""
+          "Value": "\"gQvZXRkTA2V3/CYst7Vi2Zxht/YOStkg57f72rB9CSw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 07 Apr 2025 21:55:03 GMT"
+          "Value": "Tue, 08 Apr 2025 08:48:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5510,7 +5510,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "f6cvioby5a"
+          "Value": "9y36up1386"
         },
         {
           "Name": "label",
@@ -5518,7 +5518,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ZzF6aVKXccpgLLGWEmsXFg+0C+6d+Wk19jLEG3N03MA="
+          "Value": "sha256-gQvZXRkTA2V3/CYst7Vi2Zxht/YOStkg57f72rB9CSw="
         }
       ]
     },
@@ -5533,7 +5533,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7057"
+          "Value": "6878"
         },
         {
           "Name": "Content-Type",
@@ -5541,11 +5541,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZzF6aVKXccpgLLGWEmsXFg+0C+6d+Wk19jLEG3N03MA=\""
+          "Value": "\"gQvZXRkTA2V3/CYst7Vi2Zxht/YOStkg57f72rB9CSw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 07 Apr 2025 21:55:03 GMT"
+          "Value": "Tue, 08 Apr 2025 08:48:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5555,7 +5555,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ZzF6aVKXccpgLLGWEmsXFg+0C+6d+Wk19jLEG3N03MA="
+          "Value": "sha256-gQvZXRkTA2V3/CYst7Vi2Zxht/YOStkg57f72rB9CSw="
         }
       ]
     },

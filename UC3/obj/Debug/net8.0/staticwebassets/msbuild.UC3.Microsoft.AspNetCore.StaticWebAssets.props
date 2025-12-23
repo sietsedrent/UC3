@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>s70tpfoxf6</Fingerprint>
-      <Integrity>qEQ0xhY5vPra4wHwW3iHRLCuiHICRoAN+OU2HazzbS4=</Integrity>
+      <Fingerprint>cg8cknlhjr</Fingerprint>
+      <Integrity>NGr0B4hLMEvvgdEtZcGVmCPssFLB8uUAh29FF67q1bQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\bio-editor.js'))</OriginalItemSpec>
@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>f6cvioby5a</Fingerprint>
-      <Integrity>ZzF6aVKXccpgLLGWEmsXFg+0C+6d+Wk19jLEG3N03MA=</Integrity>
+      <Fingerprint>9y36up1386</Fingerprint>
+      <Integrity>gQvZXRkTA2V3/CYst7Vi2Zxht/YOStkg57f72rB9CSw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</OriginalItemSpec>

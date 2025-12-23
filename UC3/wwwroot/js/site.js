@@ -78,6 +78,7 @@ function setupSignalR(currentUserId) {
         }
     });
 }
+
 // Functie om de UI bij te werken zonder pagina te verversen
 function updateWorkoutDayUI(dayIndex, hasWorkout) {
     const dayCircle = $(`.day-circle[data-day-index="${dayIndex}"]`);

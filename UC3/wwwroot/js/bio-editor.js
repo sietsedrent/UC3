@@ -97,12 +97,12 @@ class BioEditor extends HTMLElement {
 
     // Wanneer het element aan de DOM wordt toegevoegd
     connectedCallback() {
-        // Initiële bio-tekst instellen
+        // Initiele bio-tekst instellen
         const bioText = this.getAttribute('bio-text') || '';
         this.shadowRoot.getElementById('bioText').textContent = 'Bio: ' + bioText;
         this.shadowRoot.getElementById('bioTextarea').value = bioText;
 
-        // Event listeners toevoegen
+        //Event listeners toevoegen
         this.shadowRoot.getElementById('changeBioBtn').addEventListener('click', this._changeBio);
         this.shadowRoot.getElementById('cancelBioBtn').addEventListener('click', this._cancelBio);
         this.shadowRoot.getElementById('saveBioBtn').addEventListener('click', this._saveBio);
@@ -116,12 +116,12 @@ class BioEditor extends HTMLElement {
         this.shadowRoot.getElementById('saveBioBtn').removeEventListener('click', this._saveBio);
     }
 
-    // Welke attributen observeren we
+    // Welke attributen observeren 
     static get observedAttributes() {
         return ['bio-text'];
     }
 
-    // Wat te doen als een attribuut wijzigt
+    // wijzigen attribuut wat doen
     attributeChangedCallback(name, oldValue, newValue) {
         if (name === 'bio-text' && oldValue !== newValue) {
             this.shadowRoot.getElementById('bioText').textContent = 'Bio: ' + newValue;
